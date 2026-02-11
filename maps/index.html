@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UK Government Power Map — Constituency Maps</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Source Sans 3','Segoe UI',system-ui,sans-serif;background:#f0f2f5;color:#1a1a2e}
+  .top-bar{display:flex;align-items:center;justify-content:space-between;padding:10px 20px;flex-wrap:wrap;gap:8px}
+  .top-left{display:flex;align-items:center;gap:12px}
+  .top-left h1{font-size:17px;font-weight:800;letter-spacing:-0.3px}
+  .top-left .sub{font-size:10px;color:#5a6577}
+  .controls{display:flex;gap:4px;flex-wrap:wrap;align-items:center}
+  .map-btn{padding:5px 10px;border:1px solid #d1d5db;border-radius:6px;font-size:10.5px;font-weight:600;background:#fff;cursor:pointer;color:#555;font-family:inherit;transition:all 0.15s;white-space:nowrap}
+  .map-btn:hover{background:#f5f6f8}
+  .map-btn.active{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+  .back-link{font-size:11px;color:#1d70b8;text-decoration:none;font-weight:600}
+  .back-link:hover{text-decoration:underline}
+  #map{height:calc(100vh - 58px);width:100%;border-top:1px solid #e2e4e9}
+  .legend{background:#fff;padding:10px 14px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.15);font-size:10.5px;line-height:1.6;max-width:240px}
+  .legend-title{font-weight:700;margin-bottom:4px;font-size:11px}
+  .legend-item{display:flex;align-items:flex-start;gap:5px;margin-bottom:1px}
+  .legend-swatch{width:14px;height:10px;border-radius:1px;border:1px solid rgba(0,0,0,0.08);flex-shrink:0;margin-top:3px}
+  .legend-note{font-size:9px;color:#888;margin-top:4px;border-top:1px solid #eee;padding-top:4px}
+  .legend-def{font-size:9px;color:#888;line-height:1.3}
+  .info{background:#fff;padding:12px 14px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.15);font-size:11.5px;line-height:1.5;max-width:320px;min-width:220px}
+  .info h4{font-size:13px;font-weight:700;margin-bottom:2px;color:#1a1a2e}
+  .info .ip-mp{font-weight:600;color:#1a1a2e;margin-top:4px}
+  .info .ip-party{color:#5a6577;font-size:10.5px}
+  .info .ip-stat{color:#5a6577;font-size:10.5px;margin-top:2px}
+  .info .ip-eth{display:inline-block;font-size:9px;font-weight:700;padding:1px 5px;border-radius:3px;margin-left:3px;vertical-align:middle}
+  .info .ip-minister{background:#f0fdf4;border:1px solid #bbf7d0;padding:4px 8px;border-radius:4px;margin-top:5px;font-size:10.5px}
+  .info .ip-m-rank{font-weight:700;color:#065f46}
+  .info .ip-m-dept{color:#5a6577}
+  .info .ip-section{margin-top:6px;padding-top:5px;border-top:1px solid #f0f0f0}
+  .info .ip-section-title{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:#9ca3af;margin-bottom:2px}
+  .info .ip-tag{display:inline-block;font-size:9px;font-weight:700;padding:2px 6px;border-radius:3px;margin-top:3px}
+  .sw-neg{color:#dc2626;font-weight:700} .sw-pos{color:#16a34a;font-weight:700}
+  .eth-Asian{background:#dbeafe;color:#1e40af} .eth-Black{background:#ede9fe;color:#5b21b6}
+  .eth-Mixed{background:#fce7f3;color:#9d174d} .eth-Other{background:#ecfdf5;color:#065f46}
+  .bar{display:flex;height:5px;border-radius:3px;overflow:hidden;margin:3px 0}
+  .bar span{display:block;min-width:1px}
+  .bw{background:#d1d5db}.ba{background:#3b82f6}.bb{background:#8b5cf6}.bm{background:#ec4899}.bo{background:#10b981}
+  .stats-bar{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);z-index:1000;background:rgba(255,255,255,0.95);padding:6px 16px;border-radius:20px;box-shadow:0 2px 8px rgba(0,0,0,0.15);font-size:11px;font-weight:600;color:#1a1a2e;white-space:nowrap;pointer-events:none;backdrop-filter:blur(4px)}
+  .stats-bar span{color:#5a6577;font-weight:400}
+  .biv-wrap{display:flex;align-items:flex-end;gap:6px;margin:6px 0}
+  .biv-ylabel{writing-mode:vertical-lr;transform:rotate(180deg);font-size:9px;color:#888;text-align:center}
+  .biv-grid{display:grid;grid-template-columns:repeat(3,22px);grid-template-rows:repeat(3,22px);gap:1px}
+  .biv-cell{border-radius:2px}
+  .biv-xlabel{font-size:9px;color:#888;text-align:center;margin-top:2px}
+</style>
+</head>
+<body>
+<div class="top-bar">
+  <div class="top-left">
+    <a class="back-link" href="../index.html">&larr; Power Map</a>
+    <div><h1>UK Constituency Maps</h1><div class="sub">Census 2021/22 &middot; GE2024 &middot; Notional 2019 &middot; Sutton Trust 2024 &middot; 650 constituencies</div></div>
+  </div>
+  <div class="controls">
+    <button class="map-btn active" onclick="setLayer('diversity')" id="btn-diversity">Ethnic Diversity</button>
+    <button class="map-btn" onclick="setLayer('minority')" id="btn-minority">Minority MPs</button>
+    <button class="map-btn" onclick="setLayer('degree')" id="btn-degree">Graduate %</button>
+    <button class="map-btn" onclick="setLayer('bivariate')" id="btn-bivariate">Education × Reform</button>
+    <button class="map-btn" onclick="setLayer('reform_surge')" id="btn-reform_surge">Reform Surge</button>
+    <button class="map-btn" onclick="setLayer('realignment')" id="btn-realignment">Party Realignment</button>
+    <button class="map-btn" onclick="setLayer('brexitland')" id="btn-brexitland">Brexitland Types</button>
+    <button class="map-btn" onclick="setLayer('gender')" id="btn-gender">MP Gender</button>
+    <button class="map-btn" onclick="setLayer('deprivation')" id="btn-deprivation">Deprivation</button>
+  </div>
+</div>
+<div id="map"></div>
+<script>
+var CL='diversity',geoData,mapData,map,geoLayer,legendCtrl,infoCtrl,statsDiv;
+var PE={Lab:{priv:15,oxb:19,uni:90},Con:{priv:46,oxb:29,uni:90},LD:{priv:31,oxb:21,uni:90}};
+
+function diversityColor(nw){if(nw>=60)return'#b10026';if(nw>=45)return'#e31a1c';if(nw>=30)return'#fc4e2a';if(nw>=20)return'#fd8d3c';if(nw>=12)return'#feb24c';if(nw>=6)return'#fed976';if(nw>=3)return'#ffeda0';return'#ffffcc'}
+function degreeColor(v){if(v==null)return'#f3f4f6';if(v>=50)return'#1e3a8a';if(v>=42)return'#1d4ed8';if(v>=36)return'#2563eb';if(v>=30)return'#60a5fa';if(v>=25)return'#93c5fd';if(v>=20)return'#bfdbfe';return'#eff6ff'}
+function reformColor(v){if(v==null||v===0)return'#f3f4f6';if(v>=35)return'#7f1d1d';if(v>=28)return'#991b1b';if(v>=22)return'#dc2626';if(v>=18)return'#ef4444';if(v>=14)return'#f87171';if(v>=10)return'#fca5a5';if(v>=5)return'#fecaca';return'#fef2f2'}
+var BIV=[['#574249','#8a6070','#c27fa0'],['#627f8c','#90a0b0','#c7c1d5'],['#73b2a0','#a5d5c3','#e8e8e8']];
+function bivColor(d,r){if(d==null||r==null)return'#f3f4f6';return BIV[r<10?2:r<22?1:0][d<25?0:d<40?1:2]}
+function realignColor(d){if(!d||d.con19==null)return'#e5e7eb';var ch=d.con19>=d.lab19&&d.con19>=(d.ld19||0)&&d.con19>=(d.snp19||0);if(!ch)return'#e5e7eb';if(d.wn==='Lab')return'#e4003b';if(d.wn==='LD')return'#faa61a';if(d.wn==='RUK')return'#12b6cf';if(d.wn==='Green')return'#6ab023';if(d.wn==='Ind')return'#999';if(d.con_sw!=null&&d.con_sw<-25)return'#93c5fd';if(d.con_sw!=null&&d.con_sw<-15)return'#60a5fa';return'#0087dc'}
+function brexColor(t){return{cosmo_core:'#2563eb',cosmo_grad:'#60a5fa',necessity:'#f59e0b',id_conservative:'#dc2626',trad_working:'#b45309',mixed:'#d1d5db'}[t]||'#f3f4f6'}
+function depColor(p){if(p==null)return'#f3f4f6';if(p>70)return'#7f1d1d';if(p>55)return'#991b1b';if(p>45)return'#dc2626';if(p>35)return'#f87171';if(p>25)return'#fca5a5';if(p>15)return'#86efac';if(p>5)return'#22c55e';return'#15803d'}
+function partyColor(p){return{Lab:'#e4003b',Con:'#0087dc',LD:'#faa61a',RUK:'#12b6cf',Green:'#6ab023',SNP:'#fff95d',PC:'#005b54',Ind:'#999',SF:'#326760',DUP:'#d46a4c',APNI:'#f6cb2f',SDLP:'#2aa82c',Spk:'#999'}[p]||'#999'}
+function pcFull(p){if(!p)return'#999';var l=p.toLowerCase();if(~l.indexOf('labour'))return'#e4003b';if(~l.indexOf('conservative'))return'#0087dc';if(~l.indexOf('liberal'))return'#faa61a';if(~l.indexOf('reform'))return'#12b6cf';if(~l.indexOf('green'))return'#6ab023';if(~l.indexOf('snp')||~l.indexOf('scottish'))return'#fff95d';if(~l.indexOf('plaid'))return'#005b54';return'#999'}
+
+var IDL={cosmo_core:['Cosmopolitan Core','High graduates + high diversity. Urban, professional, Remain-voting.'],cosmo_grad:['Graduate Cosmopolitan','Degree-dense, moderate diversity. University towns, affluent suburbs.'],necessity:['Necessity Liberal','High diversity, fewer graduates. Ethnic minority communities, inner suburbs.'],id_conservative:['Identity Conservative','Very low graduates, high deprivation, very white. Strongest Reform vote.'],trad_working:['Traditional Working Class','Low graduates, low diversity. Ex-industrial, post-mining, Leave heartlands.'],mixed:['Mixed / Transitional','No dominant identity pattern. Suburban, mid-range on most metrics.']};
+
+function getStyle(f){var cd=f.properties.cd,d=mapData?mapData[cd]:null;if(!d)return{fillColor:'#e5e7eb',fillOpacity:0.2,weight:0.3,color:'#bbb',opacity:0.3};var fill='#e5e7eb',op=0.75;
+switch(CL){case'diversity':fill=diversityColor(d.nw);break;case'minority':if(d.eth){var ec=d.eth==='Asian'?'#3b82f6':d.eth==='Black'?'#8b5cf6':d.eth==='Mixed'?'#ec4899':'#10b981';return{fillColor:ec,fillOpacity:0.7,weight:1.2,color:ec,opacity:0.8}}return{fillColor:'#f3f4f6',fillOpacity:0.15,weight:0.2,color:'#ddd',opacity:0.3};case'degree':fill=degreeColor(d.deg);break;case'bivariate':fill=bivColor(d.deg,d.ruk);break;case'reform_surge':if(d.rns){fill='#f3f4f6';op=0.25}else{fill=reformColor(d.ruk)}break;case'realignment':fill=realignColor(d);op=d.con19!=null&&d.con19>=d.lab19?0.8:0.2;break;case'brexitland':if(d.idtype){fill=brexColor(d.idtype)}else{fill='#f3f4f6';op=0.25}break;case'gender':fill=d.gen?(d.gen==='F'?'#db2777':'#2563eb'):'#e5e7eb';op=0.6;break;case'deprivation':fill=depColor(d.imd_pct);break}
+return{fillColor:fill,fillOpacity:op,weight:0.5,color:'#666',opacity:0.35}}
+
+function onEachFeature(f,layer){layer.on({mouseover:function(e){e.target.setStyle({weight:2.5,color:'#1a1a2e',opacity:1});e.target.bringToFront();updateInfo(f)},mouseout:function(e){geoLayer.resetStyle(e.target)},click:function(e){map.fitBounds(e.target.getBounds());updateInfo(f)}})}
+
+function updateInfo(f){var cd=f.properties.cd,d=mapData?mapData[cd]:null;if(!d){infoCtrl.update('<h4>'+f.properties.nm+'</h4><div class="ip-stat">No data</div>');return}
+var h='<h4>'+d.name+'</h4>';
+h+='<div class="bar"><span class="bw" style="width:'+d.w+'%"></span><span class="ba" style="width:'+d.a+'%"></span><span class="bb" style="width:'+d.b+'%"></span><span class="bm" style="width:'+d.mx+'%"></span><span class="bo" style="width:'+d.o+'%"></span></div>';
+h+='<div class="ip-stat">'+d.nw.toFixed(1)+'% non-White</div>';
+h+='<div class="ip-mp">'+d.mp;if(d.eth)h+=' <span class="ip-eth eth-'+d.eth+'">'+d.eth+'</span>';if(d.gen)h+=' <span style="font-size:10px;color:#888">'+(d.gen==='F'?'\u2640':'\u2642')+'</span>';h+='</div>';
+h+='<div class="ip-party" style="border-left:3px solid '+pcFull(d.party)+';padding-left:6px">'+d.party+'</div>';
+if(d.minister)h+='<div class="ip-minister"><span class="ip-m-rank">'+d.minister.rank+'</span> \u00b7 <span class="ip-m-dept">'+d.minister.dept+'</span></div>';
+if(d.idtype&&IDL[d.idtype]){var tc=brexColor(d.idtype);h+='<div class="ip-tag" style="background:'+tc+'18;color:'+tc+';border:1px solid '+tc+'44">'+IDL[d.idtype][0]+'</div>'}
+if(d.deg!=null){h+='<div class="ip-section"><div class="ip-section-title">Education (Census)</div><div class="ip-stat">Graduates: <b>'+d.deg+'%</b>';if(d.nq!=null)h+=' \u00b7 No qualifications: '+d.nq+'%';h+='</div>';
+h+='<div style="height:5px;border-radius:3px;background:#e5e7eb;margin:3px 0"><div style="height:100%;border-radius:3px;width:'+Math.min(100,d.deg*1.5)+'%;background:linear-gradient(90deg,#60a5fa,#2563eb)"></div></div>';
+var pk=d.wn==='Lab'?'Lab':d.wn==='Con'?'Con':d.wn==='LD'?'LD':null;if(pk&&PE[pk]){var gap=PE[pk].uni-d.deg;h+='<div class="ip-stat" style="color:#9ca3af">'+pk+' MPs: '+PE[pk].uni+'% uni vs '+d.deg+'% local grads (gap +'+gap.toFixed(0)+'pp)</div>'}h+='</div>'}
+h+='<div class="ip-section"><div class="ip-section-title">2024 Election</div><div class="ip-stat">Reform: <b>'+d.ruk+'%</b>';if(d.rns)h+=' <span style="color:#dc2626;font-size:9px">(didn\u2019t stand)</span>';h+='</div>';
+if(d.wn)h+='<div class="ip-stat">Winner: <span style="color:'+partyColor(d.wn)+';font-weight:700">'+d.wn+'</span> \u00b7 Maj: '+d.mj+'%</div>';h+='</div>';
+if(d.con_sw!=null||d.lab_sw!=null){h+='<div class="ip-section"><div class="ip-section-title">Swing vs 2019</div>';
+if(d.con_sw!=null)h+='<div class="ip-stat">Con: <span class="'+(d.con_sw<0?'sw-neg':'sw-pos')+'">'+(d.con_sw>0?'+':'')+d.con_sw+'pp</span></div>';
+if(d.lab_sw!=null)h+='<div class="ip-stat">Lab: <span class="'+(d.lab_sw>0?'sw-pos':'sw-neg')+'">'+(d.lab_sw>0?'+':'')+d.lab_sw+'pp</span></div>';
+if(d.ruk_sw!=null)h+='<div class="ip-stat">Reform: <span class="sw-pos">+'+d.ruk_sw+'pp</span></div>';h+='</div>'}
+if(d.lv!==undefined&&d.lv!==''&&d.lv!==null)h+='<div class="ip-section"><div class="ip-section-title">EU Referendum (est.)</div><div class="ip-stat">Leave: <b>'+Number(d.lv).toFixed(1)+'%</b> \u00b7 Remain: '+(100-d.lv).toFixed(1)+'%</div></div>';
+if(d.imd_pct!=null){var dd=d.imd_pct>70?'Very high':d.imd_pct>50?'Above average':d.imd_pct>30?'Below average':'Low';h+='<div class="ip-section"><div class="ip-section-title">Deprivation</div><div class="ip-stat">'+d.imd_pct+'/100 ('+dd+')</div></div>'}
+infoCtrl.update(h)}
+
+function getLegendHTML(){
+if(CL==='diversity')return'<div class="legend-title">% Non-White Population</div>'+[['#ffffcc','0\u20133%'],['#ffeda0','3\u20136%'],['#fed976','6\u201312%'],['#feb24c','12\u201320%'],['#fd8d3c','20\u201330%'],['#fc4e2a','30\u201345%'],['#e31a1c','45\u201360%'],['#b10026','60%+']].map(function(x){return'<div class="legend-item"><div class="legend-swatch" style="background:'+x[0]+'"></div>'+x[1]+'</div>'}).join('')+'<div class="legend-note">Census 2021 (E&amp;W, NI) / 2022 (Scotland)</div>';
+if(CL==='minority')return'<div class="legend-title">Ethnic Minority MPs (87 of 650)</div>'+[['#3b82f6','Asian (51)'],['#8b5cf6','Black (15)'],['#ec4899','Mixed (20)'],['#10b981','Other (1)']].map(function(x){return'<div class="legend-item"><div class="legend-swatch" style="background:'+x[0]+'"></div>'+x[1]+'</div>'}).join('')+'<div class="legend-item"><div class="legend-swatch" style="background:#f3f4f6;border-color:#ccc"></div>Not identified as minority</div>';
+if(CL==='degree')return'<div class="legend-title">% with Degree (Level 4+)</div>'+[['#eff6ff','15\u201320%'],['#bfdbfe','20\u201325%'],['#93c5fd','25\u201330%'],['#60a5fa','30\u201336%'],['#2563eb','36\u201342%'],['#1d4ed8','42\u201350%'],['#1e3a8a','50\u201366%']].map(function(x){return'<div class="legend-item"><div class="legend-swatch" style="background:'+x[0]+'"></div>'+x[1]+'</div>'}).join('')+'<div class="legend-note">Census 2021 TS067 (E&amp;W) / 2022 UV501 (Scot).<br>Strongest predictor of Leave (r=\u22120.86).</div>';
+if(CL==='bivariate'){var h='<div class="legend-title">Education \u00d7 Reform Vote</div><div class="biv-wrap"><div class="biv-ylabel">\u2191 Reform %</div><div><div class="biv-grid">';BIV.flat().forEach(function(c){h+='<div class="biv-cell" style="background:'+c+'"></div>'});return h+'</div><div class="biv-xlabel">Graduate % \u2192</div></div></div><div class="legend-note">\u2196 Identity conservative heartland<br>\u2198 Cosmopolitan heartland</div>'}
+if(CL==='reform_surge')return'<div class="legend-title">Reform UK 2024 Vote Share</div>'+[['#fef2f2','0\u20135%'],['#fecaca','5\u201310%'],['#fca5a5','10\u201314%'],['#f87171','14\u201318%'],['#ef4444','18\u201322%'],['#dc2626','22\u201328%'],['#991b1b','28\u201335%'],['#7f1d1d','35%+']].map(function(x){return'<div class="legend-item"><div class="legend-swatch" style="background:'+x[0]+'"></div>'+x[1]+'</div>'}).join('')+'<div class="legend-note">Grey = did not stand (23 GB + 18 NI).<br>5 seats won. Peak: Clacton 46.2%.</div>';
+if(CL==='realignment')return'<div class="legend-title">2024 Party Realignment</div><div style="font-size:9.5px;color:#666;margin-bottom:4px">Where the 2019 Conservative coalition went</div>'+[['#e4003b','Con \u2192 Labour','Red Wall collapse'],['#faa61a','Con \u2192 Lib Dem','Blue Wall revolt in graduate suburbs'],['#12b6cf','Con \u2192 Reform','Right-flank defection'],['#60a5fa','Con held (wounded)','Kept seat, lost 15\u201325pp'],['#93c5fd','Con held (gutted)','Kept seat but lost 25pp+'],['#0087dc','Con held','Smaller swing or safe seat'],['#e5e7eb','Not Con in 2019','Was Lab/SNP/other']].map(function(x){return'<div class="legend-item"><div class="legend-swatch" style="background:'+x[0]+'"></div><div>'+x[1]+'<br><span class="legend-def">'+x[2]+'</span></div></div>'}).join('')+'<div class="legend-note">Notional 2019 (Rallings &amp; Thrasher)</div>';
+if(CL==='brexitland'){var h='<div class="legend-title">Brexitland Identity Types</div><div style="font-size:9.5px;color:#666;margin-bottom:4px">After Sobolewska &amp; Ford (2020)</div>';['cosmo_core','cosmo_grad','necessity','id_conservative','trad_working','mixed'].forEach(function(k){var l=IDL[k];h+='<div class="legend-item"><div class="legend-swatch" style="background:'+brexColor(k)+'"></div><div>'+l[0]+'<br><span class="legend-def">'+l[1]+'</span></div></div>'});return h+'<div class="legend-note">631/650 coverage (excl. NI).</div>'}
+if(CL==='gender')return'<div class="legend-title">MP Gender</div><div class="legend-item"><div class="legend-swatch" style="background:#db2777"></div>Female (263, 40%)</div><div class="legend-item"><div class="legend-swatch" style="background:#2563eb"></div>Male (387, 60%)</div><div class="legend-note">Cosmo core: 55% female MPs.<br>Id-conservative: 19% female.</div>';
+if(CL==='deprivation')return'<div class="legend-title">Deprivation (UK-harmonised)</div>'+[['#15803d','Low'],['#22c55e','Below avg'],['#86efac','Slightly below'],['#fca5a5','Above avg'],['#f87171','High'],['#dc2626','Very high'],['#991b1b','Severe'],['#7f1d1d','Extreme']].map(function(x){return'<div class="legend-item"><div class="legend-swatch" style="background:'+x[0]+'"></div>'+x[1]+'</div>'}).join('')+'<div class="legend-note">UK IMD 2019 (Abel, Payne &amp; Barclay).<br>584/650 coverage.</div>';
+return''}
+
+
+function updateStats(){
+  if(!mapData||!statsDiv)return;var vals=Object.values(mapData),n=vals.length;
+  if(CL==='diversity'){var avg=vals.reduce(function(s,v){return s+v.nw},0)/n;statsDiv.innerHTML='Mean: <span>'+avg.toFixed(1)+'% non-White</span> · Range: <span>1.1%–79.9%</span> · UK overall: <span>18.3%</span>'}
+  else if(CL==='minority'){var mn=vals.filter(function(v){return v.eth}).length;statsDiv.innerHTML=mn+' minority MPs <span>of '+n+' ('+((mn/n)*100).toFixed(1)+'%)</span> · UK non-White: <span>18.3%</span>'}
+  else if(CL==='degree'){var dv=vals.filter(function(v){return v.deg!=null}),avg=dv.reduce(function(s,v){return s+v.deg},0)/dv.length;statsDiv.innerHTML='Mean: <span>'+avg.toFixed(1)+'% graduates</span> · Range: <span>17.5%–65.6%</span> · Degree vs Leave: <span>r = −0.86</span>'}
+  else if(CL==='bivariate'){statsDiv.innerHTML='Education is <span>the strongest predictor</span> of Leave/Reform voting (r = −0.86) — <span>twice as strong as ethnic diversity</span> (r = −0.41)'}
+  else if(CL==='reform_surge'){var rv=vals.filter(function(v){return v.ruk>0&&!v.rns}),avg=rv.reduce(function(s,v){return s+v.ruk},0)/rv.length,high=rv.filter(function(v){return v.ruk>=20}).length;statsDiv.innerHTML='Mean Reform: <span>'+avg.toFixed(1)+'%</span> · '+high+' seats above 20% · <span>5 seats won</span> · Peak: <span>Clacton 46.2%</span>'}
+  else if(CL==='realignment'){var lost=vals.filter(function(v){return v.con19!=null&&v.con19>=v.lab19&&v.con19>=(v.ld19||0)&&v.wn!=='Con'}).length;statsDiv.innerHTML='Notional Con seats lost: <span>~'+lost+'</span> · <span>Collapsed on both flanks simultaneously: Red Wall to Lab, Blue Wall to LD, right flank to Reform</span>'}
+  else if(CL==='brexitland'){var tc={};vals.forEach(function(v){if(v.idtype){tc[v.idtype]=(tc[v.idtype]||0)+1}});statsDiv.innerHTML='<span style="color:#2563eb">●</span> Cosmo core: '+(tc.cosmo_core||0)+' · <span style="color:#60a5fa">●</span> Grad: '+(tc.cosmo_grad||0)+' · <span style="color:#f59e0b">●</span> Necessity: '+(tc.necessity||0)+' · <span style="color:#dc2626">●</span> Id-con: '+(tc.id_conservative||0)+' · <span style="color:#b45309">●</span> Trad: '+(tc.trad_working||0)+' · Mixed: '+(tc.mixed||0)}
+  else if(CL==='gender'){var f=vals.filter(function(v){return v.gen==='F'}).length;statsDiv.innerHTML='Female: <span>'+f+' ('+((f/n)*100).toFixed(0)+'%)</span> · Male: <span>'+(n-f)+'</span> · Cosmo core: <span>55% ♀</span> · Id-conservative: <span>19% ♀</span>'}
+  else if(CL==='deprivation'){statsDiv.innerHTML='UK-harmonised IMD 2019 · <span>All 4 nations comparable</span> · Coverage: <span>584/650</span>'}
+}
+
+/* ===== LAYER SWITCH ===== */
+function setLayer(name){
+  CL=name;
+  document.querySelectorAll('.map-btn').forEach(function(b){b.classList.remove('active')});
+  document.getElementById('btn-'+name).classList.add('active');
+  if(geoLayer)geoLayer.setStyle(getStyle);
+  if(legendCtrl)legendCtrl.update();
+  updateStats();
+}
+
+/* ===== INIT ===== */
+function initMap(){
+  map=L.map('map',{zoomControl:true}).setView([54.5,-3.5],6);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png',{attribution:'© OpenStreetMap © CARTO',maxZoom:18}).addTo(map);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png',{maxZoom:18,pane:'overlayPane'}).addTo(map);
+  infoCtrl=L.control({position:'topright'});
+  infoCtrl.onAdd=function(){this._div=L.DomUtil.create('div','info');this._div.innerHTML='<h4>Hover over a constituency</h4><div class="ip-stat">650 constituencies · 9 analytical layers</div><div class="ip-stat" style="margin-top:4px">Census 2021/22 · GE2024 · Notional 2019</div>';return this._div};
+  infoCtrl.update=function(html){this._div.innerHTML=html};
+  infoCtrl.addTo(map);
+  legendCtrl=L.control({position:'bottomleft'});
+  legendCtrl.onAdd=function(){this._div=L.DomUtil.create('div','legend');this.update();return this._div};
+  legendCtrl.update=function(){this._div.innerHTML=getLegendHTML()};
+  legendCtrl.addTo(map);
+  statsDiv=document.createElement('div');statsDiv.className='stats-bar';document.getElementById('map').appendChild(statsDiv);
+  Promise.all([
+    fetch('../assets/constituencies.geojson').then(function(r){return r.json()}),
+    fetch('../assets/map-data.json').then(function(r){return r.json()})
+  ]).then(function(results){
+    geoData=results[0];mapData=results[1];
+    geoLayer=L.geoJSON(geoData,{style:getStyle,onEachFeature:onEachFeature}).addTo(map);
+    updateStats();
+  }).catch(function(err){
+    document.getElementById('map').innerHTML='<div style="text-align:center;padding:60px 20px;color:#991b1b"><h3>Failed to load map data</h3><p>'+err.message+'</p><p style="color:#5a6577;font-size:12px">Serve locally: <code>python3 -m http.server</code></p></div>';
+  });
+}
+initMap();
+</script>
+</body>
+</html>

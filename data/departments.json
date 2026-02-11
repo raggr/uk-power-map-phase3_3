@@ -1,0 +1,700 @@
+[
+  {
+    "id": "cabinet-office",
+    "name": "Cabinet Office",
+    "color": "#1d4e89",
+    "verified": "2026-02-09",
+    "secretary": {
+      "name": "Sir Keir Starmer KCB KC MP",
+      "title": "Prime Minister, First Lord of the Treasury, Minister for the Civil Service, Minister for the Union",
+      "rt": true
+    },
+    "mos": [
+      {
+        "name": "Darren Jones MP",
+        "title": "Chief Secretary to the PM, Chancellor of the Duchy of Lancaster, Minister for Intergovernmental Relations",
+        "rt": true
+      },
+      {
+        "name": "Nick Thomas-Symonds MP",
+        "title": "Paymaster General, Minister for the Cabinet Office (Constitution & EU Relations)",
+        "rt": true
+      },
+      {
+        "name": "Dan Jarvis MBE MP",
+        "title": "Minister of State",
+        "rt": false
+      },
+      {
+        "name": "Anna Turley MP",
+        "title": "Minister of State (Minister without Portfolio)",
+        "rt": true,
+        "note": "Unpaid"
+      }
+    ],
+    "puss": [
+      {
+        "name": "Chris Ward MP",
+        "title": "Parliamentary Secretary"
+      },
+      {
+        "name": "Satvir Kaur MP",
+        "title": "Parliamentary Secretary",
+        "note": "Unpaid"
+      },
+      {
+        "name": "Josh Simons MP",
+        "title": "Parliamentary Secretary"
+      }
+    ]
+  },
+  {
+    "id": "treasury",
+    "name": "HM Treasury",
+    "color": "#8b1a1a",
+    "verified": "2026-02-09",
+    "secretary": {
+      "name": "Rachel Reeves MP",
+      "title": "Chancellor of the Exchequer",
+      "rt": true
+    },
+    "mos": [
+      {
+        "name": "James Murray MP",
+        "title": "Chief Secretary to the Treasury",
+        "rt": false,
+        "note": "Attends Cabinet"
+      },
+      {
+        "name": "Lord Livermore",
+        "title": "Financial Secretary to the Treasury",
+        "rt": false
+      },
+      {
+        "name": "Lord Stockwood",
+        "title": "Minister of State (Minister for Investment)",
+        "rt": false,
+        "note": "Unpaid"
+      }
+    ],
+    "puss": [
+      {
+        "name": "Daniel Tomlinson MP",
+        "title": "Exchequer Secretary to the Treasury"
+      },
+      {
+        "name": "Lucy Rigby KC MP",
+        "title": "Economic Secretary to the Treasury"
+      },
+      {
+        "name": "Torsten Bell MP",
+        "title": "Parliamentary Secretary"
+      }
+    ]
+  },
+  {
+    "id": "fcdo",
+    "name": "Foreign, Commonwealth & Development Office",
+    "shortName": "FCDO",
+    "color": "#003078",
+    "verified": "2026-02-09",
+    "secretary": {
+      "name": "Yvette Cooper MP",
+      "title": "Secretary of State for Foreign, Commonwealth and Development Affairs",
+      "rt": true
+    },
+    "mos": [
+      {
+        "name": "Baroness Chapman of Darlington",
+        "title": "Minister of State (International Development & Africa)",
+        "rt": true,
+        "note": "Attends Cabinet"
+      },
+      {
+        "name": "Stephen Doughty MP",
+        "title": "Minister of State (Europe, North America & Overseas Territories)",
+        "rt": false
+      }
+    ],
+    "puss": [
+      {
+        "name": "Hamish Falconer MP",
+        "title": "PUSS (Middle East, N. Africa, Afghanistan & Pakistan)"
+      },
+      {
+        "name": "Seema Malhotra MP",
+        "title": "PUSS (Indo-Pacific)"
+      },
+      {
+        "name": "Chris Elmore MP",
+        "title": "PUSS (Multilateral, Human Rights, Latin America & Caribbean)"
+      }
+    ]
+  },
+  {
+    "id": "home",
+    "name": "Home Office",
+    "color": "#732282",
+    "verified": "2026-02-09",
+    "secretary": {
+      "name": "Shabana Mahmood MP",
+      "title": "Secretary of State for the Home Department",
+      "rt": true
+    },
+    "mos": [
+      {
+        "name": "Dan Jarvis MBE MP",
+        "title": "Minister of State (Security)",
+        "rt": false
+      },
+      {
+        "name": "Lord Hanson of Flint",
+        "title": "Minister of State (Lords Minister)",
+        "rt": true,
+        "note": "Unpaid"
+      },
+      {
+        "name": "Sarah Jones MP",
+        "title": "Minister of State (Policing & Crime)",
+        "rt": false
+      },
+      {
+        "name": "Alex Norris MP",
+        "title": "Minister of State (Border Security & Asylum)",
+        "rt": false
+      }
+    ],
+    "puss": [
+      {
+        "name": "Jess Phillips MP",
+        "title": "PUSS (Safeguarding & VAWG)"
+      },
+      {
+        "name": "Mike Tapp MP",
+        "title": "PUSS (Migration & Citizenship)"
+      }
+    ]
+  },
+  {
+    "id": "mod",
+    "name": "Ministry of Defence",
+    "shortName": "MoD",
+    "color": "#4a4a4a",
+    "verified": "2026-02-09",
+    "secretary": {
+      "name": "John Healey MP",
+      "title": "Secretary of State for Defence",
+      "rt": true
+    },
+    "mos": [
+      {
+        "name": "Luke Pollard MP",
+        "title": "Minister of State (Defence Readiness & Industry)",
+        "rt": false
+      },
+      {
+        "name": "Lord Coaker",
+        "title": "Minister of State (House of Lords)",
+        "rt": false
+      }
+    ],
+    "puss": [
+      {
+        "name": "Alistair Carns DSO OBE MC MP",
+        "title": "PUSS (Armed Forces)"
+      },
+      {
+        "name": "Louise Sandher-Jones MP",
+        "title": "PUSS (Veterans & People)"
+      }
+    ]
+  },
+  {
+    "id": "moj",
+    "name": "Ministry of Justice",
+    "shortName": "MoJ",
+    "color": "#231f20",
+    "verified": "2026-02-09",
+    "secretary": {
+      "name": "David Lammy MP",
+      "title": "Deputy PM, Lord Chancellor & Secretary of State for Justice",
+      "rt": true
+    },
+    "mos": [
+      {
+        "name": "Lord Timpson OBE",
+        "title": "Minister of State (Prisons, Probation & Reducing Reoffending)",
+        "rt": false,
+        "note": "Unpaid"
+      },
+      {
+        "name": "Sarah Sackman KC MP",
+        "title": "Minister of State (Courts & Legal Services)",
+        "rt": false
+      }
+    ],
+    "puss": [
+      {
+        "name": "Alex Davies-Jones MP",
+        "title": "PUSS (Victims & Tackling VAWG)"
+      },
+      {
+        "name": "Baroness Levitt KC",
+        "title": "PUSS & Lords Minister",
+        "note": "Unpaid"
+      },
+      {
+        "name": "Jake Richards MP",
+        "title": "PUSS (Sentencing, Youth Justice & International)",
+        "note": "Paid as whip"
+      }
+    ]
+  },
+  {
+    "id": "mhclg",
+    "name": "Ministry of Housing, Communities & Local Government",
+    "shortName": "MHCLG",
+    "color": "#f47738",
+    "verified": "2026-02-09",
+    "secretary": {
+      "name": "Steve Reed OBE MP",
+      "title": "Secretary of State for Housing, Communities and Local Government",
+      "rt": true
+    },
+    "mos": [
+      {
+        "name": "Matthew Pennycook MP",
+        "title": "Minister of State (Housing & Planning)",
+        "rt": false
+      },
+      {
+        "name": "Alison McGovern MP",
+        "title": "Minister of State (Local Government & Homelessness)",
+        "rt": false
+      }
+    ],
+    "puss": [
+      {
+        "name": "Baroness Taylor of Stevenage",
+        "title": "PUSS (Lords Minister for Housing & LG)",
+        "note": "Paid as whip"
+      },
+      {
+        "name": "Miatta Fahnbulleh MP",
+        "title": "PUSS (Devolution, Faith & Communities)"
+      },
+      {
+        "name": "Samantha Dixon MBE MP",
+        "title": "PUSS (Building Safety, Fire & Democracy)"
+      }
+    ]
+  },
+  {
+    "id": "dhsc",
+    "name": "Department of Health & Social Care",
+    "shortName": "DHSC",
+    "color": "#00703c",
+    "verified": "2026-02-09",
+    "secretary": {
+      "name": "Wes Streeting MP",
+      "title": "Secretary of State for Health and Social Care",
+      "rt": true
+    },
+    "mos": [
+      {
+        "name": "Karin Smyth MP",
+        "title": "Minister of State for Health (Secondary Care)",
+        "rt": false
+      },
+      {
+        "name": "Stephen Kinnock MP",
+        "title": "Minister of State for Care",
+        "rt": false
+      }
+    ],
+    "puss": [
+      {
+        "name": "Baroness Merron",
+        "title": "PUSS (Women’s Health & Mental Health)"
+      },
+      {
+        "name": "Ashley Dalton MP",
+        "title": "PUSS (Public Health & Prevention)"
+      },
+      {
+        "name": "Dr Zubir Ahmed MP",
+        "title": "PUSS (Health Innovation & Safety)"
+      }
+    ]
+  },
+  {
+    "id": "dfe",
+    "name": "Department for Education",
+    "shortName": "DfE",
+    "color": "#d4351c",
+    "verified": "2026-02-09",
+    "secretary": {
+      "name": "Bridget Phillipson MP",
+      "title": "Secretary of State for Education, Minister for Women & Equalities",
+      "rt": true
+    },
+    "mos": [
+      {
+        "name": "Georgia Gould OBE MP",
+        "title": "Minister of State (School Standards)",
+        "rt": false
+      },
+      {
+        "name": "Baroness Smith of Malvern",
+        "title": "Minister of State (Women & Equalities / Skills)",
+        "rt": true
+      },
+      {
+        "name": "Sir Stephen Timms MP",
+        "title": "Minister of State (Social Security & Disability)",
+        "rt": true
+      }
+    ],
+    "puss": [
+      {
+        "name": "Olivia Bailey MP",
+        "title": "PUSS (Early Education / Equalities)"
+      },
+      {
+        "name": "Josh MacAlister OBE MP",
+        "title": "PUSS (Children & Families)"
+      },
+      {
+        "name": "Seema Malhotra MP",
+        "title": "PUSS (Equalities)"
+      }
+    ]
+  },
+  {
+    "id": "desnz",
+    "name": "Department for Energy Security & Net Zero",
+    "shortName": "DESNZ",
+    "color": "#28a197",
+    "verified": "2026-02-09",
+    "secretary": {
+      "name": "Ed Miliband MP",
+      "title": "Secretary of State for Energy Security and Net Zero",
+      "rt": true
+    },
+    "mos": [
+      {
+        "name": "Lord Vallance",
+        "title": "Minister of State (Science, Innovation, Research & Nuclear)",
+        "rt": false
+      },
+      {
+        "name": "Michael Shanks MP",
+        "title": "Minister of State (Energy)",
+        "rt": false
+      },
+      {
+        "name": "Lord Whitehead",
+        "title": "Minister of State (Energy Security & Net Zero)",
+        "rt": false,
+        "note": "Unpaid"
+      }
+    ],
+    "puss": [
+      {
+        "name": "Katie White OBE MP",
+        "title": "PUSS (Climate)"
+      },
+      {
+        "name": "Martin McCluskey MP",
+        "title": "PUSS (Energy Consumers)"
+      },
+      {
+        "name": "Chris McDonald MP",
+        "title": "PUSS (Industry)"
+      }
+    ]
+  },
+  {
+    "id": "dwp",
+    "name": "Department for Work & Pensions",
+    "shortName": "DWP",
+    "color": "#003078",
+    "verified": "2026-02-09",
+    "secretary": {
+      "name": "Pat McFadden MP",
+      "title": "Secretary of State for Work and Pensions",
+      "rt": true
+    },
+    "mos": [
+      {
+        "name": "Sir Stephen Timms MP",
+        "title": "Minister of State (Social Security & Disability)",
+        "rt": true
+      },
+      {
+        "name": "Dame Diana Johnson DBE MP",
+        "title": "Minister of State (Employment)",
+        "rt": true
+      },
+      {
+        "name": "Baroness Smith of Malvern",
+        "title": "Minister of State (Skills)",
+        "rt": true
+      },
+      {
+        "name": "Baroness Sherlock OBE",
+        "title": "Minister of State (Lords)",
+        "rt": false
+      }
+    ],
+    "puss": [
+      {
+        "name": "Andrew Western MP",
+        "title": "PUSS (Transformation)"
+      },
+      {
+        "name": "Torsten Bell MP",
+        "title": "PUSS (Pensions)"
+      }
+    ]
+  },
+  {
+    "id": "dbt",
+    "name": "Department for Business & Trade",
+    "shortName": "DBT",
+    "color": "#1d70b8",
+    "verified": "2026-02-09",
+    "secretary": {
+      "name": "Peter Kyle MP",
+      "title": "Secretary of State for Business and Trade, President of the Board of Trade",
+      "rt": true
+    },
+    "mos": [
+      {
+        "name": "Lord Stockwood",
+        "title": "Minister of State (Investment)",
+        "rt": false,
+        "note": "Unpaid"
+      },
+      {
+        "name": "Sir Chris Bryant MP",
+        "title": "Minister of State (Trade)",
+        "rt": false
+      }
+    ],
+    "puss": [
+      {
+        "name": "Blair McDougall MP",
+        "title": "PUSS (Small Business & Economic Transformation)"
+      },
+      {
+        "name": "Kate Dearden MP",
+        "title": "PUSS (Employment Rights & Consumer Protection)"
+      },
+      {
+        "name": "Baroness Lloyd of Effra CBE",
+        "title": "PUSS (Digital Economy)",
+        "note": "Paid as whip"
+      },
+      {
+        "name": "Chris McDonald MP",
+        "title": "PUSS (Industry)"
+      }
+    ]
+  },
+  {
+    "id": "dsit",
+    "name": "Department for Science, Innovation & Technology",
+    "shortName": "DSIT",
+    "color": "#4c2c92",
+    "verified": "2026-02-09",
+    "secretary": {
+      "name": "Liz Kendall MP",
+      "title": "Secretary of State for Science, Innovation and Technology",
+      "rt": true
+    },
+    "mos": [
+      {
+        "name": "Lord Vallance",
+        "title": "Minister of State (Science, Innovation, Research & Nuclear)",
+        "rt": false
+      },
+      {
+        "name": "Ian Murray MP",
+        "title": "Minister of State (Digital Government & Data)",
+        "rt": true
+      }
+    ],
+    "puss": [
+      {
+        "name": "Baroness Lloyd of Effra CBE",
+        "title": "PUSS (Digital Economy)",
+        "note": "Paid as whip"
+      },
+      {
+        "name": "Kanishka Narayan MP",
+        "title": "PUSS (AI & Online Safety)"
+      },
+      {
+        "name": "Josh Simons MP",
+        "title": "PUSS (Department for Science, Innovation and Technology)"
+      }
+    ]
+  },
+  {
+    "id": "dft",
+    "name": "Department for Transport",
+    "shortName": "DfT",
+    "color": "#862633",
+    "verified": "2026-02-09",
+    "secretary": {
+      "name": "Heidi Alexander MP",
+      "title": "Secretary of State for Transport",
+      "rt": true
+    },
+    "mos": [
+      {
+        "name": "Lord Hendy of Richmond Hill CBE",
+        "title": "Minister of State (Rail)",
+        "rt": false,
+        "note": "Unpaid"
+      }
+    ],
+    "puss": [
+      {
+        "name": "Simon Lightwood MP",
+        "title": "PUSS (Roads & Buses)"
+      },
+      {
+        "name": "Lilian Greenwood MP",
+        "title": "PUSS (Local Transport)"
+      },
+      {
+        "name": "Keir Mather MP",
+        "title": "PUSS (Aviation, Maritime & Decarbonisation)"
+      }
+    ]
+  },
+  {
+    "id": "defra",
+    "name": "Department for Environment, Food & Rural Affairs",
+    "shortName": "Defra",
+    "color": "#00703c",
+    "verified": "2026-02-09",
+    "secretary": {
+      "name": "Emma Reynolds MP",
+      "title": "Secretary of State for Environment, Food and Rural Affairs",
+      "rt": true
+    },
+    "mos": [
+      {
+        "name": "Dame Angela Eagle DBE MP",
+        "title": "Minister of State (Food Security & Rural Affairs)",
+        "rt": false
+      }
+    ],
+    "puss": [
+      {
+        "name": "Emma Hardy MP",
+        "title": "PUSS (Water & Flooding)"
+      },
+      {
+        "name": "Mary Creagh CBE MP",
+        "title": "PUSS (Nature)"
+      },
+      {
+        "name": "Baroness Hayman of Ullock",
+        "title": "PUSS (Biosecurity, Borders & Animals)"
+      }
+    ]
+  },
+  {
+    "id": "dcms",
+    "name": "Department for Culture, Media & Sport",
+    "shortName": "DCMS",
+    "color": "#d4351c",
+    "verified": "2026-02-09",
+    "secretary": {
+      "name": "Lisa Nandy MP",
+      "title": "Secretary of State for Culture, Media and Sport",
+      "rt": true
+    },
+    "mos": [
+      {
+        "name": "Ian Murray MP",
+        "title": "Minister of State (Creative Industries, Media & Arts)",
+        "rt": true
+      }
+    ],
+    "puss": [
+      {
+        "name": "Stephanie Peacock MP",
+        "title": "PUSS (Sport, Tourism, Civil Society & Youth)"
+      },
+      {
+        "name": "Baroness Twycross",
+        "title": "PUSS (Museums, Heritage & Gambling, Lords Minister)"
+      }
+    ]
+  },
+  {
+    "id": "nio",
+    "name": "Northern Ireland Office",
+    "shortName": "NIO",
+    "color": "#4c2c92",
+    "verified": "2026-02-09",
+    "secretary": {
+      "name": "Hilary Benn MP",
+      "title": "Secretary of State for Northern Ireland",
+      "rt": true
+    },
+    "mos": [],
+    "puss": [
+      {
+        "name": "Matthew Patrick MP",
+        "title": "PUSS"
+      }
+    ]
+  },
+  {
+    "id": "scotland",
+    "name": "Scotland Office",
+    "color": "#0065bd",
+    "verified": "2026-02-09",
+    "secretary": {
+      "name": "Douglas Alexander MP",
+      "title": "Secretary of State for Scotland",
+      "rt": true
+    },
+    "mos": [],
+    "puss": [
+      {
+        "name": "Kirsty McNeill MP",
+        "title": "PUSS"
+      }
+    ]
+  },
+  {
+    "id": "wales",
+    "name": "Wales Office",
+    "color": "#a33038",
+    "verified": "2026-02-09",
+    "secretary": {
+      "name": "Jo Stevens MP",
+      "title": "Secretary of State for Wales",
+      "rt": true
+    },
+    "mos": [],
+    "puss": [
+      {
+        "name": "Anna McMorrin MP",
+        "title": "Parliamentary Under-Secretary of State for Wales"
+      },
+      {
+        "name": "Claire Hughes MP",
+        "title": "Parliamentary Under-Secretary of State in the Wales Office, Assistant Whip",
+        "note": "Paid as whip"
+      }
+    ]
+  }
+]

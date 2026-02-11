@@ -1,0 +1,40 @@
+[
+  {
+    "date": "2026-02-09",
+    "entries": [
+      {
+        "tag": "fix",
+        "text": "Wales Office: replaced Nia Griffith with Anna McMorrin MP and Claire Hughes MP"
+      },
+      {
+        "tag": "fix",
+        "text": "Whips: added Sir Mark Tami MP as Deputy Chief Whip; corrected Sir Nic Dakin to Government Whip"
+      },
+      {
+        "tag": "change",
+        "text": "DESNZ: Dr Alan Whitehead CBE → Lord Whitehead (peerage Nov 2025)"
+      },
+      {
+        "tag": "fix",
+        "text": "Defra: Emma Reynolds rt flag corrected to true"
+      },
+      {
+        "tag": "add",
+        "text": "DSIT: Josh Simons MP cross-listed as PUSS"
+      },
+      {
+        "tag": "add",
+        "text": "Features: headshots, cabinet table, seniority filters, budget sort, changelog, print, majority bars"
+      }
+    ]
+  },
+  {
+    "date": "2026-02-08",
+    "entries": [
+      {
+        "tag": "add",
+        "text": "Initial release with wealth percentiles, constituency data, departmental budgets"
+      }
+    ]
+  }
+]

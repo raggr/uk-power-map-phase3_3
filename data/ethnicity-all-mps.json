@@ -1,0 +1,747 @@
+{
+  "_metadata": {
+    "description": "All ethnic minority MPs in the 2024 UK Parliament",
+    "count": 87,
+    "total_mps": 650,
+    "percentage": 13.4,
+    "sources": [
+      "British Future post-election analysis July 2024",
+      "House of Commons Library SN01156",
+      "Wikipedia/secondary biographical sources"
+    ],
+    "methodology": "Ethnic minority = identifies as other than White per Census 2021 categories. Most classifications based on secondary sources and flagged for verification.",
+    "uk_nonwhite_pct": 18.3,
+    "generated": "2026-02-11"
+  },
+  "mps": [
+    {
+      "name": "Abena Oppong-Asare",
+      "constituency": "Erith and Thamesmead",
+      "gss_code": "E14001229",
+      "party": "Labour",
+      "ethnicity_broad": "Black",
+      "ethnicity_detail": "Black British"
+    },
+    {
+      "name": "Abtisam Mohamed",
+      "constituency": "Sheffield Central",
+      "gss_code": "E14001467",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Yemeni"
+    },
+    {
+      "name": "Adam Jogee",
+      "constituency": "Newcastle-under-Lyme",
+      "gss_code": "E14001380",
+      "party": "Labour",
+      "ethnicity_broad": "Mixed",
+      "ethnicity_detail": "Black British/White British (Mixed)"
+    },
+    {
+      "name": "Adnan Hussain",
+      "constituency": "Blackburn",
+      "gss_code": "E14001102",
+      "party": "Independent",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Pakistani"
+    },
+    {
+      "name": "Afzal Khan",
+      "constituency": "Manchester Rusholme",
+      "gss_code": "E14001353",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Pakistani"
+    },
+    {
+      "name": "Alan Mak",
+      "constituency": "Havant",
+      "gss_code": "E14001275",
+      "party": "Conservative",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Chinese"
+    },
+    {
+      "name": "Apsana Begum",
+      "constituency": "Poplar and Limehouse",
+      "gss_code": "E14001430",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Bangladeshi"
+    },
+    {
+      "name": "Ayoub Khan",
+      "constituency": "Birmingham Perry Barr",
+      "gss_code": "E14001098",
+      "party": "Independent",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Pakistani"
+    },
+    {
+      "name": "Baggy Shanker",
+      "constituency": "Derby South",
+      "gss_code": "E14001194",
+      "party": "Labour/Co-operative",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Indian"
+    },
+    {
+      "name": "Bambos Charalambous",
+      "constituency": "Southgate and Wood Green",
+      "gss_code": "E14001503",
+      "party": "Labour",
+      "ethnicity_broad": "Other",
+      "ethnicity_detail": "British Cypriot"
+    },
+    {
+      "name": "Bayo Alaba",
+      "constituency": "Southend East and Rochford",
+      "gss_code": "E14001501",
+      "party": "Labour",
+      "ethnicity_broad": "Black",
+      "ethnicity_detail": "Black British"
+    },
+    {
+      "name": "Bell Ribeiro-Addy",
+      "constituency": "Clapham and Brixton Hill",
+      "gss_code": "E14001175",
+      "party": "Labour",
+      "ethnicity_broad": "Black",
+      "ethnicity_detail": "Black British"
+    },
+    {
+      "name": "Ben Obese-Jecty",
+      "constituency": "Huntingdon",
+      "gss_code": "E14001298",
+      "party": "Conservative",
+      "ethnicity_broad": "Mixed",
+      "ethnicity_detail": "Black British/White British (Mixed)"
+    },
+    {
+      "name": "Callum Anderson",
+      "constituency": "Buckingham and Bletchley",
+      "gss_code": "E14001141",
+      "party": "Labour",
+      "ethnicity_broad": "Mixed",
+      "ethnicity_detail": "Black British/White British (Mixed)"
+    },
+    {
+      "name": "Calvin Bailey",
+      "constituency": "Leyton and Wanstead",
+      "gss_code": "E14001334",
+      "party": "Labour",
+      "ethnicity_broad": "Mixed",
+      "ethnicity_detail": "Black British/White British (Mixed)"
+    },
+    {
+      "name": "Chi Onwurah",
+      "constituency": "Newcastle upon Tyne Central and West",
+      "gss_code": "E14001377",
+      "party": "Labour",
+      "ethnicity_broad": "Mixed",
+      "ethnicity_detail": "Black British/White British (Mixed)"
+    },
+    {
+      "name": "Claire Coutinho",
+      "constituency": "East Surrey",
+      "gss_code": "E14001215",
+      "party": "Conservative",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Indian"
+    },
+    {
+      "name": "Clive Lewis",
+      "constituency": "Norwich South",
+      "gss_code": "E14001409",
+      "party": "Labour",
+      "ethnicity_broad": "Mixed",
+      "ethnicity_detail": "Black British/White British (Mixed)"
+    },
+    {
+      "name": "David Burton-Sampson",
+      "constituency": "Southend West and Leigh",
+      "gss_code": "E14001502",
+      "party": "Labour",
+      "ethnicity_broad": "Mixed",
+      "ethnicity_detail": "Black British/White British (Mixed)"
+    },
+    {
+      "name": "David Lammy",
+      "constituency": "Tottenham",
+      "gss_code": "E14001553",
+      "party": "Labour",
+      "ethnicity_broad": "Black",
+      "ethnicity_detail": "Black British",
+      "is_minister": true,
+      "ministerial_rank": "Secretary of State",
+      "department": "MoJ"
+    },
+    {
+      "name": "Dawn Butler",
+      "constituency": "Brent East",
+      "gss_code": "E14001122",
+      "party": "Labour",
+      "ethnicity_broad": "Black",
+      "ethnicity_detail": "Black British"
+    },
+    {
+      "name": "Diane Abbott",
+      "constituency": "Hackney North and Stoke Newington",
+      "gss_code": "E14001259",
+      "party": "Independent",
+      "ethnicity_broad": "Black",
+      "ethnicity_detail": "Black British"
+    },
+    {
+      "name": "Feryal Clark",
+      "constituency": "Enfield North",
+      "gss_code": "E14001225",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Kurdish"
+    },
+    {
+      "name": "Florence Eshalomi",
+      "constituency": "Vauxhall and Camberwell Green",
+      "gss_code": "E14001559",
+      "party": "Labour/Co-operative",
+      "ethnicity_broad": "Black",
+      "ethnicity_detail": "Black British"
+    },
+    {
+      "name": "Gagan Mohindra",
+      "constituency": "South West Hertfordshire",
+      "gss_code": "E14001496",
+      "party": "Conservative",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Indian"
+    },
+    {
+      "name": "Gurinder Josan",
+      "constituency": "Smethwick",
+      "gss_code": "E14001478",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Indian"
+    },
+    {
+      "name": "Harpreet Uppal",
+      "constituency": "Huddersfield",
+      "gss_code": "E14001297",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Indian"
+    },
+    {
+      "name": "Helen Grant",
+      "constituency": "Maidstone and Malling",
+      "gss_code": "E14001349",
+      "party": "Conservative",
+      "ethnicity_broad": "Mixed",
+      "ethnicity_detail": "Black British/White British (Mixed)"
+    },
+    {
+      "name": "Imran Hussain",
+      "constituency": "Bradford East",
+      "gss_code": "E14001118",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Pakistani"
+    },
+    {
+      "name": "Iqbal Mohamed",
+      "constituency": "Dewsbury and Batley",
+      "gss_code": "E14001196",
+      "party": "Independent",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Indian"
+    },
+    {
+      "name": "James Cleverly",
+      "constituency": "Braintree",
+      "gss_code": "E14001121",
+      "party": "Conservative",
+      "ethnicity_broad": "Mixed",
+      "ethnicity_detail": "Black British/White British (Mixed)"
+    },
+    {
+      "name": "Janet Daby",
+      "constituency": "Lewisham East",
+      "gss_code": "E14001331",
+      "party": "Labour",
+      "ethnicity_broad": "Black",
+      "ethnicity_detail": "Black British"
+    },
+    {
+      "name": "Jas Athwal",
+      "constituency": "Ilford South",
+      "gss_code": "E14001301",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Indian"
+    },
+    {
+      "name": "Jeevun Sandher",
+      "constituency": "Loughborough",
+      "gss_code": "E14001342",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Indian"
+    },
+    {
+      "name": "Josh Babarinde",
+      "constituency": "Eastbourne",
+      "gss_code": "E14001219",
+      "party": "Liberal Democrat",
+      "ethnicity_broad": "Mixed",
+      "ethnicity_detail": "Black British/White British (Mixed)"
+    },
+    {
+      "name": "Juliet Campbell",
+      "constituency": "Broxtowe",
+      "gss_code": "E14001140",
+      "party": "Labour",
+      "ethnicity_broad": "Black",
+      "ethnicity_detail": "Black British"
+    },
+    {
+      "name": "Kanishka Narayan",
+      "constituency": "Vale of Glamorgan",
+      "gss_code": "W07000110",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Indian",
+      "is_minister": true,
+      "ministerial_rank": "PUSS",
+      "department": "DSIT"
+    },
+    {
+      "name": "Kate Osamor",
+      "constituency": "Edmonton and Winchmore Hill",
+      "gss_code": "E14001221",
+      "party": "Labour/Co-operative",
+      "ethnicity_broad": "Black",
+      "ethnicity_detail": "Black British"
+    },
+    {
+      "name": "Kemi Badenoch",
+      "constituency": "North West Essex",
+      "gss_code": "E14001402",
+      "party": "Conservative",
+      "ethnicity_broad": "Black",
+      "ethnicity_detail": "Black British"
+    },
+    {
+      "name": "Kim Johnson",
+      "constituency": "Liverpool Riverside",
+      "gss_code": "E14001338",
+      "party": "Labour",
+      "ethnicity_broad": "Mixed",
+      "ethnicity_detail": "Black British/White British (Mixed)"
+    },
+    {
+      "name": "Kirith Entwistle",
+      "constituency": "Bolton North East",
+      "gss_code": "E14001110",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Indian"
+    },
+    {
+      "name": "Layla Moran",
+      "constituency": "Oxford West and Abingdon",
+      "gss_code": "E14001420",
+      "party": "Liberal Democrat",
+      "ethnicity_broad": "Mixed",
+      "ethnicity_detail": "British Palestinian/White British (Mixed)"
+    },
+    {
+      "name": "Lisa Nandy",
+      "constituency": "Wigan",
+      "gss_code": "E14001585",
+      "party": "Labour",
+      "ethnicity_broad": "Mixed",
+      "ethnicity_detail": "British Bengali/White British (Mixed)",
+      "is_minister": true,
+      "ministerial_rank": "Secretary of State",
+      "department": "DCMS"
+    },
+    {
+      "name": "Mark Hendrick",
+      "constituency": "Preston",
+      "gss_code": "E14001433",
+      "party": "Labour/Co-operative",
+      "ethnicity_broad": "Mixed",
+      "ethnicity_detail": "Somali/White British (Mixed)"
+    },
+    {
+      "name": "Marsha de Cordova",
+      "constituency": "Battersea",
+      "gss_code": "E14001081",
+      "party": "Labour",
+      "ethnicity_broad": "Black",
+      "ethnicity_detail": "Black British"
+    },
+    {
+      "name": "Miatta Fahnbulleh",
+      "constituency": "Peckham",
+      "gss_code": "E14001421",
+      "party": "Labour/Co-operative",
+      "ethnicity_broad": "Black",
+      "ethnicity_detail": "Black British",
+      "is_minister": true,
+      "ministerial_rank": "PUSS",
+      "department": "MHCLG"
+    },
+    {
+      "name": "Mohammad Yasin",
+      "constituency": "Bedford",
+      "gss_code": "E14001084",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Pakistani"
+    },
+    {
+      "name": "Munira Wilson",
+      "constituency": "Twickenham",
+      "gss_code": "E14001556",
+      "party": "Liberal Democrat",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Indian"
+    },
+    {
+      "name": "Nadia Whittome",
+      "constituency": "Nottingham East",
+      "gss_code": "E14001410",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "Anglo-Indian"
+    },
+    {
+      "name": "Naseem Shah",
+      "constituency": "Bradford West",
+      "gss_code": "E14001120",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Pakistani"
+    },
+    {
+      "name": "Natasha Irons",
+      "constituency": "Croydon East",
+      "gss_code": "E14001186",
+      "party": "Labour",
+      "ethnicity_broad": "Mixed",
+      "ethnicity_detail": "Black British/White British (Mixed)",
+      "is_minister": true,
+      "ministerial_rank": "Minister of State",
+      "department": "Home Office"
+    },
+    {
+      "name": "Naushabah Khan",
+      "constituency": "Gillingham and Rainham",
+      "gss_code": "E14001246",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Pakistani"
+    },
+    {
+      "name": "Navendu Mishra",
+      "constituency": "Stockport",
+      "gss_code": "E14001517",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Indian"
+    },
+    {
+      "name": "Neil Shastri-Hurst",
+      "constituency": "Solihull West and Shirley",
+      "gss_code": "E14001479",
+      "party": "Conservative",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "Anglo-Indian"
+    },
+    {
+      "name": "Nusrat Ghani",
+      "constituency": "Sussex Weald",
+      "gss_code": "E14001533",
+      "party": "Conservative",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Pakistani"
+    },
+    {
+      "name": "Paulette Hamilton",
+      "constituency": "Birmingham Erdington",
+      "gss_code": "E14001093",
+      "party": "Labour",
+      "ethnicity_broad": "Black",
+      "ethnicity_detail": "Black British"
+    },
+    {
+      "name": "Peter Bedford",
+      "constituency": "Mid Leicestershire",
+      "gss_code": "E14001364",
+      "party": "Conservative",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "Anglo-Indian"
+    },
+    {
+      "name": "Preet Kaur Gill",
+      "constituency": "Birmingham Edgbaston",
+      "gss_code": "E14001092",
+      "party": "Labour/Co-operative",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Indian"
+    },
+    {
+      "name": "Priti Patel",
+      "constituency": "Witham",
+      "gss_code": "E14001590",
+      "party": "Conservative",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Indian"
+    },
+    {
+      "name": "Rishi Sunak",
+      "constituency": "Richmond and Northallerton",
+      "gss_code": "E14001444",
+      "party": "Conservative",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Indian"
+    },
+    {
+      "name": "Rosena Allin-Khan",
+      "constituency": "Tooting",
+      "gss_code": "E14001550",
+      "party": "Labour",
+      "ethnicity_broad": "Mixed",
+      "ethnicity_detail": "British Pakistani/Other White (Mixed)"
+    },
+    {
+      "name": "Rupa Huq",
+      "constituency": "Ealing Central and Acton",
+      "gss_code": "E14001207",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Bangladeshi"
+    },
+    {
+      "name": "Rushanara Ali",
+      "constituency": "Bethnal Green and Stepney",
+      "gss_code": "E14001086",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Bangladeshi"
+    },
+    {
+      "name": "Sadik Al-Hassan",
+      "constituency": "North Somerset",
+      "gss_code": "E14001399",
+      "party": "Labour",
+      "ethnicity_broad": "Mixed",
+      "ethnicity_detail": "British Syrian/White Irish (Mixed)"
+    },
+    {
+      "name": "Saqib Bhatti",
+      "constituency": "Meriden and Solihull East",
+      "gss_code": "E14001358",
+      "party": "Conservative",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Pakistani"
+    },
+    {
+      "name": "Sarah Owen",
+      "constituency": "Luton North",
+      "gss_code": "E14001345",
+      "party": "Labour",
+      "ethnicity_broad": "Mixed",
+      "ethnicity_detail": "British Chinese/White British (Mixed)"
+    },
+    {
+      "name": "Satvir Kaur",
+      "constituency": "Southampton Test",
+      "gss_code": "E14001500",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Indian",
+      "is_minister": true,
+      "ministerial_rank": "PUSS",
+      "department": "Cabinet Office"
+    },
+    {
+      "name": "Seema Malhotra",
+      "constituency": "Feltham and Heston",
+      "gss_code": "E14001236",
+      "party": "Labour/Co-operative",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Indian",
+      "is_minister": true,
+      "ministerial_rank": "PUSS",
+      "department": "DfE"
+    },
+    {
+      "name": "Shabana Mahmood",
+      "constituency": "Birmingham Ladywood",
+      "gss_code": "E14001096",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Pakistani",
+      "is_minister": true,
+      "ministerial_rank": "Secretary of State",
+      "department": "Home Office"
+    },
+    {
+      "name": "Shivani Raja",
+      "constituency": "Leicester East",
+      "gss_code": "E14001326",
+      "party": "Conservative",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Indian",
+      "is_minister": true,
+      "ministerial_rank": "Secretary of State",
+      "department": "DSIT"
+    },
+    {
+      "name": "Shockat Adam",
+      "constituency": "Leicester South",
+      "gss_code": "E14001327",
+      "party": "Independent",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Indian"
+    },
+    {
+      "name": "Sojan Joseph",
+      "constituency": "Ashford",
+      "gss_code": "E14001069",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Indian"
+    },
+    {
+      "name": "Sonia Kumar",
+      "constituency": "Dudley",
+      "gss_code": "E14001204",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Indian"
+    },
+    {
+      "name": "Suella Braverman",
+      "constituency": "Fareham and Waterlooville",
+      "gss_code": "E14001233",
+      "party": "Reform UK",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Indian"
+    },
+    {
+      "name": "Sureena Brackenridge",
+      "constituency": "Wolverhampton North East",
+      "gss_code": "E14001594",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Indian",
+      "is_minister": true,
+      "ministerial_rank": "Secretary of State",
+      "department": "DWP"
+    },
+    {
+      "name": "Tahir Ali",
+      "constituency": "Birmingham Hall Green and Moseley",
+      "gss_code": "E14001094",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Pakistani"
+    },
+    {
+      "name": "Taiwo Owatemi",
+      "constituency": "Coventry North West",
+      "gss_code": "E14001181",
+      "party": "Labour",
+      "ethnicity_broad": "Black",
+      "ethnicity_detail": "Black British"
+    },
+    {
+      "name": "Tan Dhesi",
+      "constituency": "Slough",
+      "gss_code": "E14001477",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Indian"
+    },
+    {
+      "name": "Tony Vaughan",
+      "constituency": "Folkestone and Hythe",
+      "gss_code": "E14001239",
+      "party": "Labour",
+      "ethnicity_broad": "Mixed",
+      "ethnicity_detail": "British Filipino/White British (Mixed)"
+    },
+    {
+      "name": "Tulip Siddiq",
+      "constituency": "Hampstead and Highgate",
+      "gss_code": "E14001265",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Bangladeshi"
+    },
+    {
+      "name": "Uma Kumaran",
+      "constituency": "Stratford and Bow",
+      "gss_code": "E14001525",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Sri Lankan"
+    },
+    {
+      "name": "Valerie Vaz",
+      "constituency": "Walsall and Bloxwich",
+      "gss_code": "E14001562",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Indian"
+    },
+    {
+      "name": "Victoria Collins",
+      "constituency": "Harpenden and Berkhamsted",
+      "gss_code": "E14001268",
+      "party": "Liberal Democrat",
+      "ethnicity_broad": "Mixed",
+      "ethnicity_detail": "British Chinese/White British (Mixed)"
+    },
+    {
+      "name": "Warinder Juss",
+      "constituency": "Wolverhampton West",
+      "gss_code": "E14001596",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Indian"
+    },
+    {
+      "name": "Yasmin Qureshi",
+      "constituency": "Bolton South and Walkden",
+      "gss_code": "E14001111",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Pakistani"
+    },
+    {
+      "name": "Yuan Yang",
+      "constituency": "Earley and Woodley",
+      "gss_code": "E14001210",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Chinese"
+    },
+    {
+      "name": "Zubir Ahmed",
+      "constituency": "Glasgow South West",
+      "gss_code": "S14000088",
+      "party": "Labour",
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "British Pakistani",
+      "is_minister": true,
+      "ministerial_rank": "PUSS",
+      "department": "DHSC"
+    }
+  ]
+}

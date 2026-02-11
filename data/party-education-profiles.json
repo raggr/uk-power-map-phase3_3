@@ -1,0 +1,170 @@
+{
+  "Lab": {
+    "n_mps": 411,
+    "school": {
+      "private": 15,
+      "comprehensive": 73,
+      "selective": 10
+    },
+    "university": {
+      "oxbridge": 19,
+      "russell_group_excl_oxbridge": 35,
+      "pre_1992": 19,
+      "post_1992": 14,
+      "other": 3,
+      "no_university": 10
+    },
+    "new_mps_2024": {
+      "private": 13,
+      "oxbridge": 17
+    }
+  },
+  "Con": {
+    "n_mps": 121,
+    "school": {
+      "private": 46,
+      "comprehensive": 40,
+      "selective": 12
+    },
+    "university": {
+      "oxbridge": 29,
+      "russell_group_excl_oxbridge": 39,
+      "pre_1992": 14,
+      "post_1992": 8,
+      "other": 3,
+      "no_university": 7
+    }
+  },
+  "LD": {
+    "n_mps": 72,
+    "school": {
+      "private": 31,
+      "comprehensive": 57,
+      "selective": 10
+    },
+    "university": {
+      "oxbridge": 21,
+      "russell_group_excl_oxbridge": 34,
+      "pre_1992": 22,
+      "post_1992": 9,
+      "other": 0,
+      "no_university": 14
+    }
+  },
+  "Other": {
+    "n_mps": 46,
+    "school": {
+      "private": 15,
+      "comprehensive": 48,
+      "selective": 38
+    },
+    "university": {
+      "oxbridge": 5,
+      "russell_group_excl_oxbridge": 23,
+      "pre_1992": 41,
+      "post_1992": 2,
+      "other": 5,
+      "no_university": 24
+    }
+  },
+  "all_mps": {
+    "n_mps": 650,
+    "school": {
+      "private": 23,
+      "comprehensive": 63,
+      "selective": 12
+    },
+    "university": {
+      "oxbridge": 20,
+      "russell_group_excl_oxbridge": 34,
+      "pre_1992": 20,
+      "post_1992": 12,
+      "other": 3,
+      "no_university": 10
+    },
+    "elite_pipeline": 42
+  },
+  "uk_population": {
+    "school": {
+      "private": 7,
+      "comprehensive": 88,
+      "selective": 5
+    },
+    "university": {
+      "any": 19,
+      "oxbridge": 1
+    }
+  },
+  "by_gender": {
+    "female": {
+      "private": 21,
+      "comprehensive": 67,
+      "selective": 10,
+      "oxbridge": 21
+    },
+    "male": {
+      "private": 25,
+      "comprehensive": 60,
+      "selective": 14,
+      "oxbridge": 20
+    }
+  },
+  "by_nation": {
+    "England": {
+      "private": 25,
+      "oxbridge": 22
+    },
+    "Scotland": {
+      "private": 18,
+      "oxbridge": 6
+    },
+    "Wales": {
+      "private": 17,
+      "oxbridge": 27
+    },
+    "Northern Ireland": {
+      "private": 0,
+      "oxbridge": 0
+    }
+  },
+  "historic_private_school": {
+    "1979": {
+      "Lab": 18,
+      "Con": 73,
+      "LD": 55,
+      "three_main": 49
+    },
+    "1983": {
+      "Lab": 14,
+      "Con": 70,
+      "LD": 52,
+      "three_main": 51
+    },
+    "1997": {
+      "Lab": 16,
+      "Con": 66,
+      "LD": 41,
+      "three_main": 30
+    },
+    "2010": {
+      "Lab": 15,
+      "Con": 54,
+      "LD": 40,
+      "three_main": 37
+    },
+    "2019": {
+      "Lab": 14,
+      "Con": 41,
+      "LD": 28,
+      "three_main": 28
+    },
+    "2024": {
+      "Lab": 15,
+      "Con": 46,
+      "LD": 31,
+      "three_main": 24
+    }
+  },
+  "source": "Sutton Trust, Parliamentary Privilege 2024 (July 2024)",
+  "methodology_note": "School data covers 83% of MPs (542/650). University data covers 94% (612/650). Figures are party-level aggregates, not individual MP data."
+}

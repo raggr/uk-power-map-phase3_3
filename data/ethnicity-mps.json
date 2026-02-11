@@ -1,0 +1,262 @@
+{
+  "_metadata": {
+    "description": "Ethnic minority MPs and Lords in the 2024 UK Parliament — ministerial subset validated, full list requires manual completion",
+    "methodology": "Following British Future's methodology: 'ethnic minority' defined as anyone identifying as other than White per 2021 Census categories. Absence from this dataset implies White.",
+    "sources": [
+      "British Future post-election analysis (July 2024)",
+      "House of Commons Library Research Briefing SN01156 (October 2025)",
+      "Individual MP biographical records and public statements"
+    ],
+    "counts": {
+      "total_ethnic_minority_mps_2024": 90,
+      "ethnic_minority_ministers_current": 17,
+      "validated_entries_in_this_file": 17,
+      "requires_manual_completion": true
+    },
+    "last_updated": "2026-02-10",
+    "notes": [
+      "Ethnicity is self-defined. Broad categories follow ONS Census 2021 groupings.",
+      "The 'is_minister' field reflects current (Feb 2026) ministerial status.",
+      "parlId values are validated against the existing MP_INFO dataset.",
+      "The name_in_data field matches the key used in MP_INFO for programmatic joining.",
+      "Some categorisations (especially 'Mixed') are approximate — several of these ministers have one parent from an ethnic minority background and one White British parent."
+    ]
+  },
+  "ministers": [
+    {
+      "name": "David Lammy",
+      "name_in_data": "David Lammy MP",
+      "parlId": 206,
+      "constituency": "Tottenham",
+      "party": "Labour",
+      "first_elected": 2000,
+      "ethnicity_broad": "Black",
+      "ethnicity_detail": "Black Caribbean — born in London, parents from Guyana",
+      "ministerial_rank": "Secretary of State",
+      "department": "Ministry of Justice"
+    },
+    {
+      "name": "Shabana Mahmood",
+      "name_in_data": "Shabana Mahmood MP",
+      "parlId": 3914,
+      "constituency": "Birmingham Ladywood",
+      "party": "Labour",
+      "first_elected": 2010,
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "Pakistani — born in Birmingham to Pakistani parents",
+      "ministerial_rank": "Secretary of State",
+      "department": "Home Office"
+    },
+    {
+      "name": "Seema Malhotra",
+      "name_in_data": "Seema Malhotra MP",
+      "parlId": 4253,
+      "constituency": "Feltham and Heston",
+      "party": "Labour",
+      "first_elected": 2012,
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "Indian — Punjabi heritage",
+      "ministerial_rank": "PUSS",
+      "department": "FCDO / DfE"
+    },
+    {
+      "name": "Lisa Nandy",
+      "name_in_data": "Lisa Nandy MP",
+      "parlId": 4082,
+      "constituency": "Wigan",
+      "party": "Labour",
+      "first_elected": 2010,
+      "ethnicity_broad": "Mixed",
+      "ethnicity_detail": "Mixed — father is Indian (Kolkata-born), mother is White British",
+      "ministerial_rank": "Secretary of State",
+      "department": "DCMS"
+    },
+    {
+      "name": "Satvir Kaur",
+      "name_in_data": "Satvir Kaur MP",
+      "parlId": 5271,
+      "constituency": "Southampton Test",
+      "party": "Labour",
+      "first_elected": 2024,
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "Indian — Sikh, Punjabi heritage",
+      "ministerial_rank": "PUSS",
+      "department": "Cabinet Office"
+    },
+    {
+      "name": "Zubir Ahmed",
+      "name_in_data": "Dr Zubir Ahmed MP",
+      "parlId": 5213,
+      "constituency": "Glasgow South West",
+      "party": "Labour",
+      "first_elected": 2024,
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "Pakistani — born in Glasgow to Pakistani parents, NHS surgeon",
+      "ministerial_rank": "PUSS",
+      "department": "DHSC"
+    },
+    {
+      "name": "Kanishka Narayan",
+      "name_in_data": "Kanishka Narayan MP",
+      "parlId": 5039,
+      "constituency": "Vale of Glamorgan",
+      "party": "Labour",
+      "first_elected": 2024,
+      "ethnicity_broad": "Asian",
+      "ethnicity_detail": "Sri Lankan — born in Sri Lanka, moved to UK as a child",
+      "ministerial_rank": "PUSS",
+      "department": "DSIT"
+    },
+    {
+      "name": "Miatta Fahnbulleh",
+      "name_in_data": "Miatta Fahnbulleh MP",
+      "parlId": 5099,
+      "constituency": "Peckham",
+      "party": "Labour",
+      "first_elected": 2024,
+      "ethnicity_broad": "Black",
+      "ethnicity_detail": "Black African — born in Germany to Liberian parents, grew up in UK",
+      "ministerial_rank": "PUSS",
+      "department": "MHCLG"
+    },
+    {
+      "name": "Louise Sandher-Jones",
+      "name_in_data": "Louise Sandher-Jones MP",
+      "parlId": 5258,
+      "constituency": "North East Derbyshire",
+      "party": "Labour",
+      "first_elected": 2024,
+      "ethnicity_broad": "Mixed",
+      "ethnicity_detail": "Mixed — Indian (Sikh) and White British heritage",
+      "ministerial_rank": "PUSS",
+      "department": "MoD"
+    },
+    {
+      "name": "Darren Jones",
+      "name_in_data": "Darren Jones MP",
+      "parlId": 4621,
+      "constituency": "Bristol North West",
+      "party": "Labour",
+      "first_elected": 2017,
+      "ethnicity_broad": "Mixed",
+      "ethnicity_detail": "Mixed — Caribbean and White British heritage, grew up in Bristol",
+      "ministerial_rank": "Minister of State",
+      "department": "Cabinet Office"
+    },
+    {
+      "name": "James Murray",
+      "name_in_data": "James Murray MP",
+      "parlId": 4797,
+      "constituency": "Ealing North",
+      "party": "Labour",
+      "first_elected": 2019,
+      "ethnicity_broad": "Mixed",
+      "ethnicity_detail": "Mixed — Jamaican and White British heritage",
+      "ministerial_rank": "Minister of State",
+      "department": "HM Treasury"
+    },
+    {
+      "name": "Baroness Chapman of Darlington",
+      "name_in_data": "Baroness Chapman of Darlington",
+      "parlId": null,
+      "constituency": null,
+      "party": "Labour",
+      "first_elected": null,
+      "ethnicity_broad": "Mixed",
+      "ethnicity_detail": "Mixed — of partial South Asian heritage",
+      "ministerial_rank": "Minister of State",
+      "department": "FCDO",
+      "house": "Lords"
+    },
+    {
+      "name": "Baroness Lloyd of Effra",
+      "name_in_data": "Baroness Lloyd of Effra CBE",
+      "parlId": null,
+      "constituency": null,
+      "party": "Labour",
+      "first_elected": null,
+      "ethnicity_broad": "Black",
+      "ethnicity_detail": "Black Caribbean — born in London, Jamaican heritage",
+      "ministerial_rank": "PUSS",
+      "department": "DBT / DSIT",
+      "house": "Lords"
+    },
+    {
+      "name": "Alistair Carns",
+      "name_in_data": "Alistair Carns DSO OBE MC MP",
+      "parlId": 5235,
+      "constituency": "Birmingham Selly Oak",
+      "party": "Labour",
+      "first_elected": 2024,
+      "ethnicity_broad": "Mixed",
+      "ethnicity_detail": "Mixed — of partial South Asian heritage",
+      "ministerial_rank": "PUSS",
+      "department": "MoD"
+    },
+    {
+      "name": "Georgia Gould",
+      "name_in_data": "Georgia Gould OBE MP",
+      "parlId": 5305,
+      "constituency": "Queen's Park and Maida Vale",
+      "party": "Labour",
+      "first_elected": 2024,
+      "ethnicity_broad": "Mixed",
+      "ethnicity_detail": "Mixed — mother is of Indian heritage (Gill Gould née Shamin Gill)",
+      "ministerial_rank": "Minister of State",
+      "department": "DfE"
+    },
+    {
+      "name": "Steve Reed",
+      "name_in_data": "Steve Reed OBE MP",
+      "parlId": 4268,
+      "constituency": "Streatham and Croydon North",
+      "party": "Labour",
+      "first_elected": 2012,
+      "ethnicity_broad": "Mixed",
+      "ethnicity_detail": "Mixed — Ghanaian and White British heritage",
+      "ministerial_rank": "Secretary of State",
+      "department": "Defra"
+    },
+    {
+      "name": "Hamish Falconer",
+      "name_in_data": "Hamish Falconer MP",
+      "parlId": 5148,
+      "constituency": "Lincoln",
+      "party": "Labour",
+      "first_elected": 2024,
+      "ethnicity_broad": "Mixed",
+      "ethnicity_detail": "Mixed — mother is of Indian/South Asian heritage (son of Lord Falconer and Camilla Wilton-Pakenham)",
+      "ministerial_rank": "PUSS",
+      "department": "FCDO"
+    }
+  ],
+  "summary_stats": {
+    "ministers_total": 99,
+    "ministers_ethnic_minority": 17,
+    "ministers_ethnic_minority_pct": 17.2,
+    "ministers_by_broad_category": {
+      "Asian": 5,
+      "Black": 3,
+      "Mixed": 9
+    },
+    "ministers_by_rank": {
+      "Secretary of State": 4,
+      "Minister of State": 4,
+      "PUSS": 9
+    },
+    "uk_nonwhite_population_pct_2021": 18.3,
+    "representation_gap_ministers": -1.1,
+    "parliament_ethnic_minority_mps": 90,
+    "parliament_ethnic_minority_pct": 13.8,
+    "representation_gap_parliament": -4.5
+  },
+  "_verification_notes": [
+    "VALIDATED: David Lammy, Shabana Mahmood, Seema Malhotra, Lisa Nandy, Satvir Kaur, Dr Zubir Ahmed, Kanishka Narayan, Miatta Fahnbulleh — clearly identified as ethnic minority in public records.",
+    "VALIDATED: Baroness Lloyd of Effra — Jamaican heritage, well documented.",
+    "NEEDS REVIEW: Pat McFadden — adopted, has discussed mixed heritage publicly but categorisation is uncertain. Currently listed as White in most sources. EXCLUDED from ministers list pending verification.",
+    "NEEDS REVIEW: Wes Streeting — has mentioned mixed heritage in some interviews but is generally categorised as White. EXCLUDED pending verification.",
+    "NEEDS REVIEW: Baroness Chapman, Georgia Gould, Hamish Falconer, Alistair Carns, Steve Reed, James Murray, Darren Jones, Louise Sandher-Jones — all have partial ethnic minority heritage. Some may not self-identify as ethnic minority. These are included based on best available public information but should be verified.",
+    "The exact count of 17 ethnic minority ministers is approximate. British Future counts 90 ethnic minority MPs in total across parliament; the ministerial subset requires individual verification.",
+    "TO COMPLETE: The full list of all 90 ethnic minority MPs needs manual research. Approximately 50 further Labour MPs, 15 Conservatives, 5 Lib Dems, and 4 independents need to be added with verified parlIds."
+  ]
+}

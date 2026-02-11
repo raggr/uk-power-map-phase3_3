@@ -1,0 +1,6865 @@
+{
+  "_metadata": {
+    "description": "Constituency demographics from Census 2021 (England, Wales, NI) and Census 2022 (Scotland), mapped to 2024 parliamentary constituency boundaries",
+    "source": "ONS Census 2021 table TS021, NRS Census 2022 table UV201, NISRA Census 2021 table MS-B01, via House of Commons Library",
+    "download": "https://commonslibrary.parliament.uk/constituency-statistics-ethnicity/",
+    "categories": {
+      "white_pct": "White (includes White British, White Irish, Gypsy/Traveller, Other White)",
+      "asian_pct": "Asian or Asian British (Indian, Pakistani, Bangladeshi, Chinese, Other Asian)",
+      "black_pct": "Black, Black British, Caribbean or African",
+      "mixed_pct": "Mixed or Multiple ethnic groups",
+      "other_pct": "Other ethnic group (Arab, Other)"
+    },
+    "last_updated": "2026-02-10",
+    "coverage": "650 constituencies (all 650 UK parliamentary constituencies)",
+    "notes": [
+      "Percentages from Census 2021/2022, mapped to 2024 constituency boundaries by House of Commons Library",
+      "Scotland census conducted in 2022 (one year later than rest of UK)",
+      "Values are percentages (0-100). Minor rounding means they may not sum to exactly 100."
+    ],
+    "name_mapping_mp_info_to_excel": {
+      "Holborn and St Pancras": "Holborn & St Pancras",
+      "Tottenham": "Tottenham",
+      "Leeds West and Pudsey": "Leeds West & Pudsey",
+      "Pontefract, Castleford and Knottingley": "Pontefract, Castleford & Knottingley",
+      "Birmingham Ladywood": "Birmingham Ladywood",
+      "Wolverhampton South East": "Wolverhampton South East",
+      "Bristol North West": "Bristol North West",
+      "Rawmarsh and Conisbrough": "Rawmarsh & Conisbrough",
+      "Ilford North": "Ilford North",
+      "Houghton and Sunderland South": "Houghton & Sunderland South",
+      "Doncaster North": "Doncaster North",
+      "Streatham and Croydon North": "Streatham & Croydon North",
+      "Hove and Portslade": "Hove & Portslade",
+      "Leicester West": "Leicester West",
+      "Swindon South": "Swindon South",
+      "Wycombe": "Wycombe",
+      "Wigan": "Wigan",
+      "Leeds South": "Leeds South",
+      "Lothian East": "Lothian East",
+      "Cardiff East": "Cardiff East",
+      "Stalybridge and Hyde": "Stalybridge & Hyde",
+      "Torfaen": "Torfaen",
+      "Barnsley North": "Barnsley North",
+      "Redcar": "Redcar",
+      "Ealing North": "Ealing North",
+      "Brighton Kemptown and Peacehaven": "Brighton Kemptown & Peacehaven",
+      "Southampton Test": "Southampton Test",
+      "Makerfield": "Makerfield",
+      "Chipping Barnet": "Chipping Barnet",
+      "Northampton North": "Northampton North",
+      "Swansea West": "Swansea West",
+      "Cardiff South and Penarth": "Cardiff South & Penarth",
+      "Lincoln": "Lincoln",
+      "Feltham and Heston": "Feltham & Heston",
+      "Bridgend": "Bridgend",
+      "Croydon West": "Croydon West",
+      "Nottingham North and Kimberley": "Nottingham North & Kimberley",
+      "Birmingham Yardley": "Birmingham Yardley",
+      "Dover and Deal": "Dover & Deal",
+      "Plymouth Sutton and Devonport": "Plymouth Sutton & Devonport",
+      "Birmingham Selly Oak": "Birmingham Selly Oak",
+      "North East Derbyshire": "North East Derbyshire",
+      "Finchley and Golders Green": "Finchley & Golders Green",
+      "Pontypridd": "Pontypridd",
+      "Rother Valley": "Rother Valley",
+      "Greenwich and Woolwich": "Greenwich & Woolwich",
+      "Birkenhead": "Birkenhead",
+      "Peckham": "Peckham",
+      "Chester North and Neston": "Chester North & Neston",
+      "Bristol South": "Bristol South",
+      "Aberafan Maesteg": "Aberafan Maesteg",
+      "West Lancashire": "West Lancashire",
+      "Glasgow South West": "Glasgow South West",
+      "Queen’s Park and Maida Vale": "Queen's Park & Maida Vale",
+      "East Ham": "East Ham",
+      "Reading West and Mid Berkshire": "Reading West & Mid Berkshire",
+      "Whitehaven and Workington": "Whitehaven & Workington",
+      "Rutherglen": "Rutherglen",
+      "Leeds North West": "Leeds North West",
+      "Inverclyde and Renfrewshire West": "Inverclyde & Renfrewshire West",
+      "Stockton North": "Stockton North",
+      "Kingston upon Hull North and Cottingham": "Kingston upon Hull North & Cottingham",
+      "Stretford and Urmston": "Stretford & Urmston",
+      "Rhondda and Ogmore": "Rhondda & Ogmore",
+      "East Renfrewshire": "East Renfrewshire",
+      "Halifax": "Halifax",
+      "Edinburgh South": "Edinburgh South",
+      "Vale of Glamorgan": "Vale of Glamorgan",
+      "Wakefield and Rothwell": "Wakefield & Rothwell",
+      "Nottingham South": "Nottingham South",
+      "Selby": "Selby",
+      "Wallasey": "Wallasey",
+      "Kingston upon Hull West and Hessle": "Kingston upon Hull West & Haltemprice",
+      "Coventry East": "Coventry East",
+      "Barnsley South": "Barnsley South",
+      "Wirral West": "Wirral West",
+      "Midlothian": "Midlothian",
+      "Cardiff North": "Cardiff North",
+      "Bangor Aberconwy": "Bangor Aberconwy",
+      "Tynemouth": "Tynemouth",
+      "Lewisham North": "Lewisham North",
+      "Alyn and Deeside": "Alyn & Deeside",
+      "Scunthorpe": "Scunthorpe"
+    }
+  },
+  "uk_average": {
+    "white_pct": 81.7,
+    "asian_pct": 9.3,
+    "black_pct": 4.0,
+    "mixed_pct": 2.9,
+    "other_pct": 2.1,
+    "nonwhite_pct": 18.3
+  },
+  "constituencies": {
+    "Aberafan Maesteg": {
+      "gss_code": "W07000081",
+      "region": "Wales",
+      "white_pct": 96.9,
+      "asian_pct": 1.5,
+      "black_pct": 0.2,
+      "mixed_pct": 1.1,
+      "other_pct": 0.3,
+      "nonwhite_pct": 3.1,
+      "ministers": [
+        "Stephen Kinnock MP"
+      ]
+    },
+    "Aberdeen North": {
+      "gss_code": "S14000060",
+      "region": "Scotland",
+      "white_pct": 87.6,
+      "asian_pct": 6.1,
+      "black_pct": 3.3,
+      "mixed_pct": 1.6,
+      "other_pct": 1.4,
+      "nonwhite_pct": 12.4
+    },
+    "Aberdeen South": {
+      "gss_code": "S14000061",
+      "region": "Scotland",
+      "white_pct": 85.5,
+      "asian_pct": 5.6,
+      "black_pct": 5.1,
+      "mixed_pct": 2.0,
+      "other_pct": 1.8,
+      "nonwhite_pct": 14.5
+    },
+    "Aberdeenshire North & Moray East": {
+      "gss_code": "S14000062",
+      "region": "Scotland",
+      "white_pct": 98.1,
+      "asian_pct": 0.8,
+      "black_pct": 0.3,
+      "mixed_pct": 0.5,
+      "other_pct": 0.3,
+      "nonwhite_pct": 1.9
+    },
+    "Airdrie & Shotts": {
+      "gss_code": "S14000063",
+      "region": "Scotland",
+      "white_pct": 96.6,
+      "asian_pct": 2.2,
+      "black_pct": 0.4,
+      "mixed_pct": 0.5,
+      "other_pct": 0.3,
+      "nonwhite_pct": 3.4
+    },
+    "Aldershot": {
+      "gss_code": "E14001063",
+      "region": "South East",
+      "white_pct": 79.3,
+      "asian_pct": 13.3,
+      "black_pct": 2.4,
+      "mixed_pct": 2.5,
+      "other_pct": 2.5,
+      "nonwhite_pct": 20.7
+    },
+    "Aldridge-Brownhills": {
+      "gss_code": "E14001064",
+      "region": "West Midlands",
+      "white_pct": 85.4,
+      "asian_pct": 8.7,
+      "black_pct": 2.1,
+      "mixed_pct": 2.4,
+      "other_pct": 1.5,
+      "nonwhite_pct": 14.6
+    },
+    "Alloa & Grangemouth": {
+      "gss_code": "S14000064",
+      "region": "Scotland",
+      "white_pct": 96.9,
+      "asian_pct": 1.7,
+      "black_pct": 0.4,
+      "mixed_pct": 0.6,
+      "other_pct": 0.4,
+      "nonwhite_pct": 3.1
+    },
+    "Altrincham & Sale West": {
+      "gss_code": "E14001065",
+      "region": "North West",
+      "white_pct": 80.6,
+      "asian_pct": 12.1,
+      "black_pct": 1.7,
+      "mixed_pct": 3.2,
+      "other_pct": 2.5,
+      "nonwhite_pct": 19.4
+    },
+    "Alyn & Deeside": {
+      "gss_code": "W07000082",
+      "region": "Wales",
+      "white_pct": 97.3,
+      "asian_pct": 1.1,
+      "black_pct": 0.2,
+      "mixed_pct": 1.0,
+      "other_pct": 0.4,
+      "nonwhite_pct": 2.7,
+      "ministers": [
+        "Sir Mark Tami MP"
+      ]
+    },
+    "Amber Valley": {
+      "gss_code": "E14001066",
+      "region": "East Midlands",
+      "white_pct": 97.7,
+      "asian_pct": 0.8,
+      "black_pct": 0.3,
+      "mixed_pct": 1.1,
+      "other_pct": 0.2,
+      "nonwhite_pct": 2.3
+    },
+    "Angus & Perthshire Glens": {
+      "gss_code": "S14000065",
+      "region": "Scotland",
+      "white_pct": 97.9,
+      "asian_pct": 0.8,
+      "black_pct": 0.2,
+      "mixed_pct": 0.7,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.1
+    },
+    "Arbroath & Broughty Ferry": {
+      "gss_code": "S14000066",
+      "region": "Scotland",
+      "white_pct": 96.8,
+      "asian_pct": 1.6,
+      "black_pct": 0.3,
+      "mixed_pct": 0.7,
+      "other_pct": 0.6,
+      "nonwhite_pct": 3.2
+    },
+    "Argyll, Bute & South Lochaber": {
+      "gss_code": "S14000067",
+      "region": "Scotland",
+      "white_pct": 97.7,
+      "asian_pct": 0.9,
+      "black_pct": 0.3,
+      "mixed_pct": 0.8,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.3
+    },
+    "Arundel & South Downs": {
+      "gss_code": "E14001067",
+      "region": "South East",
+      "white_pct": 96.8,
+      "asian_pct": 1.0,
+      "black_pct": 0.3,
+      "mixed_pct": 1.5,
+      "other_pct": 0.4,
+      "nonwhite_pct": 3.2
+    },
+    "Ashfield": {
+      "gss_code": "E14001068",
+      "region": "East Midlands",
+      "white_pct": 95.7,
+      "asian_pct": 1.5,
+      "black_pct": 1.0,
+      "mixed_pct": 1.4,
+      "other_pct": 0.4,
+      "nonwhite_pct": 4.3
+    },
+    "Ashford": {
+      "gss_code": "E14001069",
+      "region": "South East",
+      "white_pct": 86.0,
+      "asian_pct": 7.0,
+      "black_pct": 3.0,
+      "mixed_pct": 2.4,
+      "other_pct": 1.7,
+      "nonwhite_pct": 14.0
+    },
+    "Ashton-under-Lyne": {
+      "gss_code": "E14001070",
+      "region": "North West",
+      "white_pct": 79.5,
+      "asian_pct": 13.6,
+      "black_pct": 3.3,
+      "mixed_pct": 2.4,
+      "other_pct": 1.2,
+      "nonwhite_pct": 20.5
+    },
+    "Aylesbury": {
+      "gss_code": "E14001071",
+      "region": "South East",
+      "white_pct": 78.5,
+      "asian_pct": 12.9,
+      "black_pct": 3.6,
+      "mixed_pct": 3.5,
+      "other_pct": 1.5,
+      "nonwhite_pct": 21.5
+    },
+    "Ayr, Carrick & Cumnock": {
+      "gss_code": "S14000107",
+      "region": "Scotland",
+      "white_pct": 97.8,
+      "asian_pct": 1.1,
+      "black_pct": 0.2,
+      "mixed_pct": 0.5,
+      "other_pct": 0.4,
+      "nonwhite_pct": 2.2
+    },
+    "Banbury": {
+      "gss_code": "E14001072",
+      "region": "South East",
+      "white_pct": 89.7,
+      "asian_pct": 5.4,
+      "black_pct": 1.5,
+      "mixed_pct": 2.4,
+      "other_pct": 1.0,
+      "nonwhite_pct": 10.3
+    },
+    "Bangor Aberconwy": {
+      "gss_code": "W07000083",
+      "region": "Wales",
+      "white_pct": 95.2,
+      "asian_pct": 2.3,
+      "black_pct": 0.6,
+      "mixed_pct": 1.3,
+      "other_pct": 0.7,
+      "nonwhite_pct": 4.8,
+      "ministers": [
+        "Claire Hughes MP"
+      ]
+    },
+    "Barking": {
+      "gss_code": "E14001073",
+      "region": "London",
+      "white_pct": 42.3,
+      "asian_pct": 28.1,
+      "black_pct": 21.7,
+      "mixed_pct": 4.3,
+      "other_pct": 3.7,
+      "nonwhite_pct": 57.7
+    },
+    "Barnsley North": {
+      "gss_code": "E14001074",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 96.8,
+      "asian_pct": 1.0,
+      "black_pct": 0.7,
+      "mixed_pct": 0.9,
+      "other_pct": 0.6,
+      "nonwhite_pct": 3.2,
+      "ministers": [
+        "Dan Jarvis MBE MP"
+      ]
+    },
+    "Barnsley South": {
+      "gss_code": "E14001075",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 96.8,
+      "asian_pct": 0.8,
+      "black_pct": 0.8,
+      "mixed_pct": 1.0,
+      "other_pct": 0.6,
+      "nonwhite_pct": 3.2,
+      "ministers": [
+        "Stephanie Peacock MP"
+      ]
+    },
+    "Barrow & Furness": {
+      "gss_code": "E14001076",
+      "region": "North West",
+      "white_pct": 97.4,
+      "asian_pct": 1.2,
+      "black_pct": 0.3,
+      "mixed_pct": 0.8,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.6
+    },
+    "Basildon & Billericay": {
+      "gss_code": "E14001077",
+      "region": "East of England",
+      "white_pct": 87.2,
+      "asian_pct": 4.1,
+      "black_pct": 5.1,
+      "mixed_pct": 2.7,
+      "other_pct": 0.9,
+      "nonwhite_pct": 12.8
+    },
+    "Basingstoke": {
+      "gss_code": "E14001078",
+      "region": "South East",
+      "white_pct": 85.6,
+      "asian_pct": 7.7,
+      "black_pct": 2.4,
+      "mixed_pct": 2.9,
+      "other_pct": 1.5,
+      "nonwhite_pct": 14.4
+    },
+    "Bassetlaw": {
+      "gss_code": "E14001079",
+      "region": "East Midlands",
+      "white_pct": 96.3,
+      "asian_pct": 1.3,
+      "black_pct": 0.7,
+      "mixed_pct": 1.2,
+      "other_pct": 0.5,
+      "nonwhite_pct": 3.7
+    },
+    "Bath": {
+      "gss_code": "E14001080",
+      "region": "South West",
+      "white_pct": 88.5,
+      "asian_pct": 5.1,
+      "black_pct": 1.4,
+      "mixed_pct": 3.6,
+      "other_pct": 1.3,
+      "nonwhite_pct": 11.5
+    },
+    "Bathgate & Linlithgow": {
+      "gss_code": "S14000068",
+      "region": "Scotland",
+      "white_pct": 96.5,
+      "asian_pct": 1.6,
+      "black_pct": 0.6,
+      "mixed_pct": 0.9,
+      "other_pct": 0.3,
+      "nonwhite_pct": 3.5
+    },
+    "Battersea": {
+      "gss_code": "E14001081",
+      "region": "London",
+      "white_pct": 67.9,
+      "asian_pct": 9.1,
+      "black_pct": 12.4,
+      "mixed_pct": 6.4,
+      "other_pct": 4.3,
+      "nonwhite_pct": 32.1
+    },
+    "Beaconsfield": {
+      "gss_code": "E14001082",
+      "region": "South East",
+      "white_pct": 79.6,
+      "asian_pct": 13.0,
+      "black_pct": 1.6,
+      "mixed_pct": 3.5,
+      "other_pct": 2.3,
+      "nonwhite_pct": 20.4
+    },
+    "Beckenham & Penge": {
+      "gss_code": "E14001083",
+      "region": "London",
+      "white_pct": 72.8,
+      "asian_pct": 7.0,
+      "black_pct": 10.6,
+      "mixed_pct": 6.9,
+      "other_pct": 2.7,
+      "nonwhite_pct": 27.2
+    },
+    "Bedford": {
+      "gss_code": "E14001084",
+      "region": "East of England",
+      "white_pct": 69.3,
+      "asian_pct": 16.8,
+      "black_pct": 6.6,
+      "mixed_pct": 4.9,
+      "other_pct": 2.4,
+      "nonwhite_pct": 30.7
+    },
+    "Belfast East": {
+      "gss_code": "N05000001",
+      "region": "Northern Ireland",
+      "white_pct": 94.7,
+      "asian_pct": 2.8,
+      "black_pct": 0.9,
+      "mixed_pct": 1.3,
+      "other_pct": 0.3,
+      "nonwhite_pct": 5.3
+    },
+    "Belfast North": {
+      "gss_code": "N05000002",
+      "region": "Northern Ireland",
+      "white_pct": 94.9,
+      "asian_pct": 2.4,
+      "black_pct": 1.2,
+      "mixed_pct": 1.0,
+      "other_pct": 0.4,
+      "nonwhite_pct": 5.1
+    },
+    "Belfast South & Mid Down": {
+      "gss_code": "N05000003",
+      "region": "Northern Ireland",
+      "white_pct": 89.2,
+      "asian_pct": 7.0,
+      "black_pct": 1.5,
+      "mixed_pct": 1.5,
+      "other_pct": 0.8,
+      "nonwhite_pct": 10.8
+    },
+    "Belfast West": {
+      "gss_code": "N05000004",
+      "region": "Northern Ireland",
+      "white_pct": 96.3,
+      "asian_pct": 1.5,
+      "black_pct": 0.9,
+      "mixed_pct": 0.8,
+      "other_pct": 0.4,
+      "nonwhite_pct": 3.7
+    },
+    "Bermondsey & Old Southwark": {
+      "gss_code": "E14001085",
+      "region": "London",
+      "white_pct": 56.0,
+      "asian_pct": 13.2,
+      "black_pct": 18.2,
+      "mixed_pct": 6.7,
+      "other_pct": 5.9,
+      "nonwhite_pct": 44.0
+    },
+    "Berwickshire, Roxburgh & Selkirk": {
+      "gss_code": "S14000108",
+      "region": "Scotland",
+      "white_pct": 98.1,
+      "asian_pct": 0.7,
+      "black_pct": 0.2,
+      "mixed_pct": 0.7,
+      "other_pct": 0.3,
+      "nonwhite_pct": 1.9
+    },
+    "Bethnal Green & Stepney": {
+      "gss_code": "E14001086",
+      "region": "London",
+      "white_pct": 35.7,
+      "asian_pct": 49.4,
+      "black_pct": 6.5,
+      "mixed_pct": 4.5,
+      "other_pct": 3.8,
+      "nonwhite_pct": 64.3
+    },
+    "Beverley & Holderness": {
+      "gss_code": "E14001087",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 97.8,
+      "asian_pct": 0.9,
+      "black_pct": 0.2,
+      "mixed_pct": 0.8,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.2
+    },
+    "Bexhill & Battle": {
+      "gss_code": "E14001088",
+      "region": "South East",
+      "white_pct": 95.6,
+      "asian_pct": 1.5,
+      "black_pct": 0.6,
+      "mixed_pct": 1.8,
+      "other_pct": 0.5,
+      "nonwhite_pct": 4.4
+    },
+    "Bexleyheath & Crayford": {
+      "gss_code": "E14001089",
+      "region": "London",
+      "white_pct": 73.2,
+      "asian_pct": 10.1,
+      "black_pct": 11.0,
+      "mixed_pct": 3.3,
+      "other_pct": 2.5,
+      "nonwhite_pct": 26.8
+    },
+    "Bicester & Woodstock": {
+      "gss_code": "E14001090",
+      "region": "South East",
+      "white_pct": 89.4,
+      "asian_pct": 4.9,
+      "black_pct": 1.5,
+      "mixed_pct": 2.9,
+      "other_pct": 1.2,
+      "nonwhite_pct": 10.6
+    },
+    "Birkenhead": {
+      "gss_code": "E14001091",
+      "region": "North West",
+      "white_pct": 93.5,
+      "asian_pct": 3.3,
+      "black_pct": 0.6,
+      "mixed_pct": 1.7,
+      "other_pct": 0.9,
+      "nonwhite_pct": 6.5,
+      "ministers": [
+        "Alison McGovern MP"
+      ]
+    },
+    "Birmingham Edgbaston": {
+      "gss_code": "E14001092",
+      "region": "West Midlands",
+      "white_pct": 54.2,
+      "asian_pct": 23.0,
+      "black_pct": 11.4,
+      "mixed_pct": 5.8,
+      "other_pct": 5.5,
+      "nonwhite_pct": 45.8
+    },
+    "Birmingham Erdington": {
+      "gss_code": "E14001093",
+      "region": "West Midlands",
+      "white_pct": 63.1,
+      "asian_pct": 15.3,
+      "black_pct": 13.3,
+      "mixed_pct": 5.8,
+      "other_pct": 2.5,
+      "nonwhite_pct": 36.9
+    },
+    "Birmingham Hall Green & Moseley": {
+      "gss_code": "E14001094",
+      "region": "West Midlands",
+      "white_pct": 29.6,
+      "asian_pct": 54.2,
+      "black_pct": 5.7,
+      "mixed_pct": 3.8,
+      "other_pct": 6.6,
+      "nonwhite_pct": 70.4
+    },
+    "Birmingham Hodge Hill & Solihull North": {
+      "gss_code": "E14001095",
+      "region": "West Midlands",
+      "white_pct": 49.7,
+      "asian_pct": 34.1,
+      "black_pct": 7.9,
+      "mixed_pct": 4.9,
+      "other_pct": 3.5,
+      "nonwhite_pct": 50.3
+    },
+    "Birmingham Ladywood": {
+      "gss_code": "E14001096",
+      "region": "West Midlands",
+      "white_pct": 22.3,
+      "asian_pct": 40.8,
+      "black_pct": 23.7,
+      "mixed_pct": 4.9,
+      "other_pct": 8.3,
+      "nonwhite_pct": 77.7,
+      "ministers": [
+        "Shabana Mahmood MP"
+      ]
+    },
+    "Birmingham Northfield": {
+      "gss_code": "E14001097",
+      "region": "West Midlands",
+      "white_pct": 77.8,
+      "asian_pct": 6.4,
+      "black_pct": 7.6,
+      "mixed_pct": 5.9,
+      "other_pct": 2.3,
+      "nonwhite_pct": 22.2
+    },
+    "Birmingham Perry Barr": {
+      "gss_code": "E14001098",
+      "region": "West Midlands",
+      "white_pct": 21.0,
+      "asian_pct": 53.0,
+      "black_pct": 17.2,
+      "mixed_pct": 3.8,
+      "other_pct": 5.0,
+      "nonwhite_pct": 79.0
+    },
+    "Birmingham Selly Oak": {
+      "gss_code": "E14001099",
+      "region": "West Midlands",
+      "white_pct": 68.9,
+      "asian_pct": 16.4,
+      "black_pct": 6.2,
+      "mixed_pct": 5.6,
+      "other_pct": 3.0,
+      "nonwhite_pct": 31.1,
+      "ministers": [
+        "Alistair Carns DSO OBE MC MP"
+      ]
+    },
+    "Birmingham Yardley": {
+      "gss_code": "E14001100",
+      "region": "West Midlands",
+      "white_pct": 44.1,
+      "asian_pct": 40.9,
+      "black_pct": 6.4,
+      "mixed_pct": 4.1,
+      "other_pct": 4.5,
+      "nonwhite_pct": 55.9,
+      "ministers": [
+        "Jess Phillips MP"
+      ]
+    },
+    "Bishop Auckland": {
+      "gss_code": "E14001101",
+      "region": "North East",
+      "white_pct": 98.0,
+      "asian_pct": 0.7,
+      "black_pct": 0.3,
+      "mixed_pct": 0.7,
+      "other_pct": 0.2,
+      "nonwhite_pct": 2.0
+    },
+    "Blackburn": {
+      "gss_code": "E14001102",
+      "region": "North West",
+      "white_pct": 47.8,
+      "asian_pct": 47.5,
+      "black_pct": 1.1,
+      "mixed_pct": 1.8,
+      "other_pct": 1.8,
+      "nonwhite_pct": 52.2
+    },
+    "Blackley & Middleton South": {
+      "gss_code": "E14001103",
+      "region": "North West",
+      "white_pct": 63.3,
+      "asian_pct": 14.9,
+      "black_pct": 14.4,
+      "mixed_pct": 4.1,
+      "other_pct": 3.3,
+      "nonwhite_pct": 36.7
+    },
+    "Blackpool North & Fleetwood": {
+      "gss_code": "E14001104",
+      "region": "North West",
+      "white_pct": 97.3,
+      "asian_pct": 1.0,
+      "black_pct": 0.3,
+      "mixed_pct": 1.1,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.7
+    },
+    "Blackpool South": {
+      "gss_code": "E14001105",
+      "region": "North West",
+      "white_pct": 94.0,
+      "asian_pct": 3.0,
+      "black_pct": 0.6,
+      "mixed_pct": 1.7,
+      "other_pct": 0.7,
+      "nonwhite_pct": 6.0
+    },
+    "Blaenau Gwent & Rhymney": {
+      "gss_code": "W07000084",
+      "region": "Wales",
+      "white_pct": 97.9,
+      "asian_pct": 0.9,
+      "black_pct": 0.2,
+      "mixed_pct": 0.8,
+      "other_pct": 0.2,
+      "nonwhite_pct": 2.1
+    },
+    "Blaydon & Consett": {
+      "gss_code": "E14001106",
+      "region": "North East",
+      "white_pct": 97.8,
+      "asian_pct": 0.8,
+      "black_pct": 0.2,
+      "mixed_pct": 0.9,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.2
+    },
+    "Blyth & Ashington": {
+      "gss_code": "E14001107",
+      "region": "North East",
+      "white_pct": 97.5,
+      "asian_pct": 1.1,
+      "black_pct": 0.2,
+      "mixed_pct": 0.7,
+      "other_pct": 0.4,
+      "nonwhite_pct": 2.5
+    },
+    "Bognor Regis & Littlehampton": {
+      "gss_code": "E14001108",
+      "region": "South East",
+      "white_pct": 95.5,
+      "asian_pct": 1.7,
+      "black_pct": 0.6,
+      "mixed_pct": 1.6,
+      "other_pct": 0.6,
+      "nonwhite_pct": 4.5
+    },
+    "Bolsover": {
+      "gss_code": "E14001109",
+      "region": "East Midlands",
+      "white_pct": 97.4,
+      "asian_pct": 0.9,
+      "black_pct": 0.5,
+      "mixed_pct": 1.0,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.6
+    },
+    "Bolton North East": {
+      "gss_code": "E14001110",
+      "region": "North West",
+      "white_pct": 75.5,
+      "asian_pct": 16.8,
+      "black_pct": 3.8,
+      "mixed_pct": 2.3,
+      "other_pct": 1.6,
+      "nonwhite_pct": 24.5
+    },
+    "Bolton South & Walkden": {
+      "gss_code": "E14001111",
+      "region": "North West",
+      "white_pct": 64.6,
+      "asian_pct": 24.3,
+      "black_pct": 6.2,
+      "mixed_pct": 2.4,
+      "other_pct": 2.5,
+      "nonwhite_pct": 35.4
+    },
+    "Bolton West": {
+      "gss_code": "E14001112",
+      "region": "North West",
+      "white_pct": 83.1,
+      "asian_pct": 11.9,
+      "black_pct": 1.7,
+      "mixed_pct": 2.2,
+      "other_pct": 1.1,
+      "nonwhite_pct": 16.9
+    },
+    "Bootle": {
+      "gss_code": "E14001113",
+      "region": "North West",
+      "white_pct": 95.4,
+      "asian_pct": 1.6,
+      "black_pct": 0.7,
+      "mixed_pct": 1.4,
+      "other_pct": 0.9,
+      "nonwhite_pct": 4.6
+    },
+    "Boston & Skegness": {
+      "gss_code": "E14001114",
+      "region": "East Midlands",
+      "white_pct": 95.7,
+      "asian_pct": 1.6,
+      "black_pct": 0.5,
+      "mixed_pct": 1.3,
+      "other_pct": 0.8,
+      "nonwhite_pct": 4.3
+    },
+    "Bournemouth East": {
+      "gss_code": "E14001115",
+      "region": "South West",
+      "white_pct": 88.1,
+      "asian_pct": 4.5,
+      "black_pct": 1.5,
+      "mixed_pct": 3.7,
+      "other_pct": 2.3,
+      "nonwhite_pct": 11.9
+    },
+    "Bournemouth West": {
+      "gss_code": "E14001116",
+      "region": "South West",
+      "white_pct": 88.5,
+      "asian_pct": 4.2,
+      "black_pct": 1.5,
+      "mixed_pct": 3.7,
+      "other_pct": 2.0,
+      "nonwhite_pct": 11.5
+    },
+    "Bracknell": {
+      "gss_code": "E14001117",
+      "region": "South East",
+      "white_pct": 85.7,
+      "asian_pct": 7.4,
+      "black_pct": 2.6,
+      "mixed_pct": 3.1,
+      "other_pct": 1.3,
+      "nonwhite_pct": 14.3
+    },
+    "Bradford East": {
+      "gss_code": "E14001118",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 45.7,
+      "asian_pct": 45.7,
+      "black_pct": 2.7,
+      "mixed_pct": 3.2,
+      "other_pct": 2.7,
+      "nonwhite_pct": 54.3
+    },
+    "Bradford South": {
+      "gss_code": "E14001119",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 70.4,
+      "asian_pct": 22.0,
+      "black_pct": 2.5,
+      "mixed_pct": 3.4,
+      "other_pct": 1.7,
+      "nonwhite_pct": 29.6
+    },
+    "Bradford West": {
+      "gss_code": "E14001120",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 29.5,
+      "asian_pct": 61.0,
+      "black_pct": 3.1,
+      "mixed_pct": 2.9,
+      "other_pct": 3.5,
+      "nonwhite_pct": 70.5
+    },
+    "Braintree": {
+      "gss_code": "E14001121",
+      "region": "East of England",
+      "white_pct": 94.9,
+      "asian_pct": 1.6,
+      "black_pct": 1.1,
+      "mixed_pct": 1.8,
+      "other_pct": 0.5,
+      "nonwhite_pct": 5.1
+    },
+    "Brecon, Radnor & Cwm Tawe": {
+      "gss_code": "W07000085",
+      "region": "Wales",
+      "white_pct": 97.4,
+      "asian_pct": 1.1,
+      "black_pct": 0.2,
+      "mixed_pct": 0.9,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.6
+    },
+    "Brent East": {
+      "gss_code": "E14001122",
+      "region": "London",
+      "white_pct": 38.0,
+      "asian_pct": 22.3,
+      "black_pct": 21.7,
+      "mixed_pct": 6.0,
+      "other_pct": 12.1,
+      "nonwhite_pct": 62.0
+    },
+    "Brent West": {
+      "gss_code": "E14001123",
+      "region": "London",
+      "white_pct": 25.6,
+      "asian_pct": 50.1,
+      "black_pct": 12.4,
+      "mixed_pct": 3.4,
+      "other_pct": 8.6,
+      "nonwhite_pct": 74.4
+    },
+    "Brentford & Isleworth": {
+      "gss_code": "E14001124",
+      "region": "London",
+      "white_pct": 45.4,
+      "asian_pct": 35.3,
+      "black_pct": 7.1,
+      "mixed_pct": 5.0,
+      "other_pct": 7.1,
+      "nonwhite_pct": 54.6
+    },
+    "Brentwood & Ongar": {
+      "gss_code": "E14001125",
+      "region": "East of England",
+      "white_pct": 89.6,
+      "asian_pct": 4.5,
+      "black_pct": 1.9,
+      "mixed_pct": 2.9,
+      "other_pct": 1.0,
+      "nonwhite_pct": 10.4
+    },
+    "Bridgend": {
+      "gss_code": "W07000086",
+      "region": "Wales",
+      "white_pct": 96.1,
+      "asian_pct": 1.8,
+      "black_pct": 0.4,
+      "mixed_pct": 1.4,
+      "other_pct": 0.3,
+      "nonwhite_pct": 3.9,
+      "ministers": [
+        "Chris Elmore MP"
+      ]
+    },
+    "Bridgwater": {
+      "gss_code": "E14001126",
+      "region": "South West",
+      "white_pct": 96.3,
+      "asian_pct": 1.6,
+      "black_pct": 0.4,
+      "mixed_pct": 1.2,
+      "other_pct": 0.6,
+      "nonwhite_pct": 3.7
+    },
+    "Bridlington & The Wolds": {
+      "gss_code": "E14001127",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 98.1,
+      "asian_pct": 0.7,
+      "black_pct": 0.2,
+      "mixed_pct": 0.8,
+      "other_pct": 0.3,
+      "nonwhite_pct": 1.9
+    },
+    "Brigg & Immingham": {
+      "gss_code": "E14001128",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 97.2,
+      "asian_pct": 1.3,
+      "black_pct": 0.3,
+      "mixed_pct": 0.8,
+      "other_pct": 0.4,
+      "nonwhite_pct": 2.8
+    },
+    "Brighton Kemptown & Peacehaven": {
+      "gss_code": "E14001129",
+      "region": "South East",
+      "white_pct": 86.7,
+      "asian_pct": 4.7,
+      "black_pct": 2.2,
+      "mixed_pct": 4.0,
+      "other_pct": 2.5,
+      "nonwhite_pct": 13.3,
+      "ministers": [
+        "Chris Ward MP"
+      ]
+    },
+    "Brighton Pavilion": {
+      "gss_code": "E14001130",
+      "region": "South East",
+      "white_pct": 85.3,
+      "asian_pct": 5.0,
+      "black_pct": 2.0,
+      "mixed_pct": 5.2,
+      "other_pct": 2.6,
+      "nonwhite_pct": 14.7
+    },
+    "Bristol Central": {
+      "gss_code": "E14001131",
+      "region": "South West",
+      "white_pct": 78.2,
+      "asian_pct": 8.1,
+      "black_pct": 5.7,
+      "mixed_pct": 5.3,
+      "other_pct": 2.6,
+      "nonwhite_pct": 21.8
+    },
+    "Bristol East": {
+      "gss_code": "E14001132",
+      "region": "South West",
+      "white_pct": 76.5,
+      "asian_pct": 6.7,
+      "black_pct": 9.8,
+      "mixed_pct": 4.8,
+      "other_pct": 2.1,
+      "nonwhite_pct": 23.5
+    },
+    "Bristol North East": {
+      "gss_code": "E14001133",
+      "region": "South West",
+      "white_pct": 78.8,
+      "asian_pct": 8.5,
+      "black_pct": 6.3,
+      "mixed_pct": 4.5,
+      "other_pct": 1.9,
+      "nonwhite_pct": 21.2
+    },
+    "Bristol North West": {
+      "gss_code": "E14001134",
+      "region": "South West",
+      "white_pct": 85.6,
+      "asian_pct": 5.5,
+      "black_pct": 3.4,
+      "mixed_pct": 3.9,
+      "other_pct": 1.6,
+      "nonwhite_pct": 14.4,
+      "ministers": [
+        "Darren Jones MP"
+      ]
+    },
+    "Bristol South": {
+      "gss_code": "E14001135",
+      "region": "South West",
+      "white_pct": 90.1,
+      "asian_pct": 3.0,
+      "black_pct": 2.6,
+      "mixed_pct": 3.3,
+      "other_pct": 1.0,
+      "nonwhite_pct": 9.9,
+      "ministers": [
+        "Karin Smyth MP"
+      ]
+    },
+    "Broadland & Fakenham": {
+      "gss_code": "E14001136",
+      "region": "East of England",
+      "white_pct": 97.3,
+      "asian_pct": 0.9,
+      "black_pct": 0.3,
+      "mixed_pct": 1.2,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.7
+    },
+    "Bromley & Biggin Hill": {
+      "gss_code": "E14001137",
+      "region": "London",
+      "white_pct": 78.2,
+      "asian_pct": 8.1,
+      "black_pct": 6.1,
+      "mixed_pct": 5.3,
+      "other_pct": 2.3,
+      "nonwhite_pct": 21.8
+    },
+    "Bromsgrove": {
+      "gss_code": "E14001138",
+      "region": "West Midlands",
+      "white_pct": 93.1,
+      "asian_pct": 3.2,
+      "black_pct": 0.8,
+      "mixed_pct": 2.4,
+      "other_pct": 0.5,
+      "nonwhite_pct": 6.9
+    },
+    "Broxbourne": {
+      "gss_code": "E14001139",
+      "region": "East of England",
+      "white_pct": 82.2,
+      "asian_pct": 3.5,
+      "black_pct": 6.1,
+      "mixed_pct": 3.9,
+      "other_pct": 4.2,
+      "nonwhite_pct": 17.8
+    },
+    "Broxtowe": {
+      "gss_code": "E14001140",
+      "region": "East Midlands",
+      "white_pct": 89.0,
+      "asian_pct": 5.4,
+      "black_pct": 1.7,
+      "mixed_pct": 2.6,
+      "other_pct": 1.3,
+      "nonwhite_pct": 11.0
+    },
+    "Buckingham & Bletchley": {
+      "gss_code": "E14001141",
+      "region": "South East",
+      "white_pct": 80.2,
+      "asian_pct": 8.6,
+      "black_pct": 6.5,
+      "mixed_pct": 3.4,
+      "other_pct": 1.3,
+      "nonwhite_pct": 19.8
+    },
+    "Burnley": {
+      "gss_code": "E14001142",
+      "region": "North West",
+      "white_pct": 77.6,
+      "asian_pct": 19.7,
+      "black_pct": 0.3,
+      "mixed_pct": 1.6,
+      "other_pct": 0.8,
+      "nonwhite_pct": 22.4
+    },
+    "Burton & Uttoxeter": {
+      "gss_code": "E14001143",
+      "region": "West Midlands",
+      "white_pct": 85.2,
+      "asian_pct": 10.1,
+      "black_pct": 1.2,
+      "mixed_pct": 2.3,
+      "other_pct": 1.1,
+      "nonwhite_pct": 14.8
+    },
+    "Bury North": {
+      "gss_code": "E14001144",
+      "region": "North West",
+      "white_pct": 82.2,
+      "asian_pct": 12.6,
+      "black_pct": 1.7,
+      "mixed_pct": 2.2,
+      "other_pct": 1.3,
+      "nonwhite_pct": 17.8
+    },
+    "Bury South": {
+      "gss_code": "E14001145",
+      "region": "North West",
+      "white_pct": 82.9,
+      "asian_pct": 8.3,
+      "black_pct": 2.6,
+      "mixed_pct": 3.0,
+      "other_pct": 3.2,
+      "nonwhite_pct": 17.1
+    },
+    "Bury St Edmunds & Stowmarket": {
+      "gss_code": "E14001146",
+      "region": "East of England",
+      "white_pct": 94.8,
+      "asian_pct": 1.9,
+      "black_pct": 0.8,
+      "mixed_pct": 1.9,
+      "other_pct": 0.7,
+      "nonwhite_pct": 5.2
+    },
+    "Caerfyrddin": {
+      "gss_code": "W07000087",
+      "region": "Wales",
+      "white_pct": 97.2,
+      "asian_pct": 1.2,
+      "black_pct": 0.3,
+      "mixed_pct": 1.0,
+      "other_pct": 0.4,
+      "nonwhite_pct": 2.8
+    },
+    "Caerphilly": {
+      "gss_code": "W07000088",
+      "region": "Wales",
+      "white_pct": 97.5,
+      "asian_pct": 1.0,
+      "black_pct": 0.1,
+      "mixed_pct": 1.1,
+      "other_pct": 0.2,
+      "nonwhite_pct": 2.5
+    },
+    "Caithness, Sutherland & Easter Ross": {
+      "gss_code": "S14000069",
+      "region": "Scotland",
+      "white_pct": 98.1,
+      "asian_pct": 0.8,
+      "black_pct": 0.2,
+      "mixed_pct": 0.7,
+      "other_pct": 0.3,
+      "nonwhite_pct": 1.9
+    },
+    "Calder Valley": {
+      "gss_code": "E14001147",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 95.0,
+      "asian_pct": 2.3,
+      "black_pct": 0.5,
+      "mixed_pct": 1.9,
+      "other_pct": 0.4,
+      "nonwhite_pct": 5.0
+    },
+    "Camborne & Redruth": {
+      "gss_code": "E14001148",
+      "region": "South West",
+      "white_pct": 96.9,
+      "asian_pct": 0.6,
+      "black_pct": 0.2,
+      "mixed_pct": 1.2,
+      "other_pct": 1.2,
+      "nonwhite_pct": 3.1
+    },
+    "Cambridge": {
+      "gss_code": "E14001149",
+      "region": "East of England",
+      "white_pct": 75.3,
+      "asian_pct": 13.9,
+      "black_pct": 2.5,
+      "mixed_pct": 5.2,
+      "other_pct": 3.1,
+      "nonwhite_pct": 24.7
+    },
+    "Cannock Chase": {
+      "gss_code": "E14001150",
+      "region": "West Midlands",
+      "white_pct": 96.6,
+      "asian_pct": 1.2,
+      "black_pct": 0.5,
+      "mixed_pct": 1.4,
+      "other_pct": 0.3,
+      "nonwhite_pct": 3.4
+    },
+    "Canterbury": {
+      "gss_code": "E14001151",
+      "region": "South East",
+      "white_pct": 86.4,
+      "asian_pct": 5.0,
+      "black_pct": 3.4,
+      "mixed_pct": 3.3,
+      "other_pct": 1.9,
+      "nonwhite_pct": 13.6
+    },
+    "Cardiff East": {
+      "gss_code": "W07000089",
+      "region": "Wales",
+      "white_pct": 77.3,
+      "asian_pct": 10.4,
+      "black_pct": 4.1,
+      "mixed_pct": 4.3,
+      "other_pct": 3.9,
+      "nonwhite_pct": 22.7,
+      "ministers": [
+        "Jo Stevens MP"
+      ]
+    },
+    "Cardiff North": {
+      "gss_code": "W07000090",
+      "region": "Wales",
+      "white_pct": 87.8,
+      "asian_pct": 5.8,
+      "black_pct": 1.3,
+      "mixed_pct": 3.1,
+      "other_pct": 2.0,
+      "nonwhite_pct": 12.2,
+      "ministers": [
+        "Anna McMorrin MP"
+      ]
+    },
+    "Cardiff South & Penarth": {
+      "gss_code": "W07000091",
+      "region": "Wales",
+      "white_pct": 75.6,
+      "asian_pct": 11.1,
+      "black_pct": 5.2,
+      "mixed_pct": 4.0,
+      "other_pct": 4.1,
+      "nonwhite_pct": 24.4,
+      "ministers": [
+        "Stephen Doughty MP"
+      ]
+    },
+    "Cardiff West": {
+      "gss_code": "W07000092",
+      "region": "Wales",
+      "white_pct": 83.9,
+      "asian_pct": 7.6,
+      "black_pct": 2.8,
+      "mixed_pct": 3.8,
+      "other_pct": 1.8,
+      "nonwhite_pct": 16.1
+    },
+    "Carlisle": {
+      "gss_code": "E14001152",
+      "region": "North West",
+      "white_pct": 96.7,
+      "asian_pct": 1.5,
+      "black_pct": 0.3,
+      "mixed_pct": 0.9,
+      "other_pct": 0.6,
+      "nonwhite_pct": 3.3
+    },
+    "Carshalton & Wallington": {
+      "gss_code": "E14001153",
+      "region": "London",
+      "white_pct": 68.6,
+      "asian_pct": 15.9,
+      "black_pct": 7.4,
+      "mixed_pct": 5.0,
+      "other_pct": 3.0,
+      "nonwhite_pct": 31.4
+    },
+    "Castle Point": {
+      "gss_code": "E14001154",
+      "region": "East of England",
+      "white_pct": 94.8,
+      "asian_pct": 1.7,
+      "black_pct": 1.4,
+      "mixed_pct": 1.6,
+      "other_pct": 0.5,
+      "nonwhite_pct": 5.2
+    },
+    "Central Ayrshire": {
+      "gss_code": "S14000109",
+      "region": "Scotland",
+      "white_pct": 97.8,
+      "asian_pct": 1.2,
+      "black_pct": 0.2,
+      "mixed_pct": 0.5,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.2
+    },
+    "Central Devon": {
+      "gss_code": "E14001155",
+      "region": "South West",
+      "white_pct": 97.8,
+      "asian_pct": 0.6,
+      "black_pct": 0.2,
+      "mixed_pct": 1.2,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.2
+    },
+    "Central Suffolk & North Ipswich": {
+      "gss_code": "E14001156",
+      "region": "East of England",
+      "white_pct": 93.3,
+      "asian_pct": 2.2,
+      "black_pct": 1.2,
+      "mixed_pct": 2.5,
+      "other_pct": 0.8,
+      "nonwhite_pct": 6.7
+    },
+    "Ceredigion Preseli": {
+      "gss_code": "W07000093",
+      "region": "Wales",
+      "white_pct": 96.7,
+      "asian_pct": 1.3,
+      "black_pct": 0.4,
+      "mixed_pct": 1.1,
+      "other_pct": 0.4,
+      "nonwhite_pct": 3.3
+    },
+    "Chatham & Aylesford": {
+      "gss_code": "E14001157",
+      "region": "South East",
+      "white_pct": 85.8,
+      "asian_pct": 5.1,
+      "black_pct": 5.2,
+      "mixed_pct": 2.6,
+      "other_pct": 1.4,
+      "nonwhite_pct": 14.2
+    },
+    "Cheadle": {
+      "gss_code": "E14001158",
+      "region": "North West",
+      "white_pct": 82.6,
+      "asian_pct": 11.6,
+      "black_pct": 0.8,
+      "mixed_pct": 2.6,
+      "other_pct": 2.3,
+      "nonwhite_pct": 17.4
+    },
+    "Chelmsford": {
+      "gss_code": "E14001159",
+      "region": "East of England",
+      "white_pct": 85.2,
+      "asian_pct": 7.2,
+      "black_pct": 3.4,
+      "mixed_pct": 3.1,
+      "other_pct": 1.2,
+      "nonwhite_pct": 14.8
+    },
+    "Chelsea & Fulham": {
+      "gss_code": "E14001160",
+      "region": "London",
+      "white_pct": 70.4,
+      "asian_pct": 9.2,
+      "black_pct": 8.0,
+      "mixed_pct": 6.1,
+      "other_pct": 6.4,
+      "nonwhite_pct": 29.6
+    },
+    "Cheltenham": {
+      "gss_code": "E14001161",
+      "region": "South West",
+      "white_pct": 91.3,
+      "asian_pct": 4.1,
+      "black_pct": 1.0,
+      "mixed_pct": 2.5,
+      "other_pct": 1.1,
+      "nonwhite_pct": 8.7
+    },
+    "Chesham & Amersham": {
+      "gss_code": "E14001162",
+      "region": "South East",
+      "white_pct": 82.0,
+      "asian_pct": 12.1,
+      "black_pct": 1.0,
+      "mixed_pct": 3.5,
+      "other_pct": 1.4,
+      "nonwhite_pct": 18.0
+    },
+    "Chester North & Neston": {
+      "gss_code": "E14001163",
+      "region": "North West",
+      "white_pct": 93.3,
+      "asian_pct": 3.0,
+      "black_pct": 1.0,
+      "mixed_pct": 1.8,
+      "other_pct": 1.0,
+      "nonwhite_pct": 6.7,
+      "ministers": [
+        "Samantha Dixon MBE MP"
+      ]
+    },
+    "Chester South & Eddisbury": {
+      "gss_code": "E14001164",
+      "region": "North West",
+      "white_pct": 96.1,
+      "asian_pct": 1.6,
+      "black_pct": 0.5,
+      "mixed_pct": 1.4,
+      "other_pct": 0.4,
+      "nonwhite_pct": 3.9
+    },
+    "Chesterfield": {
+      "gss_code": "E14001165",
+      "region": "East Midlands",
+      "white_pct": 95.4,
+      "asian_pct": 2.0,
+      "black_pct": 0.8,
+      "mixed_pct": 1.5,
+      "other_pct": 0.4,
+      "nonwhite_pct": 4.6
+    },
+    "Chichester": {
+      "gss_code": "E14001166",
+      "region": "South East",
+      "white_pct": 95.0,
+      "asian_pct": 2.1,
+      "black_pct": 0.7,
+      "mixed_pct": 1.6,
+      "other_pct": 0.6,
+      "nonwhite_pct": 5.0
+    },
+    "Chingford & Woodford Green": {
+      "gss_code": "E14001167",
+      "region": "London",
+      "white_pct": 62.9,
+      "asian_pct": 14.8,
+      "black_pct": 10.7,
+      "mixed_pct": 6.4,
+      "other_pct": 5.1,
+      "nonwhite_pct": 37.1
+    },
+    "Chippenham": {
+      "gss_code": "E14001168",
+      "region": "South West",
+      "white_pct": 94.1,
+      "asian_pct": 2.3,
+      "black_pct": 1.1,
+      "mixed_pct": 1.8,
+      "other_pct": 0.6,
+      "nonwhite_pct": 5.9
+    },
+    "Chipping Barnet": {
+      "gss_code": "E14001169",
+      "region": "London",
+      "white_pct": 63.4,
+      "asian_pct": 16.9,
+      "black_pct": 6.3,
+      "mixed_pct": 5.6,
+      "other_pct": 7.8,
+      "nonwhite_pct": 36.6,
+      "ministers": [
+        "Daniel Tomlinson MP"
+      ]
+    },
+    "Chorley": {
+      "gss_code": "E14001170",
+      "region": "North West",
+      "white_pct": 95.4,
+      "asian_pct": 2.0,
+      "black_pct": 0.6,
+      "mixed_pct": 1.5,
+      "other_pct": 0.5,
+      "nonwhite_pct": 4.6
+    },
+    "Christchurch": {
+      "gss_code": "E14001171",
+      "region": "South West",
+      "white_pct": 96.9,
+      "asian_pct": 1.2,
+      "black_pct": 0.3,
+      "mixed_pct": 1.3,
+      "other_pct": 0.4,
+      "nonwhite_pct": 3.1
+    },
+    "Cities of London & Westminster": {
+      "gss_code": "E14001172",
+      "region": "London",
+      "white_pct": 60.0,
+      "asian_pct": 17.8,
+      "black_pct": 5.4,
+      "mixed_pct": 6.1,
+      "other_pct": 10.6,
+      "nonwhite_pct": 40.0
+    },
+    "City of Durham": {
+      "gss_code": "E14001173",
+      "region": "North East",
+      "white_pct": 92.3,
+      "asian_pct": 4.1,
+      "black_pct": 0.7,
+      "mixed_pct": 1.9,
+      "other_pct": 1.0,
+      "nonwhite_pct": 7.7
+    },
+    "Clacton": {
+      "gss_code": "E14001174",
+      "region": "East of England",
+      "white_pct": 96.1,
+      "asian_pct": 1.3,
+      "black_pct": 0.6,
+      "mixed_pct": 1.6,
+      "other_pct": 0.4,
+      "nonwhite_pct": 3.9
+    },
+    "Clapham & Brixton Hill": {
+      "gss_code": "E14001175",
+      "region": "London",
+      "white_pct": 58.7,
+      "asian_pct": 5.7,
+      "black_pct": 22.9,
+      "mixed_pct": 7.5,
+      "other_pct": 5.3,
+      "nonwhite_pct": 41.3
+    },
+    "Clwyd East": {
+      "gss_code": "W07000094",
+      "region": "Wales",
+      "white_pct": 97.8,
+      "asian_pct": 0.9,
+      "black_pct": 0.2,
+      "mixed_pct": 0.9,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.2
+    },
+    "Clwyd North": {
+      "gss_code": "W07000095",
+      "region": "Wales",
+      "white_pct": 95.9,
+      "asian_pct": 2.1,
+      "black_pct": 0.3,
+      "mixed_pct": 1.2,
+      "other_pct": 0.4,
+      "nonwhite_pct": 4.1
+    },
+    "Coatbridge & Bellshill": {
+      "gss_code": "S14000070",
+      "region": "Scotland",
+      "white_pct": 96.4,
+      "asian_pct": 2.2,
+      "black_pct": 0.4,
+      "mixed_pct": 0.7,
+      "other_pct": 0.3,
+      "nonwhite_pct": 3.6
+    },
+    "Colchester": {
+      "gss_code": "E14001176",
+      "region": "East of England",
+      "white_pct": 83.5,
+      "asian_pct": 6.8,
+      "black_pct": 4.3,
+      "mixed_pct": 3.4,
+      "other_pct": 1.9,
+      "nonwhite_pct": 16.5
+    },
+    "Colne Valley": {
+      "gss_code": "E14001177",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 90.7,
+      "asian_pct": 4.4,
+      "black_pct": 1.3,
+      "mixed_pct": 2.8,
+      "other_pct": 0.8,
+      "nonwhite_pct": 9.3
+    },
+    "Congleton": {
+      "gss_code": "E14001178",
+      "region": "North West",
+      "white_pct": 96.8,
+      "asian_pct": 1.2,
+      "black_pct": 0.3,
+      "mixed_pct": 1.3,
+      "other_pct": 0.3,
+      "nonwhite_pct": 3.2
+    },
+    "Corby & East Northamptonshire": {
+      "gss_code": "E14001179",
+      "region": "East Midlands",
+      "white_pct": 93.2,
+      "asian_pct": 1.8,
+      "black_pct": 2.5,
+      "mixed_pct": 1.7,
+      "other_pct": 0.8,
+      "nonwhite_pct": 6.8
+    },
+    "Coventry East": {
+      "gss_code": "E14001180",
+      "region": "West Midlands",
+      "white_pct": 61.2,
+      "asian_pct": 20.6,
+      "black_pct": 10.7,
+      "mixed_pct": 3.6,
+      "other_pct": 3.9,
+      "nonwhite_pct": 38.8,
+      "ministers": [
+        "Mary Creagh CBE MP"
+      ]
+    },
+    "Coventry North West": {
+      "gss_code": "E14001181",
+      "region": "West Midlands",
+      "white_pct": 75.0,
+      "asian_pct": 13.0,
+      "black_pct": 5.8,
+      "mixed_pct": 3.1,
+      "other_pct": 3.1,
+      "nonwhite_pct": 25.0
+    },
+    "Coventry South": {
+      "gss_code": "E14001182",
+      "region": "West Midlands",
+      "white_pct": 61.4,
+      "asian_pct": 21.3,
+      "black_pct": 9.9,
+      "mixed_pct": 3.5,
+      "other_pct": 4.0,
+      "nonwhite_pct": 38.6
+    },
+    "Cowdenbeath & Kirkcaldy": {
+      "gss_code": "S14000071",
+      "region": "Scotland",
+      "white_pct": 96.0,
+      "asian_pct": 2.2,
+      "black_pct": 0.4,
+      "mixed_pct": 0.8,
+      "other_pct": 0.6,
+      "nonwhite_pct": 4.0
+    },
+    "Cramlington & Killingworth": {
+      "gss_code": "E14001183",
+      "region": "North East",
+      "white_pct": 96.4,
+      "asian_pct": 1.7,
+      "black_pct": 0.4,
+      "mixed_pct": 1.1,
+      "other_pct": 0.3,
+      "nonwhite_pct": 3.6
+    },
+    "Crawley": {
+      "gss_code": "E14001184",
+      "region": "South East",
+      "white_pct": 73.4,
+      "asian_pct": 15.4,
+      "black_pct": 4.5,
+      "mixed_pct": 4.1,
+      "other_pct": 2.7,
+      "nonwhite_pct": 26.6
+    },
+    "Crewe & Nantwich": {
+      "gss_code": "E14001185",
+      "region": "North West",
+      "white_pct": 92.9,
+      "asian_pct": 3.0,
+      "black_pct": 0.9,
+      "mixed_pct": 2.0,
+      "other_pct": 1.2,
+      "nonwhite_pct": 7.1
+    },
+    "Croydon East": {
+      "gss_code": "E14001186",
+      "region": "London",
+      "white_pct": 55.2,
+      "asian_pct": 12.5,
+      "black_pct": 21.6,
+      "mixed_pct": 7.5,
+      "other_pct": 3.1,
+      "nonwhite_pct": 44.8
+    },
+    "Croydon South": {
+      "gss_code": "E14001187",
+      "region": "London",
+      "white_pct": 62.8,
+      "asian_pct": 16.4,
+      "black_pct": 11.1,
+      "mixed_pct": 6.9,
+      "other_pct": 2.8,
+      "nonwhite_pct": 37.2
+    },
+    "Croydon West": {
+      "gss_code": "E14001188",
+      "region": "London",
+      "white_pct": 33.3,
+      "asian_pct": 23.1,
+      "black_pct": 30.6,
+      "mixed_pct": 8.1,
+      "other_pct": 5.0,
+      "nonwhite_pct": 66.7,
+      "ministers": [
+        "Sarah Jones MP"
+      ]
+    },
+    "Cumbernauld & Kirkintilloch": {
+      "gss_code": "S14000072",
+      "region": "Scotland",
+      "white_pct": 96.2,
+      "asian_pct": 2.2,
+      "black_pct": 0.6,
+      "mixed_pct": 0.7,
+      "other_pct": 0.4,
+      "nonwhite_pct": 3.8
+    },
+    "Dagenham & Rainham": {
+      "gss_code": "E14001189",
+      "region": "London",
+      "white_pct": 58.0,
+      "asian_pct": 17.6,
+      "black_pct": 17.5,
+      "mixed_pct": 3.9,
+      "other_pct": 2.9,
+      "nonwhite_pct": 42.0
+    },
+    "Darlington": {
+      "gss_code": "E14001190",
+      "region": "North East",
+      "white_pct": 94.1,
+      "asian_pct": 2.9,
+      "black_pct": 0.7,
+      "mixed_pct": 1.4,
+      "other_pct": 0.9,
+      "nonwhite_pct": 5.9
+    },
+    "Dartford": {
+      "gss_code": "E14001191",
+      "region": "South East",
+      "white_pct": 73.3,
+      "asian_pct": 10.3,
+      "black_pct": 11.0,
+      "mixed_pct": 3.2,
+      "other_pct": 2.1,
+      "nonwhite_pct": 26.7
+    },
+    "Daventry": {
+      "gss_code": "E14001192",
+      "region": "East Midlands",
+      "white_pct": 94.3,
+      "asian_pct": 2.1,
+      "black_pct": 1.3,
+      "mixed_pct": 1.9,
+      "other_pct": 0.4,
+      "nonwhite_pct": 5.7
+    },
+    "Derby North": {
+      "gss_code": "E14001193",
+      "region": "East Midlands",
+      "white_pct": 80.2,
+      "asian_pct": 11.0,
+      "black_pct": 3.4,
+      "mixed_pct": 3.4,
+      "other_pct": 2.1,
+      "nonwhite_pct": 19.8
+    },
+    "Derby South": {
+      "gss_code": "E14001194",
+      "region": "East Midlands",
+      "white_pct": 61.5,
+      "asian_pct": 24.1,
+      "black_pct": 5.5,
+      "mixed_pct": 4.5,
+      "other_pct": 4.4,
+      "nonwhite_pct": 38.5
+    },
+    "Derbyshire Dales": {
+      "gss_code": "E14001195",
+      "region": "East Midlands",
+      "white_pct": 97.3,
+      "asian_pct": 1.0,
+      "black_pct": 0.3,
+      "mixed_pct": 1.1,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.7
+    },
+    "Dewsbury & Batley": {
+      "gss_code": "E14001196",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 51.2,
+      "asian_pct": 44.2,
+      "black_pct": 0.8,
+      "mixed_pct": 2.3,
+      "other_pct": 1.5,
+      "nonwhite_pct": 48.8
+    },
+    "Didcot & Wantage": {
+      "gss_code": "E14001197",
+      "region": "South East",
+      "white_pct": 92.4,
+      "asian_pct": 3.3,
+      "black_pct": 1.4,
+      "mixed_pct": 2.1,
+      "other_pct": 0.8,
+      "nonwhite_pct": 7.6
+    },
+    "Doncaster Central": {
+      "gss_code": "E14001198",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 87.5,
+      "asian_pct": 5.7,
+      "black_pct": 2.1,
+      "mixed_pct": 2.1,
+      "other_pct": 2.5,
+      "nonwhite_pct": 12.5
+    },
+    "Doncaster East & the Isle of Axholme": {
+      "gss_code": "E14001199",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 96.1,
+      "asian_pct": 1.7,
+      "black_pct": 0.6,
+      "mixed_pct": 1.2,
+      "other_pct": 0.5,
+      "nonwhite_pct": 3.9
+    },
+    "Doncaster North": {
+      "gss_code": "E14001200",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 96.7,
+      "asian_pct": 1.1,
+      "black_pct": 0.7,
+      "mixed_pct": 1.1,
+      "other_pct": 0.4,
+      "nonwhite_pct": 3.3,
+      "ministers": [
+        "Ed Miliband MP"
+      ]
+    },
+    "Dorking & Horley": {
+      "gss_code": "E14001201",
+      "region": "South East",
+      "white_pct": 91.7,
+      "asian_pct": 3.6,
+      "black_pct": 1.3,
+      "mixed_pct": 2.5,
+      "other_pct": 0.9,
+      "nonwhite_pct": 8.3
+    },
+    "Dover & Deal": {
+      "gss_code": "E14001202",
+      "region": "South East",
+      "white_pct": 94.7,
+      "asian_pct": 2.2,
+      "black_pct": 0.8,
+      "mixed_pct": 1.5,
+      "other_pct": 0.9,
+      "nonwhite_pct": 5.3,
+      "ministers": [
+        "Mike Tapp MP"
+      ]
+    },
+    "Droitwich & Evesham": {
+      "gss_code": "E14001203",
+      "region": "West Midlands",
+      "white_pct": 96.7,
+      "asian_pct": 1.2,
+      "black_pct": 0.4,
+      "mixed_pct": 1.2,
+      "other_pct": 0.5,
+      "nonwhite_pct": 3.3
+    },
+    "Dudley": {
+      "gss_code": "E14001204",
+      "region": "West Midlands",
+      "white_pct": 80.2,
+      "asian_pct": 10.9,
+      "black_pct": 4.3,
+      "mixed_pct": 3.3,
+      "other_pct": 1.2,
+      "nonwhite_pct": 19.8
+    },
+    "Dulwich & West Norwood": {
+      "gss_code": "E14001205",
+      "region": "London",
+      "white_pct": 54.9,
+      "asian_pct": 6.4,
+      "black_pct": 25.3,
+      "mixed_pct": 8.5,
+      "other_pct": 4.8,
+      "nonwhite_pct": 45.1
+    },
+    "Dumfries & Galloway": {
+      "gss_code": "S14000073",
+      "region": "Scotland",
+      "white_pct": 97.8,
+      "asian_pct": 0.9,
+      "black_pct": 0.3,
+      "mixed_pct": 0.7,
+      "other_pct": 0.4,
+      "nonwhite_pct": 2.2
+    },
+    "Dumfriesshire, Clydesdale & Tweeddale": {
+      "gss_code": "S14000074",
+      "region": "Scotland",
+      "white_pct": 98.4,
+      "asian_pct": 0.5,
+      "black_pct": 0.2,
+      "mixed_pct": 0.7,
+      "other_pct": 0.2,
+      "nonwhite_pct": 1.6
+    },
+    "Dundee Central": {
+      "gss_code": "S14000075",
+      "region": "Scotland",
+      "white_pct": 87.5,
+      "asian_pct": 7.3,
+      "black_pct": 2.0,
+      "mixed_pct": 1.5,
+      "other_pct": 1.6,
+      "nonwhite_pct": 12.5
+    },
+    "Dunfermline & Dollar": {
+      "gss_code": "S14000076",
+      "region": "Scotland",
+      "white_pct": 95.7,
+      "asian_pct": 2.3,
+      "black_pct": 0.7,
+      "mixed_pct": 0.9,
+      "other_pct": 0.4,
+      "nonwhite_pct": 4.3
+    },
+    "Dunstable & Leighton Buzzard": {
+      "gss_code": "E14001206",
+      "region": "East of England",
+      "white_pct": 87.3,
+      "asian_pct": 4.4,
+      "black_pct": 3.8,
+      "mixed_pct": 3.4,
+      "other_pct": 1.1,
+      "nonwhite_pct": 12.7
+    },
+    "Dwyfor Meirionnydd": {
+      "gss_code": "W07000096",
+      "region": "Wales",
+      "white_pct": 98.2,
+      "asian_pct": 0.6,
+      "black_pct": 0.2,
+      "mixed_pct": 0.9,
+      "other_pct": 0.2,
+      "nonwhite_pct": 1.8
+    },
+    "Ealing Central & Acton": {
+      "gss_code": "E14001207",
+      "region": "London",
+      "white_pct": 55.7,
+      "asian_pct": 16.0,
+      "black_pct": 10.7,
+      "mixed_pct": 6.5,
+      "other_pct": 11.1,
+      "nonwhite_pct": 44.3
+    },
+    "Ealing North": {
+      "gss_code": "E14001208",
+      "region": "London",
+      "white_pct": 43.2,
+      "asian_pct": 26.8,
+      "black_pct": 13.3,
+      "mixed_pct": 5.5,
+      "other_pct": 11.2,
+      "nonwhite_pct": 56.8,
+      "ministers": [
+        "James Murray MP"
+      ]
+    },
+    "Ealing Southall": {
+      "gss_code": "E14001209",
+      "region": "London",
+      "white_pct": 30.7,
+      "asian_pct": 46.9,
+      "black_pct": 9.3,
+      "mixed_pct": 3.9,
+      "other_pct": 9.2,
+      "nonwhite_pct": 69.3
+    },
+    "Earley & Woodley": {
+      "gss_code": "E14001210",
+      "region": "South East",
+      "white_pct": 69.5,
+      "asian_pct": 19.6,
+      "black_pct": 4.5,
+      "mixed_pct": 4.0,
+      "other_pct": 2.4,
+      "nonwhite_pct": 30.5
+    },
+    "Easington": {
+      "gss_code": "E14001211",
+      "region": "North East",
+      "white_pct": 98.1,
+      "asian_pct": 0.9,
+      "black_pct": 0.2,
+      "mixed_pct": 0.6,
+      "other_pct": 0.2,
+      "nonwhite_pct": 1.9
+    },
+    "East Antrim": {
+      "gss_code": "N05000005",
+      "region": "Northern Ireland",
+      "white_pct": 97.9,
+      "asian_pct": 1.1,
+      "black_pct": 0.2,
+      "mixed_pct": 0.6,
+      "other_pct": 0.1,
+      "nonwhite_pct": 2.1
+    },
+    "East Grinstead & Uckfield": {
+      "gss_code": "E14001212",
+      "region": "South East",
+      "white_pct": 94.1,
+      "asian_pct": 2.3,
+      "black_pct": 0.7,
+      "mixed_pct": 2.3,
+      "other_pct": 0.6,
+      "nonwhite_pct": 5.9
+    },
+    "East Ham": {
+      "gss_code": "E14001213",
+      "region": "London",
+      "white_pct": 20.3,
+      "asian_pct": 58.8,
+      "black_pct": 12.8,
+      "mixed_pct": 3.2,
+      "other_pct": 4.9,
+      "nonwhite_pct": 79.7,
+      "ministers": [
+        "Sir Stephen Timms MP"
+      ]
+    },
+    "East Hampshire": {
+      "gss_code": "E14001214",
+      "region": "South East",
+      "white_pct": 96.0,
+      "asian_pct": 1.6,
+      "black_pct": 0.4,
+      "mixed_pct": 1.5,
+      "other_pct": 0.4,
+      "nonwhite_pct": 4.0
+    },
+    "East Kilbride & Strathaven": {
+      "gss_code": "S14000077",
+      "region": "Scotland",
+      "white_pct": 96.2,
+      "asian_pct": 2.1,
+      "black_pct": 0.5,
+      "mixed_pct": 0.8,
+      "other_pct": 0.4,
+      "nonwhite_pct": 3.8
+    },
+    "East Londonderry": {
+      "gss_code": "N05000006",
+      "region": "Northern Ireland",
+      "white_pct": 98.4,
+      "asian_pct": 0.7,
+      "black_pct": 0.2,
+      "mixed_pct": 0.5,
+      "other_pct": 0.1,
+      "nonwhite_pct": 1.6
+    },
+    "East Renfrewshire": {
+      "gss_code": "S14000021",
+      "region": "Scotland",
+      "white_pct": 87.5,
+      "asian_pct": 9.5,
+      "black_pct": 0.5,
+      "mixed_pct": 1.2,
+      "other_pct": 1.3,
+      "nonwhite_pct": 12.5,
+      "ministers": [
+        "Blair McDougall MP"
+      ]
+    },
+    "East Surrey": {
+      "gss_code": "E14001215",
+      "region": "South East",
+      "white_pct": 88.6,
+      "asian_pct": 4.0,
+      "black_pct": 2.5,
+      "mixed_pct": 3.9,
+      "other_pct": 1.0,
+      "nonwhite_pct": 11.4
+    },
+    "East Thanet": {
+      "gss_code": "E14001216",
+      "region": "South East",
+      "white_pct": 92.2,
+      "asian_pct": 2.6,
+      "black_pct": 1.2,
+      "mixed_pct": 2.6,
+      "other_pct": 1.4,
+      "nonwhite_pct": 7.8
+    },
+    "East Wiltshire": {
+      "gss_code": "E14001217",
+      "region": "South West",
+      "white_pct": 91.9,
+      "asian_pct": 2.8,
+      "black_pct": 2.2,
+      "mixed_pct": 1.9,
+      "other_pct": 1.1,
+      "nonwhite_pct": 8.1
+    },
+    "East Worthing & Shoreham": {
+      "gss_code": "E14001218",
+      "region": "South East",
+      "white_pct": 92.6,
+      "asian_pct": 2.9,
+      "black_pct": 0.9,
+      "mixed_pct": 2.5,
+      "other_pct": 1.0,
+      "nonwhite_pct": 7.4
+    },
+    "Eastbourne": {
+      "gss_code": "E14001219",
+      "region": "South East",
+      "white_pct": 90.8,
+      "asian_pct": 3.5,
+      "black_pct": 1.3,
+      "mixed_pct": 2.8,
+      "other_pct": 1.7,
+      "nonwhite_pct": 9.2
+    },
+    "Eastleigh": {
+      "gss_code": "E14001220",
+      "region": "South East",
+      "white_pct": 90.9,
+      "asian_pct": 5.0,
+      "black_pct": 1.0,
+      "mixed_pct": 2.2,
+      "other_pct": 1.0,
+      "nonwhite_pct": 9.1
+    },
+    "Edinburgh East & Musselburgh": {
+      "gss_code": "S14000078",
+      "region": "Scotland",
+      "white_pct": 84.1,
+      "asian_pct": 9.1,
+      "black_pct": 2.1,
+      "mixed_pct": 2.7,
+      "other_pct": 2.1,
+      "nonwhite_pct": 15.9
+    },
+    "Edinburgh North & Leith": {
+      "gss_code": "S14000079",
+      "region": "Scotland",
+      "white_pct": 84.9,
+      "asian_pct": 7.4,
+      "black_pct": 2.6,
+      "mixed_pct": 3.0,
+      "other_pct": 2.1,
+      "nonwhite_pct": 15.1
+    },
+    "Edinburgh South": {
+      "gss_code": "S14000080",
+      "region": "Scotland",
+      "white_pct": 84.3,
+      "asian_pct": 9.4,
+      "black_pct": 1.6,
+      "mixed_pct": 2.7,
+      "other_pct": 2.0,
+      "nonwhite_pct": 15.7,
+      "ministers": [
+        "Ian Murray MP"
+      ]
+    },
+    "Edinburgh South West": {
+      "gss_code": "S14000081",
+      "region": "Scotland",
+      "white_pct": 83.6,
+      "asian_pct": 9.3,
+      "black_pct": 2.9,
+      "mixed_pct": 2.2,
+      "other_pct": 2.0,
+      "nonwhite_pct": 16.4
+    },
+    "Edinburgh West": {
+      "gss_code": "S14000082",
+      "region": "Scotland",
+      "white_pct": 89.2,
+      "asian_pct": 6.7,
+      "black_pct": 1.2,
+      "mixed_pct": 1.7,
+      "other_pct": 1.3,
+      "nonwhite_pct": 10.8
+    },
+    "Edmonton & Winchmore Hill": {
+      "gss_code": "E14001221",
+      "region": "London",
+      "white_pct": 46.0,
+      "asian_pct": 12.0,
+      "black_pct": 22.9,
+      "mixed_pct": 5.4,
+      "other_pct": 13.8,
+      "nonwhite_pct": 54.0
+    },
+    "Ellesmere Port & Bromborough": {
+      "gss_code": "E14001222",
+      "region": "North West",
+      "white_pct": 96.0,
+      "asian_pct": 1.8,
+      "black_pct": 0.4,
+      "mixed_pct": 1.3,
+      "other_pct": 0.5,
+      "nonwhite_pct": 4.0
+    },
+    "Eltham & Chislehurst": {
+      "gss_code": "E14001223",
+      "region": "London",
+      "white_pct": 71.3,
+      "asian_pct": 9.4,
+      "black_pct": 10.8,
+      "mixed_pct": 5.0,
+      "other_pct": 3.4,
+      "nonwhite_pct": 28.7
+    },
+    "Ely & East Cambridgeshire": {
+      "gss_code": "E14001224",
+      "region": "East of England",
+      "white_pct": 93.6,
+      "asian_pct": 2.5,
+      "black_pct": 0.9,
+      "mixed_pct": 2.3,
+      "other_pct": 0.8,
+      "nonwhite_pct": 6.4
+    },
+    "Enfield North": {
+      "gss_code": "E14001225",
+      "region": "London",
+      "white_pct": 52.4,
+      "asian_pct": 9.5,
+      "black_pct": 20.3,
+      "mixed_pct": 6.4,
+      "other_pct": 11.4,
+      "nonwhite_pct": 47.6
+    },
+    "Epping Forest": {
+      "gss_code": "E14001226",
+      "region": "East of England",
+      "white_pct": 81.2,
+      "asian_pct": 8.7,
+      "black_pct": 3.5,
+      "mixed_pct": 4.0,
+      "other_pct": 2.6,
+      "nonwhite_pct": 18.8
+    },
+    "Epsom & Ewell": {
+      "gss_code": "E14001227",
+      "region": "South East",
+      "white_pct": 81.9,
+      "asian_pct": 9.8,
+      "black_pct": 1.8,
+      "mixed_pct": 4.1,
+      "other_pct": 2.4,
+      "nonwhite_pct": 18.1
+    },
+    "Erewash": {
+      "gss_code": "E14001228",
+      "region": "East Midlands",
+      "white_pct": 95.2,
+      "asian_pct": 1.7,
+      "black_pct": 0.8,
+      "mixed_pct": 1.9,
+      "other_pct": 0.4,
+      "nonwhite_pct": 4.8
+    },
+    "Erith & Thamesmead": {
+      "gss_code": "E14001229",
+      "region": "London",
+      "white_pct": 46.2,
+      "asian_pct": 13.6,
+      "black_pct": 30.6,
+      "mixed_pct": 5.5,
+      "other_pct": 4.2,
+      "nonwhite_pct": 53.8
+    },
+    "Esher & Walton": {
+      "gss_code": "E14001230",
+      "region": "South East",
+      "white_pct": 86.2,
+      "asian_pct": 6.6,
+      "black_pct": 1.2,
+      "mixed_pct": 4.1,
+      "other_pct": 1.9,
+      "nonwhite_pct": 13.8
+    },
+    "Exeter": {
+      "gss_code": "E14001231",
+      "region": "South West",
+      "white_pct": 89.4,
+      "asian_pct": 5.3,
+      "black_pct": 1.0,
+      "mixed_pct": 2.7,
+      "other_pct": 1.6,
+      "nonwhite_pct": 10.6
+    },
+    "Exmouth & Exeter East": {
+      "gss_code": "E14001232",
+      "region": "South West",
+      "white_pct": 96.1,
+      "asian_pct": 1.6,
+      "black_pct": 0.3,
+      "mixed_pct": 1.4,
+      "other_pct": 0.5,
+      "nonwhite_pct": 3.9
+    },
+    "Falkirk": {
+      "gss_code": "S14000083",
+      "region": "Scotland",
+      "white_pct": 96.1,
+      "asian_pct": 2.3,
+      "black_pct": 0.5,
+      "mixed_pct": 0.8,
+      "other_pct": 0.3,
+      "nonwhite_pct": 3.9
+    },
+    "Fareham & Waterlooville": {
+      "gss_code": "E14001233",
+      "region": "South East",
+      "white_pct": 95.8,
+      "asian_pct": 1.9,
+      "black_pct": 0.6,
+      "mixed_pct": 1.4,
+      "other_pct": 0.4,
+      "nonwhite_pct": 4.2
+    },
+    "Farnham & Bordon": {
+      "gss_code": "E14001234",
+      "region": "South East",
+      "white_pct": 93.4,
+      "asian_pct": 3.2,
+      "black_pct": 0.7,
+      "mixed_pct": 2.1,
+      "other_pct": 0.6,
+      "nonwhite_pct": 6.6
+    },
+    "Faversham & Mid Kent": {
+      "gss_code": "E14001235",
+      "region": "South East",
+      "white_pct": 93.7,
+      "asian_pct": 2.2,
+      "black_pct": 1.6,
+      "mixed_pct": 1.9,
+      "other_pct": 0.7,
+      "nonwhite_pct": 6.3
+    },
+    "Feltham & Heston": {
+      "gss_code": "E14001236",
+      "region": "London",
+      "white_pct": 37.4,
+      "asian_pct": 43.6,
+      "black_pct": 7.6,
+      "mixed_pct": 3.8,
+      "other_pct": 7.5,
+      "nonwhite_pct": 62.6,
+      "ministers": [
+        "Seema Malhotra MP"
+      ]
+    },
+    "Fermanagh & South Tyrone": {
+      "gss_code": "N05000007",
+      "region": "Northern Ireland",
+      "white_pct": 95.9,
+      "asian_pct": 1.5,
+      "black_pct": 1.3,
+      "mixed_pct": 0.9,
+      "other_pct": 0.3,
+      "nonwhite_pct": 4.1
+    },
+    "Filton & Bradley Stoke": {
+      "gss_code": "E14001237",
+      "region": "South West",
+      "white_pct": 85.2,
+      "asian_pct": 7.3,
+      "black_pct": 2.6,
+      "mixed_pct": 3.3,
+      "other_pct": 1.5,
+      "nonwhite_pct": 14.8
+    },
+    "Finchley & Golders Green": {
+      "gss_code": "E14001238",
+      "region": "London",
+      "white_pct": 60.5,
+      "asian_pct": 17.2,
+      "black_pct": 5.9,
+      "mixed_pct": 5.3,
+      "other_pct": 11.2,
+      "nonwhite_pct": 39.5,
+      "ministers": [
+        "Sarah Sackman KC MP"
+      ]
+    },
+    "Folkestone & Hythe": {
+      "gss_code": "E14001239",
+      "region": "South East",
+      "white_pct": 91.9,
+      "asian_pct": 4.3,
+      "black_pct": 0.7,
+      "mixed_pct": 2.0,
+      "other_pct": 1.1,
+      "nonwhite_pct": 8.1
+    },
+    "Forest of Dean": {
+      "gss_code": "E14001240",
+      "region": "South West",
+      "white_pct": 97.5,
+      "asian_pct": 0.7,
+      "black_pct": 0.3,
+      "mixed_pct": 1.1,
+      "other_pct": 0.4,
+      "nonwhite_pct": 2.5
+    },
+    "Foyle": {
+      "gss_code": "N05000008",
+      "region": "Northern Ireland",
+      "white_pct": 97.3,
+      "asian_pct": 1.5,
+      "black_pct": 0.3,
+      "mixed_pct": 0.7,
+      "other_pct": 0.2,
+      "nonwhite_pct": 2.7
+    },
+    "Frome & East Somerset": {
+      "gss_code": "E14001241",
+      "region": "South West",
+      "white_pct": 96.8,
+      "asian_pct": 1.0,
+      "black_pct": 0.4,
+      "mixed_pct": 1.5,
+      "other_pct": 0.3,
+      "nonwhite_pct": 3.2
+    },
+    "Fylde": {
+      "gss_code": "E14001242",
+      "region": "North West",
+      "white_pct": 96.3,
+      "asian_pct": 1.5,
+      "black_pct": 0.4,
+      "mixed_pct": 1.4,
+      "other_pct": 0.4,
+      "nonwhite_pct": 3.7
+    },
+    "Gainsborough": {
+      "gss_code": "E14001243",
+      "region": "East Midlands",
+      "white_pct": 97.0,
+      "asian_pct": 1.2,
+      "black_pct": 0.3,
+      "mixed_pct": 1.1,
+      "other_pct": 0.4,
+      "nonwhite_pct": 3.0
+    },
+    "Gateshead Central & Whickham": {
+      "gss_code": "E14001244",
+      "region": "North East",
+      "white_pct": 91.1,
+      "asian_pct": 3.5,
+      "black_pct": 1.6,
+      "mixed_pct": 1.5,
+      "other_pct": 2.3,
+      "nonwhite_pct": 8.9
+    },
+    "Gedling": {
+      "gss_code": "E14001245",
+      "region": "East Midlands",
+      "white_pct": 88.6,
+      "asian_pct": 4.2,
+      "black_pct": 2.5,
+      "mixed_pct": 3.8,
+      "other_pct": 0.9,
+      "nonwhite_pct": 11.4
+    },
+    "Gillingham & Rainham": {
+      "gss_code": "E14001246",
+      "region": "South East",
+      "white_pct": 84.1,
+      "asian_pct": 6.3,
+      "black_pct": 5.3,
+      "mixed_pct": 2.9,
+      "other_pct": 1.3,
+      "nonwhite_pct": 15.9
+    },
+    "Glasgow East": {
+      "gss_code": "S14000084",
+      "region": "Scotland",
+      "white_pct": 80.2,
+      "asian_pct": 11.5,
+      "black_pct": 4.4,
+      "mixed_pct": 1.4,
+      "other_pct": 2.5,
+      "nonwhite_pct": 19.8
+    },
+    "Glasgow North": {
+      "gss_code": "S14000085",
+      "region": "Scotland",
+      "white_pct": 75.8,
+      "asian_pct": 13.8,
+      "black_pct": 4.4,
+      "mixed_pct": 2.4,
+      "other_pct": 3.6,
+      "nonwhite_pct": 24.2
+    },
+    "Glasgow North East": {
+      "gss_code": "S14000086",
+      "region": "Scotland",
+      "white_pct": 83.3,
+      "asian_pct": 6.8,
+      "black_pct": 6.0,
+      "mixed_pct": 1.2,
+      "other_pct": 2.7,
+      "nonwhite_pct": 16.7
+    },
+    "Glasgow South": {
+      "gss_code": "S14000087",
+      "region": "Scotland",
+      "white_pct": 84.7,
+      "asian_pct": 9.7,
+      "black_pct": 2.3,
+      "mixed_pct": 1.7,
+      "other_pct": 1.6,
+      "nonwhite_pct": 15.3
+    },
+    "Glasgow South West": {
+      "gss_code": "S14000088",
+      "region": "Scotland",
+      "white_pct": 75.8,
+      "asian_pct": 17.5,
+      "black_pct": 2.7,
+      "mixed_pct": 1.5,
+      "other_pct": 2.5,
+      "nonwhite_pct": 24.2,
+      "ministers": [
+        "Dr Zubir Ahmed MP"
+      ]
+    },
+    "Glasgow West": {
+      "gss_code": "S14000089",
+      "region": "Scotland",
+      "white_pct": 83.7,
+      "asian_pct": 8.1,
+      "black_pct": 2.9,
+      "mixed_pct": 2.1,
+      "other_pct": 3.2,
+      "nonwhite_pct": 16.3
+    },
+    "Glastonbury & Somerton": {
+      "gss_code": "E14001247",
+      "region": "South West",
+      "white_pct": 97.3,
+      "asian_pct": 0.9,
+      "black_pct": 0.4,
+      "mixed_pct": 1.2,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.7
+    },
+    "Glenrothes & Mid Fife": {
+      "gss_code": "S14000090",
+      "region": "Scotland",
+      "white_pct": 97.2,
+      "asian_pct": 1.6,
+      "black_pct": 0.3,
+      "mixed_pct": 0.6,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.8
+    },
+    "Gloucester": {
+      "gss_code": "E14001248",
+      "region": "South West",
+      "white_pct": 84.2,
+      "asian_pct": 6.6,
+      "black_pct": 4.0,
+      "mixed_pct": 4.0,
+      "other_pct": 1.3,
+      "nonwhite_pct": 15.8
+    },
+    "Godalming & Ash": {
+      "gss_code": "E14001249",
+      "region": "South East",
+      "white_pct": 93.8,
+      "asian_pct": 2.6,
+      "black_pct": 0.7,
+      "mixed_pct": 2.2,
+      "other_pct": 0.7,
+      "nonwhite_pct": 6.2
+    },
+    "Goole & Pocklington": {
+      "gss_code": "E14001250",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 97.1,
+      "asian_pct": 1.2,
+      "black_pct": 0.3,
+      "mixed_pct": 1.0,
+      "other_pct": 0.4,
+      "nonwhite_pct": 2.9
+    },
+    "Gordon & Buchan": {
+      "gss_code": "S14000091",
+      "region": "Scotland",
+      "white_pct": 97.5,
+      "asian_pct": 0.9,
+      "black_pct": 0.4,
+      "mixed_pct": 0.8,
+      "other_pct": 0.4,
+      "nonwhite_pct": 2.5
+    },
+    "Gorton & Denton": {
+      "gss_code": "E14001251",
+      "region": "North West",
+      "white_pct": 56.6,
+      "asian_pct": 26.6,
+      "black_pct": 9.1,
+      "mixed_pct": 4.2,
+      "other_pct": 3.5,
+      "nonwhite_pct": 43.4
+    },
+    "Gosport": {
+      "gss_code": "E14001252",
+      "region": "South East",
+      "white_pct": 95.6,
+      "asian_pct": 1.3,
+      "black_pct": 1.1,
+      "mixed_pct": 1.5,
+      "other_pct": 0.5,
+      "nonwhite_pct": 4.4
+    },
+    "Gower": {
+      "gss_code": "W07000097",
+      "region": "Wales",
+      "white_pct": 95.7,
+      "asian_pct": 2.1,
+      "black_pct": 0.4,
+      "mixed_pct": 1.2,
+      "other_pct": 0.6,
+      "nonwhite_pct": 4.3
+    },
+    "Grantham & Bourne": {
+      "gss_code": "E14001253",
+      "region": "East Midlands",
+      "white_pct": 95.6,
+      "asian_pct": 2.0,
+      "black_pct": 0.7,
+      "mixed_pct": 1.3,
+      "other_pct": 0.5,
+      "nonwhite_pct": 4.4
+    },
+    "Gravesham": {
+      "gss_code": "E14001254",
+      "region": "South East",
+      "white_pct": 76.6,
+      "asian_pct": 11.2,
+      "black_pct": 6.5,
+      "mixed_pct": 2.6,
+      "other_pct": 3.0,
+      "nonwhite_pct": 23.4
+    },
+    "Great Grimsby & Cleethorpes": {
+      "gss_code": "E14001255",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 96.1,
+      "asian_pct": 1.5,
+      "black_pct": 0.6,
+      "mixed_pct": 1.1,
+      "other_pct": 0.7,
+      "nonwhite_pct": 3.9
+    },
+    "Great Yarmouth": {
+      "gss_code": "E14001256",
+      "region": "East of England",
+      "white_pct": 94.6,
+      "asian_pct": 1.9,
+      "black_pct": 1.1,
+      "mixed_pct": 1.6,
+      "other_pct": 0.8,
+      "nonwhite_pct": 5.4
+    },
+    "Greenwich & Woolwich": {
+      "gss_code": "E14001257",
+      "region": "London",
+      "white_pct": 55.3,
+      "asian_pct": 13.9,
+      "black_pct": 20.0,
+      "mixed_pct": 6.8,
+      "other_pct": 4.1,
+      "nonwhite_pct": 44.7,
+      "ministers": [
+        "Matthew Pennycook MP"
+      ]
+    },
+    "Guildford": {
+      "gss_code": "E14001258",
+      "region": "South East",
+      "white_pct": 84.5,
+      "asian_pct": 8.1,
+      "black_pct": 1.6,
+      "mixed_pct": 3.5,
+      "other_pct": 2.3,
+      "nonwhite_pct": 15.5
+    },
+    "Hackney North & Stoke Newington": {
+      "gss_code": "E14001259",
+      "region": "London",
+      "white_pct": 55.2,
+      "asian_pct": 10.3,
+      "black_pct": 19.3,
+      "mixed_pct": 6.2,
+      "other_pct": 9.0,
+      "nonwhite_pct": 44.8
+    },
+    "Hackney South & Shoreditch": {
+      "gss_code": "E14001260",
+      "region": "London",
+      "white_pct": 50.5,
+      "asian_pct": 10.7,
+      "black_pct": 23.7,
+      "mixed_pct": 7.3,
+      "other_pct": 8.0,
+      "nonwhite_pct": 49.5
+    },
+    "Halesowen": {
+      "gss_code": "E14001261",
+      "region": "West Midlands",
+      "white_pct": 82.4,
+      "asian_pct": 9.2,
+      "black_pct": 2.4,
+      "mixed_pct": 3.3,
+      "other_pct": 2.6,
+      "nonwhite_pct": 17.6
+    },
+    "Halifax": {
+      "gss_code": "E14001262",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 77.9,
+      "asian_pct": 18.1,
+      "black_pct": 0.9,
+      "mixed_pct": 2.0,
+      "other_pct": 1.1,
+      "nonwhite_pct": 22.1,
+      "ministers": [
+        "Kate Dearden MP"
+      ]
+    },
+    "Hamble Valley": {
+      "gss_code": "E14001263",
+      "region": "South East",
+      "white_pct": 94.9,
+      "asian_pct": 2.2,
+      "black_pct": 0.7,
+      "mixed_pct": 1.7,
+      "other_pct": 0.5,
+      "nonwhite_pct": 5.1
+    },
+    "Hamilton & Clyde Valley": {
+      "gss_code": "S14000092",
+      "region": "Scotland",
+      "white_pct": 96.1,
+      "asian_pct": 2.2,
+      "black_pct": 0.6,
+      "mixed_pct": 0.7,
+      "other_pct": 0.4,
+      "nonwhite_pct": 3.9
+    },
+    "Hammersmith & Chiswick": {
+      "gss_code": "E14001264",
+      "region": "London",
+      "white_pct": 63.3,
+      "asian_pct": 11.0,
+      "black_pct": 11.2,
+      "mixed_pct": 7.0,
+      "other_pct": 7.5,
+      "nonwhite_pct": 36.7
+    },
+    "Hampstead & Highgate": {
+      "gss_code": "E14001265",
+      "region": "London",
+      "white_pct": 65.5,
+      "asian_pct": 13.7,
+      "black_pct": 7.0,
+      "mixed_pct": 6.6,
+      "other_pct": 7.2,
+      "nonwhite_pct": 34.5
+    },
+    "Harborough, Oadby & Wigston": {
+      "gss_code": "E14001266",
+      "region": "East Midlands",
+      "white_pct": 75.3,
+      "asian_pct": 18.2,
+      "black_pct": 1.6,
+      "mixed_pct": 2.8,
+      "other_pct": 2.2,
+      "nonwhite_pct": 24.7
+    },
+    "Harlow": {
+      "gss_code": "E14001267",
+      "region": "East of England",
+      "white_pct": 84.4,
+      "asian_pct": 5.3,
+      "black_pct": 5.4,
+      "mixed_pct": 3.1,
+      "other_pct": 1.7,
+      "nonwhite_pct": 15.6
+    },
+    "Harpenden & Berkhamsted": {
+      "gss_code": "E14001268",
+      "region": "East of England",
+      "white_pct": 91.7,
+      "asian_pct": 3.2,
+      "black_pct": 1.1,
+      "mixed_pct": 3.1,
+      "other_pct": 0.8,
+      "nonwhite_pct": 8.3
+    },
+    "Harrogate & Knaresborough": {
+      "gss_code": "E14001269",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 94.8,
+      "asian_pct": 2.1,
+      "black_pct": 0.7,
+      "mixed_pct": 1.8,
+      "other_pct": 0.6,
+      "nonwhite_pct": 5.2
+    },
+    "Harrow East": {
+      "gss_code": "E14001270",
+      "region": "London",
+      "white_pct": 36.5,
+      "asian_pct": 46.5,
+      "black_pct": 6.8,
+      "mixed_pct": 2.9,
+      "other_pct": 7.3,
+      "nonwhite_pct": 63.5
+    },
+    "Harrow West": {
+      "gss_code": "E14001271",
+      "region": "London",
+      "white_pct": 34.2,
+      "asian_pct": 44.6,
+      "black_pct": 8.7,
+      "mixed_pct": 4.5,
+      "other_pct": 7.9,
+      "nonwhite_pct": 65.8
+    },
+    "Hartlepool": {
+      "gss_code": "E14001272",
+      "region": "North East",
+      "white_pct": 96.5,
+      "asian_pct": 1.7,
+      "black_pct": 0.5,
+      "mixed_pct": 0.7,
+      "other_pct": 0.6,
+      "nonwhite_pct": 3.5
+    },
+    "Harwich & North Essex": {
+      "gss_code": "E14001273",
+      "region": "East of England",
+      "white_pct": 93.9,
+      "asian_pct": 1.9,
+      "black_pct": 1.5,
+      "mixed_pct": 1.9,
+      "other_pct": 0.7,
+      "nonwhite_pct": 6.1
+    },
+    "Hastings & Rye": {
+      "gss_code": "E14001274",
+      "region": "South East",
+      "white_pct": 92.1,
+      "asian_pct": 2.5,
+      "black_pct": 1.3,
+      "mixed_pct": 2.7,
+      "other_pct": 1.4,
+      "nonwhite_pct": 7.9
+    },
+    "Havant": {
+      "gss_code": "E14001275",
+      "region": "South East",
+      "white_pct": 95.8,
+      "asian_pct": 1.7,
+      "black_pct": 0.6,
+      "mixed_pct": 1.5,
+      "other_pct": 0.4,
+      "nonwhite_pct": 4.2
+    },
+    "Hayes & Harlington": {
+      "gss_code": "E14001276",
+      "region": "London",
+      "white_pct": 32.0,
+      "asian_pct": 44.5,
+      "black_pct": 11.0,
+      "mixed_pct": 3.9,
+      "other_pct": 8.6,
+      "nonwhite_pct": 68.0
+    },
+    "Hazel Grove": {
+      "gss_code": "E14001277",
+      "region": "North West",
+      "white_pct": 94.4,
+      "asian_pct": 2.5,
+      "black_pct": 0.6,
+      "mixed_pct": 1.8,
+      "other_pct": 0.6,
+      "nonwhite_pct": 5.6
+    },
+    "Hemel Hempstead": {
+      "gss_code": "E14001278",
+      "region": "East of England",
+      "white_pct": 83.4,
+      "asian_pct": 7.6,
+      "black_pct": 3.9,
+      "mixed_pct": 3.7,
+      "other_pct": 1.4,
+      "nonwhite_pct": 16.6
+    },
+    "Hendon": {
+      "gss_code": "E14001279",
+      "region": "London",
+      "white_pct": 49.7,
+      "asian_pct": 23.8,
+      "black_pct": 11.1,
+      "mixed_pct": 5.0,
+      "other_pct": 10.5,
+      "nonwhite_pct": 50.3
+    },
+    "Henley & Thame": {
+      "gss_code": "E14001280",
+      "region": "South East",
+      "white_pct": 94.1,
+      "asian_pct": 2.2,
+      "black_pct": 0.7,
+      "mixed_pct": 2.3,
+      "other_pct": 0.7,
+      "nonwhite_pct": 5.9
+    },
+    "Hereford & South Herefordshire": {
+      "gss_code": "E14001281",
+      "region": "West Midlands",
+      "white_pct": 96.3,
+      "asian_pct": 1.5,
+      "black_pct": 0.4,
+      "mixed_pct": 1.2,
+      "other_pct": 0.7,
+      "nonwhite_pct": 3.7
+    },
+    "Herne Bay & Sandwich": {
+      "gss_code": "E14001282",
+      "region": "South East",
+      "white_pct": 95.3,
+      "asian_pct": 1.7,
+      "black_pct": 0.6,
+      "mixed_pct": 1.7,
+      "other_pct": 0.6,
+      "nonwhite_pct": 4.7
+    },
+    "Hertford & Stortford": {
+      "gss_code": "E14001283",
+      "region": "East of England",
+      "white_pct": 90.9,
+      "asian_pct": 3.3,
+      "black_pct": 1.6,
+      "mixed_pct": 3.2,
+      "other_pct": 1.1,
+      "nonwhite_pct": 9.1
+    },
+    "Hertsmere": {
+      "gss_code": "E14001284",
+      "region": "East of England",
+      "white_pct": 78.0,
+      "asian_pct": 9.7,
+      "black_pct": 4.8,
+      "mixed_pct": 3.7,
+      "other_pct": 3.9,
+      "nonwhite_pct": 22.0
+    },
+    "Hexham": {
+      "gss_code": "E14001285",
+      "region": "North East",
+      "white_pct": 96.7,
+      "asian_pct": 1.8,
+      "black_pct": 0.2,
+      "mixed_pct": 0.9,
+      "other_pct": 0.4,
+      "nonwhite_pct": 3.3
+    },
+    "Heywood & Middleton North": {
+      "gss_code": "E14001286",
+      "region": "North West",
+      "white_pct": 82.0,
+      "asian_pct": 10.6,
+      "black_pct": 3.9,
+      "mixed_pct": 2.4,
+      "other_pct": 1.2,
+      "nonwhite_pct": 18.0
+    },
+    "High Peak": {
+      "gss_code": "E14001287",
+      "region": "East Midlands",
+      "white_pct": 97.4,
+      "asian_pct": 0.8,
+      "black_pct": 0.2,
+      "mixed_pct": 1.3,
+      "other_pct": 0.2,
+      "nonwhite_pct": 2.6
+    },
+    "Hinckley & Bosworth": {
+      "gss_code": "E14001288",
+      "region": "East Midlands",
+      "white_pct": 95.0,
+      "asian_pct": 2.2,
+      "black_pct": 0.6,
+      "mixed_pct": 1.7,
+      "other_pct": 0.5,
+      "nonwhite_pct": 5.0
+    },
+    "Hitchin": {
+      "gss_code": "E14001289",
+      "region": "East of England",
+      "white_pct": 88.0,
+      "asian_pct": 4.8,
+      "black_pct": 2.3,
+      "mixed_pct": 3.7,
+      "other_pct": 1.1,
+      "nonwhite_pct": 12.0
+    },
+    "Holborn & St Pancras": {
+      "gss_code": "E14001290",
+      "region": "London",
+      "white_pct": 54.8,
+      "asian_pct": 21.7,
+      "black_pct": 10.7,
+      "mixed_pct": 6.8,
+      "other_pct": 6.0,
+      "nonwhite_pct": 45.2,
+      "ministers": [
+        "Sir Keir Starmer KCB KC MP"
+      ]
+    },
+    "Honiton & Sidmouth": {
+      "gss_code": "E14001291",
+      "region": "South West",
+      "white_pct": 97.4,
+      "asian_pct": 1.0,
+      "black_pct": 0.2,
+      "mixed_pct": 1.1,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.6
+    },
+    "Hornchurch & Upminster": {
+      "gss_code": "E14001292",
+      "region": "London",
+      "white_pct": 79.9,
+      "asian_pct": 8.3,
+      "black_pct": 6.9,
+      "mixed_pct": 3.3,
+      "other_pct": 1.6,
+      "nonwhite_pct": 20.1
+    },
+    "Hornsey & Friern Barnet": {
+      "gss_code": "E14001293",
+      "region": "London",
+      "white_pct": 69.7,
+      "asian_pct": 8.3,
+      "black_pct": 8.1,
+      "mixed_pct": 7.4,
+      "other_pct": 6.4,
+      "nonwhite_pct": 30.3
+    },
+    "Horsham": {
+      "gss_code": "E14001294",
+      "region": "South East",
+      "white_pct": 92.4,
+      "asian_pct": 3.4,
+      "black_pct": 1.1,
+      "mixed_pct": 2.4,
+      "other_pct": 0.7,
+      "nonwhite_pct": 7.6
+    },
+    "Houghton & Sunderland South": {
+      "gss_code": "E14001295",
+      "region": "North East",
+      "white_pct": 97.5,
+      "asian_pct": 0.9,
+      "black_pct": 0.5,
+      "mixed_pct": 0.8,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.5,
+      "ministers": [
+        "Bridget Phillipson MP"
+      ]
+    },
+    "Hove & Portslade": {
+      "gss_code": "E14001296",
+      "region": "South East",
+      "white_pct": 85.7,
+      "asian_pct": 4.3,
+      "black_pct": 1.5,
+      "mixed_pct": 4.7,
+      "other_pct": 3.8,
+      "nonwhite_pct": 14.3,
+      "ministers": [
+        "Peter Kyle MP"
+      ]
+    },
+    "Huddersfield": {
+      "gss_code": "E14001297",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 61.8,
+      "asian_pct": 23.2,
+      "black_pct": 6.4,
+      "mixed_pct": 5.4,
+      "other_pct": 3.3,
+      "nonwhite_pct": 38.2
+    },
+    "Huntingdon": {
+      "gss_code": "E14001298",
+      "region": "East of England",
+      "white_pct": 91.2,
+      "asian_pct": 3.9,
+      "black_pct": 1.8,
+      "mixed_pct": 2.4,
+      "other_pct": 0.7,
+      "nonwhite_pct": 8.8
+    },
+    "Hyndburn": {
+      "gss_code": "E14001299",
+      "region": "North West",
+      "white_pct": 82.4,
+      "asian_pct": 15.3,
+      "black_pct": 0.3,
+      "mixed_pct": 1.4,
+      "other_pct": 0.6,
+      "nonwhite_pct": 17.6
+    },
+    "Ilford North": {
+      "gss_code": "E14001300",
+      "region": "London",
+      "white_pct": 32.9,
+      "asian_pct": 50.4,
+      "black_pct": 7.5,
+      "mixed_pct": 3.5,
+      "other_pct": 5.7,
+      "nonwhite_pct": 67.1,
+      "ministers": [
+        "Wes Streeting MP"
+      ]
+    },
+    "Ilford South": {
+      "gss_code": "E14001301",
+      "region": "London",
+      "white_pct": 22.0,
+      "asian_pct": 57.6,
+      "black_pct": 11.1,
+      "mixed_pct": 3.5,
+      "other_pct": 5.8,
+      "nonwhite_pct": 78.0
+    },
+    "Inverclyde & Renfrewshire West": {
+      "gss_code": "S14000093",
+      "region": "Scotland",
+      "white_pct": 97.2,
+      "asian_pct": 1.2,
+      "black_pct": 0.3,
+      "mixed_pct": 0.7,
+      "other_pct": 0.5,
+      "nonwhite_pct": 2.8,
+      "ministers": [
+        "Martin McCluskey MP"
+      ]
+    },
+    "Inverness, Skye & West Ross-shire": {
+      "gss_code": "S14000094",
+      "region": "Scotland",
+      "white_pct": 96.6,
+      "asian_pct": 1.6,
+      "black_pct": 0.4,
+      "mixed_pct": 1.0,
+      "other_pct": 0.4,
+      "nonwhite_pct": 3.4
+    },
+    "Ipswich": {
+      "gss_code": "E14001302",
+      "region": "East of England",
+      "white_pct": 83.4,
+      "asian_pct": 5.9,
+      "black_pct": 3.7,
+      "mixed_pct": 4.7,
+      "other_pct": 2.2,
+      "nonwhite_pct": 16.6
+    },
+    "Isle of Wight East": {
+      "gss_code": "E14001303",
+      "region": "South East",
+      "white_pct": 97.2,
+      "asian_pct": 1.0,
+      "black_pct": 0.3,
+      "mixed_pct": 1.3,
+      "other_pct": 0.2,
+      "nonwhite_pct": 2.8
+    },
+    "Isle of Wight West": {
+      "gss_code": "E14001304",
+      "region": "South East",
+      "white_pct": 96.7,
+      "asian_pct": 1.4,
+      "black_pct": 0.4,
+      "mixed_pct": 1.1,
+      "other_pct": 0.3,
+      "nonwhite_pct": 3.3
+    },
+    "Islington North": {
+      "gss_code": "E14001305",
+      "region": "London",
+      "white_pct": 61.9,
+      "asian_pct": 8.6,
+      "black_pct": 14.6,
+      "mixed_pct": 7.7,
+      "other_pct": 7.3,
+      "nonwhite_pct": 38.1
+    },
+    "Islington South & Finsbury": {
+      "gss_code": "E14001306",
+      "region": "London",
+      "white_pct": 62.4,
+      "asian_pct": 11.1,
+      "black_pct": 12.3,
+      "mixed_pct": 7.3,
+      "other_pct": 7.0,
+      "nonwhite_pct": 37.6
+    },
+    "Jarrow & Gateshead East": {
+      "gss_code": "E14001307",
+      "region": "North East",
+      "white_pct": 95.8,
+      "asian_pct": 1.6,
+      "black_pct": 0.7,
+      "mixed_pct": 1.0,
+      "other_pct": 0.9,
+      "nonwhite_pct": 4.2
+    },
+    "Keighley & Ilkley": {
+      "gss_code": "E14001308",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 80.2,
+      "asian_pct": 16.8,
+      "black_pct": 0.5,
+      "mixed_pct": 1.8,
+      "other_pct": 0.8,
+      "nonwhite_pct": 19.8
+    },
+    "Kenilworth & Southam": {
+      "gss_code": "E14001309",
+      "region": "West Midlands",
+      "white_pct": 93.0,
+      "asian_pct": 3.6,
+      "black_pct": 0.8,
+      "mixed_pct": 2.0,
+      "other_pct": 0.6,
+      "nonwhite_pct": 7.0
+    },
+    "Kensington & Bayswater": {
+      "gss_code": "E14001310",
+      "region": "London",
+      "white_pct": 61.4,
+      "asian_pct": 13.0,
+      "black_pct": 8.0,
+      "mixed_pct": 6.9,
+      "other_pct": 10.6,
+      "nonwhite_pct": 38.6
+    },
+    "Kettering": {
+      "gss_code": "E14001311",
+      "region": "East Midlands",
+      "white_pct": 90.2,
+      "asian_pct": 4.1,
+      "black_pct": 2.7,
+      "mixed_pct": 2.0,
+      "other_pct": 1.0,
+      "nonwhite_pct": 9.8
+    },
+    "Kilmarnock & Loudoun": {
+      "gss_code": "S14000110",
+      "region": "Scotland",
+      "white_pct": 97.6,
+      "asian_pct": 1.1,
+      "black_pct": 0.3,
+      "mixed_pct": 0.7,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.4
+    },
+    "Kingston & Surbiton": {
+      "gss_code": "E14001312",
+      "region": "London",
+      "white_pct": 70.5,
+      "asian_pct": 16.1,
+      "black_pct": 3.0,
+      "mixed_pct": 5.3,
+      "other_pct": 5.1,
+      "nonwhite_pct": 29.5
+    },
+    "Kingston upon Hull East": {
+      "gss_code": "E14001313",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 96.1,
+      "asian_pct": 1.3,
+      "black_pct": 0.8,
+      "mixed_pct": 1.2,
+      "other_pct": 0.6,
+      "nonwhite_pct": 3.9
+    },
+    "Kingston upon Hull North & Cottingham": {
+      "gss_code": "E14001314",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 89.5,
+      "asian_pct": 3.7,
+      "black_pct": 2.4,
+      "mixed_pct": 2.0,
+      "other_pct": 2.4,
+      "nonwhite_pct": 10.5,
+      "ministers": [
+        "Dame Diana Johnson DBE MP"
+      ]
+    },
+    "Kingston upon Hull West & Haltemprice": {
+      "gss_code": "E14001315",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 92.2,
+      "asian_pct": 2.7,
+      "black_pct": 1.6,
+      "mixed_pct": 1.6,
+      "other_pct": 1.9,
+      "nonwhite_pct": 7.8,
+      "ministers": [
+        "Emma Hardy MP"
+      ]
+    },
+    "Kingswinford & South Staffordshire": {
+      "gss_code": "E14001316",
+      "region": "West Midlands",
+      "white_pct": 94.3,
+      "asian_pct": 2.7,
+      "black_pct": 0.6,
+      "mixed_pct": 1.9,
+      "other_pct": 0.5,
+      "nonwhite_pct": 5.7
+    },
+    "Knowsley": {
+      "gss_code": "E14001317",
+      "region": "North West",
+      "white_pct": 95.9,
+      "asian_pct": 1.2,
+      "black_pct": 0.8,
+      "mixed_pct": 1.6,
+      "other_pct": 0.5,
+      "nonwhite_pct": 4.1
+    },
+    "Lagan Valley": {
+      "gss_code": "N05000009",
+      "region": "Northern Ireland",
+      "white_pct": 97.1,
+      "asian_pct": 1.5,
+      "black_pct": 0.3,
+      "mixed_pct": 0.8,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.9
+    },
+    "Lancaster & Wyre": {
+      "gss_code": "E14001318",
+      "region": "North West",
+      "white_pct": 91.3,
+      "asian_pct": 4.8,
+      "black_pct": 1.1,
+      "mixed_pct": 1.8,
+      "other_pct": 1.0,
+      "nonwhite_pct": 8.7
+    },
+    "Leeds Central & Headingley": {
+      "gss_code": "E14001319",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 71.1,
+      "asian_pct": 13.2,
+      "black_pct": 6.2,
+      "mixed_pct": 4.9,
+      "other_pct": 4.6,
+      "nonwhite_pct": 28.9
+    },
+    "Leeds East": {
+      "gss_code": "E14001320",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 74.0,
+      "asian_pct": 13.7,
+      "black_pct": 7.0,
+      "mixed_pct": 3.4,
+      "other_pct": 2.0,
+      "nonwhite_pct": 26.0
+    },
+    "Leeds North East": {
+      "gss_code": "E14001321",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 63.7,
+      "asian_pct": 19.9,
+      "black_pct": 7.2,
+      "mixed_pct": 5.2,
+      "other_pct": 4.0,
+      "nonwhite_pct": 36.3
+    },
+    "Leeds North West": {
+      "gss_code": "E14001322",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 91.7,
+      "asian_pct": 3.8,
+      "black_pct": 0.8,
+      "mixed_pct": 2.3,
+      "other_pct": 1.4,
+      "nonwhite_pct": 8.3,
+      "ministers": [
+        "Katie White OBE MP"
+      ]
+    },
+    "Leeds South": {
+      "gss_code": "E14001323",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 67.9,
+      "asian_pct": 10.9,
+      "black_pct": 14.0,
+      "mixed_pct": 4.0,
+      "other_pct": 3.1,
+      "nonwhite_pct": 32.1,
+      "ministers": [
+        "Hilary Benn MP"
+      ]
+    },
+    "Leeds South West & Morley": {
+      "gss_code": "E14001324",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 91.4,
+      "asian_pct": 3.8,
+      "black_pct": 1.9,
+      "mixed_pct": 2.2,
+      "other_pct": 0.7,
+      "nonwhite_pct": 8.6
+    },
+    "Leeds West & Pudsey": {
+      "gss_code": "E14001325",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 84.6,
+      "asian_pct": 7.7,
+      "black_pct": 3.4,
+      "mixed_pct": 2.8,
+      "other_pct": 1.6,
+      "nonwhite_pct": 15.4,
+      "ministers": [
+        "Rachel Reeves MP"
+      ]
+    },
+    "Leicester East": {
+      "gss_code": "E14001326",
+      "region": "East Midlands",
+      "white_pct": 20.1,
+      "asian_pct": 68.8,
+      "black_pct": 4.1,
+      "mixed_pct": 2.9,
+      "other_pct": 4.2,
+      "nonwhite_pct": 79.9
+    },
+    "Leicester South": {
+      "gss_code": "E14001327",
+      "region": "East Midlands",
+      "white_pct": 39.0,
+      "asian_pct": 43.5,
+      "black_pct": 9.2,
+      "mixed_pct": 3.9,
+      "other_pct": 4.5,
+      "nonwhite_pct": 61.0
+    },
+    "Leicester West": {
+      "gss_code": "E14001328",
+      "region": "East Midlands",
+      "white_pct": 63.4,
+      "asian_pct": 18.1,
+      "black_pct": 10.2,
+      "mixed_pct": 4.6,
+      "other_pct": 3.8,
+      "nonwhite_pct": 36.6,
+      "ministers": [
+        "Liz Kendall MP"
+      ]
+    },
+    "Leigh & Atherton": {
+      "gss_code": "E14001329",
+      "region": "North West",
+      "white_pct": 94.0,
+      "asian_pct": 2.1,
+      "black_pct": 1.6,
+      "mixed_pct": 1.6,
+      "other_pct": 0.7,
+      "nonwhite_pct": 6.0
+    },
+    "Lewes": {
+      "gss_code": "E14001330",
+      "region": "South East",
+      "white_pct": 95.0,
+      "asian_pct": 1.7,
+      "black_pct": 0.6,
+      "mixed_pct": 2.2,
+      "other_pct": 0.6,
+      "nonwhite_pct": 5.0
+    },
+    "Lewisham East": {
+      "gss_code": "E14001331",
+      "region": "London",
+      "white_pct": 48.7,
+      "asian_pct": 9.4,
+      "black_pct": 28.9,
+      "mixed_pct": 8.1,
+      "other_pct": 4.8,
+      "nonwhite_pct": 51.3
+    },
+    "Lewisham North": {
+      "gss_code": "E14001332",
+      "region": "London",
+      "white_pct": 49.9,
+      "asian_pct": 10.0,
+      "black_pct": 27.1,
+      "mixed_pct": 7.9,
+      "other_pct": 5.2,
+      "nonwhite_pct": 50.1,
+      "ministers": [
+        "Ellie Reeves MP"
+      ]
+    },
+    "Lewisham West & East Dulwich": {
+      "gss_code": "E14001333",
+      "region": "London",
+      "white_pct": 62.2,
+      "asian_pct": 6.0,
+      "black_pct": 20.1,
+      "mixed_pct": 8.2,
+      "other_pct": 3.6,
+      "nonwhite_pct": 37.8
+    },
+    "Leyton & Wanstead": {
+      "gss_code": "E14001334",
+      "region": "London",
+      "white_pct": 52.0,
+      "asian_pct": 23.3,
+      "black_pct": 13.4,
+      "mixed_pct": 6.3,
+      "other_pct": 5.1,
+      "nonwhite_pct": 48.0
+    },
+    "Lichfield": {
+      "gss_code": "E14001335",
+      "region": "West Midlands",
+      "white_pct": 96.0,
+      "asian_pct": 1.6,
+      "black_pct": 0.4,
+      "mixed_pct": 1.7,
+      "other_pct": 0.3,
+      "nonwhite_pct": 4.0
+    },
+    "Lincoln": {
+      "gss_code": "E14001336",
+      "region": "East Midlands",
+      "white_pct": 92.7,
+      "asian_pct": 3.0,
+      "black_pct": 1.3,
+      "mixed_pct": 1.9,
+      "other_pct": 1.1,
+      "nonwhite_pct": 7.3,
+      "ministers": [
+        "Hamish Falconer MP"
+      ]
+    },
+    "Liverpool Garston": {
+      "gss_code": "E14001337",
+      "region": "North West",
+      "white_pct": 91.1,
+      "asian_pct": 3.7,
+      "black_pct": 1.2,
+      "mixed_pct": 2.9,
+      "other_pct": 1.0,
+      "nonwhite_pct": 8.9
+    },
+    "Liverpool Riverside": {
+      "gss_code": "E14001338",
+      "region": "North West",
+      "white_pct": 74.2,
+      "asian_pct": 8.9,
+      "black_pct": 6.2,
+      "mixed_pct": 4.4,
+      "other_pct": 6.3,
+      "nonwhite_pct": 25.8
+    },
+    "Liverpool Walton": {
+      "gss_code": "E14001339",
+      "region": "North West",
+      "white_pct": 92.2,
+      "asian_pct": 3.0,
+      "black_pct": 2.0,
+      "mixed_pct": 1.8,
+      "other_pct": 1.0,
+      "nonwhite_pct": 7.8
+    },
+    "Liverpool Wavertree": {
+      "gss_code": "E14001340",
+      "region": "North West",
+      "white_pct": 78.1,
+      "asian_pct": 7.3,
+      "black_pct": 4.7,
+      "mixed_pct": 5.0,
+      "other_pct": 4.9,
+      "nonwhite_pct": 21.9
+    },
+    "Liverpool West Derby": {
+      "gss_code": "E14001341",
+      "region": "North West",
+      "white_pct": 90.1,
+      "asian_pct": 3.8,
+      "black_pct": 1.9,
+      "mixed_pct": 2.4,
+      "other_pct": 1.9,
+      "nonwhite_pct": 9.9
+    },
+    "Livingston": {
+      "gss_code": "S14000095",
+      "region": "Scotland",
+      "white_pct": 93.7,
+      "asian_pct": 3.6,
+      "black_pct": 1.0,
+      "mixed_pct": 1.1,
+      "other_pct": 0.6,
+      "nonwhite_pct": 6.3
+    },
+    "Llanelli": {
+      "gss_code": "W07000098",
+      "region": "Wales",
+      "white_pct": 97.3,
+      "asian_pct": 1.3,
+      "black_pct": 0.2,
+      "mixed_pct": 0.9,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.7
+    },
+    "Lothian East": {
+      "gss_code": "S14000096",
+      "region": "Scotland",
+      "white_pct": 97.2,
+      "asian_pct": 1.1,
+      "black_pct": 0.3,
+      "mixed_pct": 1.0,
+      "other_pct": 0.4,
+      "nonwhite_pct": 2.8,
+      "ministers": [
+        "Douglas Alexander MP"
+      ]
+    },
+    "Loughborough": {
+      "gss_code": "E14001342",
+      "region": "East Midlands",
+      "white_pct": 83.0,
+      "asian_pct": 10.9,
+      "black_pct": 2.0,
+      "mixed_pct": 2.7,
+      "other_pct": 1.4,
+      "nonwhite_pct": 17.0
+    },
+    "Louth & Horncastle": {
+      "gss_code": "E14001343",
+      "region": "East Midlands",
+      "white_pct": 97.9,
+      "asian_pct": 0.7,
+      "black_pct": 0.2,
+      "mixed_pct": 1.0,
+      "other_pct": 0.2,
+      "nonwhite_pct": 2.1
+    },
+    "Lowestoft": {
+      "gss_code": "E14001344",
+      "region": "East of England",
+      "white_pct": 97.0,
+      "asian_pct": 1.1,
+      "black_pct": 0.4,
+      "mixed_pct": 1.3,
+      "other_pct": 0.3,
+      "nonwhite_pct": 3.0
+    },
+    "Luton North": {
+      "gss_code": "E14001345",
+      "region": "East of England",
+      "white_pct": 44.3,
+      "asian_pct": 37.6,
+      "black_pct": 10.5,
+      "mixed_pct": 4.5,
+      "other_pct": 3.1,
+      "nonwhite_pct": 55.7
+    },
+    "Luton South & South Bedfordshire": {
+      "gss_code": "E14001346",
+      "region": "East of England",
+      "white_pct": 51.4,
+      "asian_pct": 32.6,
+      "black_pct": 8.7,
+      "mixed_pct": 3.9,
+      "other_pct": 3.4,
+      "nonwhite_pct": 48.6
+    },
+    "Macclesfield": {
+      "gss_code": "E14001347",
+      "region": "North West",
+      "white_pct": 95.2,
+      "asian_pct": 2.0,
+      "black_pct": 0.6,
+      "mixed_pct": 1.6,
+      "other_pct": 0.6,
+      "nonwhite_pct": 4.8
+    },
+    "Maidenhead": {
+      "gss_code": "E14001348",
+      "region": "South East",
+      "white_pct": 80.4,
+      "asian_pct": 13.1,
+      "black_pct": 1.5,
+      "mixed_pct": 3.2,
+      "other_pct": 1.8,
+      "nonwhite_pct": 19.6
+    },
+    "Maidstone & Malling": {
+      "gss_code": "E14001349",
+      "region": "South East",
+      "white_pct": 87.5,
+      "asian_pct": 6.1,
+      "black_pct": 2.3,
+      "mixed_pct": 2.6,
+      "other_pct": 1.4,
+      "nonwhite_pct": 12.5
+    },
+    "Makerfield": {
+      "gss_code": "E14001350",
+      "region": "North West",
+      "white_pct": 96.7,
+      "asian_pct": 1.2,
+      "black_pct": 0.7,
+      "mixed_pct": 1.0,
+      "other_pct": 0.5,
+      "nonwhite_pct": 3.3,
+      "ministers": [
+        "Josh Simons MP"
+      ]
+    },
+    "Maldon": {
+      "gss_code": "E14001351",
+      "region": "East of England",
+      "white_pct": 96.0,
+      "asian_pct": 1.4,
+      "black_pct": 0.7,
+      "mixed_pct": 1.5,
+      "other_pct": 0.4,
+      "nonwhite_pct": 4.0
+    },
+    "Manchester Central": {
+      "gss_code": "E14001352",
+      "region": "North West",
+      "white_pct": 61.4,
+      "asian_pct": 17.5,
+      "black_pct": 11.5,
+      "mixed_pct": 4.8,
+      "other_pct": 4.7,
+      "nonwhite_pct": 38.6
+    },
+    "Manchester Rusholme": {
+      "gss_code": "E14001353",
+      "region": "North West",
+      "white_pct": 40.8,
+      "asian_pct": 26.9,
+      "black_pct": 17.7,
+      "mixed_pct": 6.1,
+      "other_pct": 8.5,
+      "nonwhite_pct": 59.2
+    },
+    "Manchester Withington": {
+      "gss_code": "E14001354",
+      "region": "North West",
+      "white_pct": 71.7,
+      "asian_pct": 14.7,
+      "black_pct": 3.7,
+      "mixed_pct": 5.7,
+      "other_pct": 4.3,
+      "nonwhite_pct": 28.3
+    },
+    "Mansfield": {
+      "gss_code": "E14001355",
+      "region": "East Midlands",
+      "white_pct": 94.9,
+      "asian_pct": 2.0,
+      "black_pct": 1.0,
+      "mixed_pct": 1.4,
+      "other_pct": 0.7,
+      "nonwhite_pct": 5.1
+    },
+    "Melksham & Devizes": {
+      "gss_code": "E14001356",
+      "region": "South West",
+      "white_pct": 96.3,
+      "asian_pct": 1.2,
+      "black_pct": 0.5,
+      "mixed_pct": 1.6,
+      "other_pct": 0.4,
+      "nonwhite_pct": 3.7
+    },
+    "Melton & Syston": {
+      "gss_code": "E14001357",
+      "region": "East Midlands",
+      "white_pct": 89.4,
+      "asian_pct": 7.7,
+      "black_pct": 0.6,
+      "mixed_pct": 1.7,
+      "other_pct": 0.7,
+      "nonwhite_pct": 10.6
+    },
+    "Meriden & Solihull East": {
+      "gss_code": "E14001358",
+      "region": "West Midlands",
+      "white_pct": 85.7,
+      "asian_pct": 7.6,
+      "black_pct": 1.9,
+      "mixed_pct": 3.6,
+      "other_pct": 1.2,
+      "nonwhite_pct": 14.3
+    },
+    "Merthyr Tydfil & Aberdare": {
+      "gss_code": "W07000099",
+      "region": "Wales",
+      "white_pct": 97.4,
+      "asian_pct": 1.3,
+      "black_pct": 0.2,
+      "mixed_pct": 0.9,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.6
+    },
+    "Mid & South Pembrokeshire": {
+      "gss_code": "W07000100",
+      "region": "Wales",
+      "white_pct": 97.4,
+      "asian_pct": 1.0,
+      "black_pct": 0.2,
+      "mixed_pct": 1.0,
+      "other_pct": 0.4,
+      "nonwhite_pct": 2.6
+    },
+    "Mid Bedfordshire": {
+      "gss_code": "E14001359",
+      "region": "East of England",
+      "white_pct": 89.3,
+      "asian_pct": 4.5,
+      "black_pct": 2.2,
+      "mixed_pct": 3.3,
+      "other_pct": 0.8,
+      "nonwhite_pct": 10.7
+    },
+    "Mid Buckinghamshire": {
+      "gss_code": "E14001360",
+      "region": "South East",
+      "white_pct": 90.7,
+      "asian_pct": 4.1,
+      "black_pct": 1.5,
+      "mixed_pct": 2.9,
+      "other_pct": 0.8,
+      "nonwhite_pct": 9.3
+    },
+    "Mid Cheshire": {
+      "gss_code": "E14001361",
+      "region": "North West",
+      "white_pct": 96.0,
+      "asian_pct": 1.7,
+      "black_pct": 0.4,
+      "mixed_pct": 1.4,
+      "other_pct": 0.5,
+      "nonwhite_pct": 4.0
+    },
+    "Mid Derbyshire": {
+      "gss_code": "E14001362",
+      "region": "East Midlands",
+      "white_pct": 95.2,
+      "asian_pct": 1.8,
+      "black_pct": 0.7,
+      "mixed_pct": 1.8,
+      "other_pct": 0.4,
+      "nonwhite_pct": 4.8
+    },
+    "Mid Dorset & North Poole": {
+      "gss_code": "E14001363",
+      "region": "South West",
+      "white_pct": 96.8,
+      "asian_pct": 1.2,
+      "black_pct": 0.3,
+      "mixed_pct": 1.3,
+      "other_pct": 0.4,
+      "nonwhite_pct": 3.2
+    },
+    "Mid Dunbartonshire": {
+      "gss_code": "S14000097",
+      "region": "Scotland",
+      "white_pct": 93.0,
+      "asian_pct": 4.8,
+      "black_pct": 0.4,
+      "mixed_pct": 1.2,
+      "other_pct": 0.7,
+      "nonwhite_pct": 7.0
+    },
+    "Mid Leicestershire": {
+      "gss_code": "E14001364",
+      "region": "East Midlands",
+      "white_pct": 81.9,
+      "asian_pct": 12.5,
+      "black_pct": 1.6,
+      "mixed_pct": 2.7,
+      "other_pct": 1.4,
+      "nonwhite_pct": 18.1
+    },
+    "Mid Norfolk": {
+      "gss_code": "E14001365",
+      "region": "East of England",
+      "white_pct": 96.8,
+      "asian_pct": 0.9,
+      "black_pct": 0.7,
+      "mixed_pct": 1.2,
+      "other_pct": 0.3,
+      "nonwhite_pct": 3.2
+    },
+    "Mid Sussex": {
+      "gss_code": "E14001366",
+      "region": "South East",
+      "white_pct": 91.8,
+      "asian_pct": 4.0,
+      "black_pct": 0.9,
+      "mixed_pct": 2.6,
+      "other_pct": 0.8,
+      "nonwhite_pct": 8.2
+    },
+    "Mid Ulster": {
+      "gss_code": "N05000010",
+      "region": "Northern Ireland",
+      "white_pct": 98.3,
+      "asian_pct": 0.5,
+      "black_pct": 0.5,
+      "mixed_pct": 0.5,
+      "other_pct": 0.2,
+      "nonwhite_pct": 1.7
+    },
+    "Middlesbrough & Thornaby East": {
+      "gss_code": "E14001367",
+      "region": "North East",
+      "white_pct": 78.1,
+      "asian_pct": 13.3,
+      "black_pct": 3.3,
+      "mixed_pct": 2.3,
+      "other_pct": 3.0,
+      "nonwhite_pct": 21.9
+    },
+    "Middlesbrough South & East Cleveland": {
+      "gss_code": "E14001368",
+      "region": "North East",
+      "white_pct": 96.4,
+      "asian_pct": 1.6,
+      "black_pct": 0.4,
+      "mixed_pct": 1.1,
+      "other_pct": 0.4,
+      "nonwhite_pct": 3.6
+    },
+    "Midlothian": {
+      "gss_code": "S14000045",
+      "region": "Scotland",
+      "white_pct": 95.5,
+      "asian_pct": 2.3,
+      "black_pct": 0.6,
+      "mixed_pct": 1.1,
+      "other_pct": 0.6,
+      "nonwhite_pct": 4.5,
+      "ministers": [
+        "Kirsty McNeill MP"
+      ]
+    },
+    "Milton Keynes Central": {
+      "gss_code": "E14001369",
+      "region": "South East",
+      "white_pct": 65.5,
+      "asian_pct": 15.1,
+      "black_pct": 12.4,
+      "mixed_pct": 4.4,
+      "other_pct": 2.6,
+      "nonwhite_pct": 34.5
+    },
+    "Milton Keynes North": {
+      "gss_code": "E14001370",
+      "region": "South East",
+      "white_pct": 79.9,
+      "asian_pct": 9.0,
+      "black_pct": 6.1,
+      "mixed_pct": 3.5,
+      "other_pct": 1.4,
+      "nonwhite_pct": 20.1
+    },
+    "Mitcham & Morden": {
+      "gss_code": "E14001371",
+      "region": "London",
+      "white_pct": 52.1,
+      "asian_pct": 21.1,
+      "black_pct": 15.7,
+      "mixed_pct": 5.9,
+      "other_pct": 5.3,
+      "nonwhite_pct": 47.9
+    },
+    "Monmouthshire": {
+      "gss_code": "W07000101",
+      "region": "Wales",
+      "white_pct": 96.9,
+      "asian_pct": 1.3,
+      "black_pct": 0.2,
+      "mixed_pct": 1.2,
+      "other_pct": 0.3,
+      "nonwhite_pct": 3.1
+    },
+    "Montgomeryshire & Glyndwr": {
+      "gss_code": "W07000102",
+      "region": "Wales",
+      "white_pct": 98.0,
+      "asian_pct": 0.6,
+      "black_pct": 0.2,
+      "mixed_pct": 0.8,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.0
+    },
+    "Moray West, Nairn & Strathspey": {
+      "gss_code": "S14000098",
+      "region": "Scotland",
+      "white_pct": 97.5,
+      "asian_pct": 0.9,
+      "black_pct": 0.3,
+      "mixed_pct": 0.8,
+      "other_pct": 0.4,
+      "nonwhite_pct": 2.5
+    },
+    "Morecambe & Lunesdale": {
+      "gss_code": "E14001372",
+      "region": "North West",
+      "white_pct": 97.5,
+      "asian_pct": 0.9,
+      "black_pct": 0.3,
+      "mixed_pct": 0.9,
+      "other_pct": 0.4,
+      "nonwhite_pct": 2.5
+    },
+    "Motherwell, Wishaw & Carluke": {
+      "gss_code": "S14000099",
+      "region": "Scotland",
+      "white_pct": 95.4,
+      "asian_pct": 2.7,
+      "black_pct": 1.0,
+      "mixed_pct": 0.6,
+      "other_pct": 0.4,
+      "nonwhite_pct": 4.6
+    },
+    "Na h-Eileanan an Iar": {
+      "gss_code": "S14000027",
+      "region": "Scotland",
+      "white_pct": 98.3,
+      "asian_pct": 0.6,
+      "black_pct": 0.1,
+      "mixed_pct": 0.6,
+      "other_pct": 0.3,
+      "nonwhite_pct": 1.7
+    },
+    "Neath & Swansea East": {
+      "gss_code": "W07000103",
+      "region": "Wales",
+      "white_pct": 95.6,
+      "asian_pct": 2.0,
+      "black_pct": 0.6,
+      "mixed_pct": 1.2,
+      "other_pct": 0.6,
+      "nonwhite_pct": 4.4
+    },
+    "New Forest East": {
+      "gss_code": "E14001373",
+      "region": "South East",
+      "white_pct": 96.7,
+      "asian_pct": 1.1,
+      "black_pct": 0.5,
+      "mixed_pct": 1.3,
+      "other_pct": 0.4,
+      "nonwhite_pct": 3.3
+    },
+    "New Forest West": {
+      "gss_code": "E14001374",
+      "region": "South East",
+      "white_pct": 96.9,
+      "asian_pct": 1.3,
+      "black_pct": 0.3,
+      "mixed_pct": 1.2,
+      "other_pct": 0.4,
+      "nonwhite_pct": 3.1
+    },
+    "Newark": {
+      "gss_code": "E14001375",
+      "region": "East Midlands",
+      "white_pct": 96.1,
+      "asian_pct": 1.3,
+      "black_pct": 0.6,
+      "mixed_pct": 1.6,
+      "other_pct": 0.5,
+      "nonwhite_pct": 3.9
+    },
+    "Newbury": {
+      "gss_code": "E14001376",
+      "region": "South East",
+      "white_pct": 92.7,
+      "asian_pct": 3.6,
+      "black_pct": 1.0,
+      "mixed_pct": 2.0,
+      "other_pct": 0.8,
+      "nonwhite_pct": 7.3
+    },
+    "Newcastle upon Tyne Central & West": {
+      "gss_code": "E14001377",
+      "region": "North East",
+      "white_pct": 72.6,
+      "asian_pct": 16.9,
+      "black_pct": 4.3,
+      "mixed_pct": 2.1,
+      "other_pct": 4.1,
+      "nonwhite_pct": 27.4
+    },
+    "Newcastle upon Tyne East & Wallsend": {
+      "gss_code": "E14001378",
+      "region": "North East",
+      "white_pct": 88.4,
+      "asian_pct": 5.1,
+      "black_pct": 2.8,
+      "mixed_pct": 2.0,
+      "other_pct": 1.7,
+      "nonwhite_pct": 11.6
+    },
+    "Newcastle upon Tyne North": {
+      "gss_code": "E14001379",
+      "region": "North East",
+      "white_pct": 87.0,
+      "asian_pct": 7.1,
+      "black_pct": 1.5,
+      "mixed_pct": 2.4,
+      "other_pct": 2.1,
+      "nonwhite_pct": 13.0
+    },
+    "Newcastle-under-Lyme": {
+      "gss_code": "E14001380",
+      "region": "West Midlands",
+      "white_pct": 91.6,
+      "asian_pct": 4.6,
+      "black_pct": 1.3,
+      "mixed_pct": 1.8,
+      "other_pct": 0.8,
+      "nonwhite_pct": 8.4
+    },
+    "Newport East": {
+      "gss_code": "W07000104",
+      "region": "Wales",
+      "white_pct": 83.9,
+      "asian_pct": 8.6,
+      "black_pct": 2.6,
+      "mixed_pct": 2.8,
+      "other_pct": 2.0,
+      "nonwhite_pct": 16.1
+    },
+    "Newport West & Islwyn": {
+      "gss_code": "W07000105",
+      "region": "Wales",
+      "white_pct": 93.6,
+      "asian_pct": 3.0,
+      "black_pct": 0.9,
+      "mixed_pct": 1.9,
+      "other_pct": 0.6,
+      "nonwhite_pct": 6.4
+    },
+    "Newry & Armagh": {
+      "gss_code": "N05000011",
+      "region": "Northern Ireland",
+      "white_pct": 98.3,
+      "asian_pct": 0.7,
+      "black_pct": 0.2,
+      "mixed_pct": 0.5,
+      "other_pct": 0.3,
+      "nonwhite_pct": 1.7
+    },
+    "Newton Abbot": {
+      "gss_code": "E14001381",
+      "region": "South West",
+      "white_pct": 97.6,
+      "asian_pct": 0.8,
+      "black_pct": 0.2,
+      "mixed_pct": 1.1,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.4
+    },
+    "Newton Aycliffe & Spennymoor": {
+      "gss_code": "E14001382",
+      "region": "North East",
+      "white_pct": 97.8,
+      "asian_pct": 0.9,
+      "black_pct": 0.3,
+      "mixed_pct": 0.7,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.2
+    },
+    "Normanton & Hemsworth": {
+      "gss_code": "E14001383",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 96.9,
+      "asian_pct": 1.0,
+      "black_pct": 0.7,
+      "mixed_pct": 1.1,
+      "other_pct": 0.3,
+      "nonwhite_pct": 3.1
+    },
+    "North Antrim": {
+      "gss_code": "N05000012",
+      "region": "Northern Ireland",
+      "white_pct": 98.7,
+      "asian_pct": 0.6,
+      "black_pct": 0.2,
+      "mixed_pct": 0.4,
+      "other_pct": 0.1,
+      "nonwhite_pct": 1.3
+    },
+    "North Ayrshire & Arran": {
+      "gss_code": "S14000048",
+      "region": "Scotland",
+      "white_pct": 98.1,
+      "asian_pct": 0.7,
+      "black_pct": 0.2,
+      "mixed_pct": 0.6,
+      "other_pct": 0.4,
+      "nonwhite_pct": 1.9
+    },
+    "North Bedfordshire": {
+      "gss_code": "E14001384",
+      "region": "East of England",
+      "white_pct": 89.6,
+      "asian_pct": 4.0,
+      "black_pct": 2.4,
+      "mixed_pct": 3.3,
+      "other_pct": 0.7,
+      "nonwhite_pct": 10.4
+    },
+    "North Cornwall": {
+      "gss_code": "E14001385",
+      "region": "South West",
+      "white_pct": 97.3,
+      "asian_pct": 0.6,
+      "black_pct": 0.1,
+      "mixed_pct": 1.1,
+      "other_pct": 0.9,
+      "nonwhite_pct": 2.7
+    },
+    "North Cotswolds": {
+      "gss_code": "E14001386",
+      "region": "South West",
+      "white_pct": 95.8,
+      "asian_pct": 1.4,
+      "black_pct": 0.6,
+      "mixed_pct": 1.8,
+      "other_pct": 0.4,
+      "nonwhite_pct": 4.2
+    },
+    "North Devon": {
+      "gss_code": "E14001387",
+      "region": "South West",
+      "white_pct": 97.0,
+      "asian_pct": 1.2,
+      "black_pct": 0.3,
+      "mixed_pct": 1.2,
+      "other_pct": 0.3,
+      "nonwhite_pct": 3.0
+    },
+    "North Dorset": {
+      "gss_code": "E14001388",
+      "region": "South West",
+      "white_pct": 97.2,
+      "asian_pct": 1.2,
+      "black_pct": 0.3,
+      "mixed_pct": 1.0,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.8
+    },
+    "North Down": {
+      "gss_code": "N05000013",
+      "region": "Northern Ireland",
+      "white_pct": 97.2,
+      "asian_pct": 1.3,
+      "black_pct": 0.4,
+      "mixed_pct": 0.9,
+      "other_pct": 0.2,
+      "nonwhite_pct": 2.8
+    },
+    "North Durham": {
+      "gss_code": "E14001389",
+      "region": "North East",
+      "white_pct": 97.6,
+      "asian_pct": 1.1,
+      "black_pct": 0.2,
+      "mixed_pct": 0.8,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.4
+    },
+    "North East Cambridgeshire": {
+      "gss_code": "E14001390",
+      "region": "East of England",
+      "white_pct": 95.9,
+      "asian_pct": 1.2,
+      "black_pct": 0.8,
+      "mixed_pct": 1.4,
+      "other_pct": 0.7,
+      "nonwhite_pct": 4.1
+    },
+    "North East Derbyshire": {
+      "gss_code": "E14001391",
+      "region": "East Midlands",
+      "white_pct": 97.3,
+      "asian_pct": 1.0,
+      "black_pct": 0.4,
+      "mixed_pct": 1.2,
+      "other_pct": 0.2,
+      "nonwhite_pct": 2.7,
+      "ministers": [
+        "Louise Sandher-Jones MP"
+      ]
+    },
+    "North East Fife": {
+      "gss_code": "S14000100",
+      "region": "Scotland",
+      "white_pct": 95.1,
+      "asian_pct": 2.5,
+      "black_pct": 0.4,
+      "mixed_pct": 1.3,
+      "other_pct": 0.7,
+      "nonwhite_pct": 4.9
+    },
+    "North East Hampshire": {
+      "gss_code": "E14001392",
+      "region": "South East",
+      "white_pct": 93.1,
+      "asian_pct": 3.1,
+      "black_pct": 0.8,
+      "mixed_pct": 2.3,
+      "other_pct": 0.7,
+      "nonwhite_pct": 6.9
+    },
+    "North East Hertfordshire": {
+      "gss_code": "E14001393",
+      "region": "East of England",
+      "white_pct": 91.0,
+      "asian_pct": 3.7,
+      "black_pct": 1.7,
+      "mixed_pct": 2.9,
+      "other_pct": 0.8,
+      "nonwhite_pct": 9.0
+    },
+    "North East Somerset & Hanham": {
+      "gss_code": "E14001394",
+      "region": "South West",
+      "white_pct": 95.9,
+      "asian_pct": 1.4,
+      "black_pct": 0.6,
+      "mixed_pct": 1.8,
+      "other_pct": 0.3,
+      "nonwhite_pct": 4.1
+    },
+    "North Herefordshire": {
+      "gss_code": "E14001395",
+      "region": "West Midlands",
+      "white_pct": 97.6,
+      "asian_pct": 0.9,
+      "black_pct": 0.2,
+      "mixed_pct": 0.9,
+      "other_pct": 0.4,
+      "nonwhite_pct": 2.4
+    },
+    "North Norfolk": {
+      "gss_code": "E14001396",
+      "region": "East of England",
+      "white_pct": 98.1,
+      "asian_pct": 0.5,
+      "black_pct": 0.2,
+      "mixed_pct": 1.0,
+      "other_pct": 0.2,
+      "nonwhite_pct": 1.9
+    },
+    "North Northumberland": {
+      "gss_code": "E14001397",
+      "region": "North East",
+      "white_pct": 98.2,
+      "asian_pct": 0.7,
+      "black_pct": 0.2,
+      "mixed_pct": 0.7,
+      "other_pct": 0.3,
+      "nonwhite_pct": 1.8
+    },
+    "North Shropshire": {
+      "gss_code": "E14001398",
+      "region": "West Midlands",
+      "white_pct": 97.4,
+      "asian_pct": 0.9,
+      "black_pct": 0.3,
+      "mixed_pct": 1.0,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.6
+    },
+    "North Somerset": {
+      "gss_code": "E14001399",
+      "region": "South West",
+      "white_pct": 96.1,
+      "asian_pct": 1.3,
+      "black_pct": 0.4,
+      "mixed_pct": 1.8,
+      "other_pct": 0.4,
+      "nonwhite_pct": 3.9
+    },
+    "North Warwickshire & Bedworth": {
+      "gss_code": "E14001400",
+      "region": "West Midlands",
+      "white_pct": 92.3,
+      "asian_pct": 4.0,
+      "black_pct": 1.1,
+      "mixed_pct": 1.8,
+      "other_pct": 0.8,
+      "nonwhite_pct": 7.7
+    },
+    "North West Cambridgeshire": {
+      "gss_code": "E14001401",
+      "region": "East of England",
+      "white_pct": 86.8,
+      "asian_pct": 5.0,
+      "black_pct": 3.7,
+      "mixed_pct": 3.1,
+      "other_pct": 1.4,
+      "nonwhite_pct": 13.2
+    },
+    "North West Essex": {
+      "gss_code": "E14001402",
+      "region": "East of England",
+      "white_pct": 93.2,
+      "asian_pct": 2.6,
+      "black_pct": 1.2,
+      "mixed_pct": 2.3,
+      "other_pct": 0.7,
+      "nonwhite_pct": 6.8
+    },
+    "North West Hampshire": {
+      "gss_code": "E14001403",
+      "region": "South East",
+      "white_pct": 91.8,
+      "asian_pct": 3.7,
+      "black_pct": 1.6,
+      "mixed_pct": 2.1,
+      "other_pct": 0.7,
+      "nonwhite_pct": 8.2
+    },
+    "North West Leicestershire": {
+      "gss_code": "E14001404",
+      "region": "East Midlands",
+      "white_pct": 95.8,
+      "asian_pct": 1.5,
+      "black_pct": 0.6,
+      "mixed_pct": 1.5,
+      "other_pct": 0.5,
+      "nonwhite_pct": 4.2
+    },
+    "North West Norfolk": {
+      "gss_code": "E14001405",
+      "region": "East of England",
+      "white_pct": 95.0,
+      "asian_pct": 2.4,
+      "black_pct": 0.6,
+      "mixed_pct": 1.3,
+      "other_pct": 0.7,
+      "nonwhite_pct": 5.0
+    },
+    "Northampton North": {
+      "gss_code": "E14001406",
+      "region": "East Midlands",
+      "white_pct": 77.1,
+      "asian_pct": 8.6,
+      "black_pct": 8.6,
+      "mixed_pct": 3.8,
+      "other_pct": 1.9,
+      "nonwhite_pct": 22.9,
+      "ministers": [
+        "Lucy Rigby KC MP"
+      ]
+    },
+    "Northampton South": {
+      "gss_code": "E14001407",
+      "region": "East Midlands",
+      "white_pct": 81.6,
+      "asian_pct": 7.0,
+      "black_pct": 6.7,
+      "mixed_pct": 3.4,
+      "other_pct": 1.4,
+      "nonwhite_pct": 18.4
+    },
+    "Norwich North": {
+      "gss_code": "E14001408",
+      "region": "East of England",
+      "white_pct": 93.1,
+      "asian_pct": 2.5,
+      "black_pct": 1.4,
+      "mixed_pct": 2.1,
+      "other_pct": 0.9,
+      "nonwhite_pct": 6.9
+    },
+    "Norwich South": {
+      "gss_code": "E14001409",
+      "region": "East of England",
+      "white_pct": 86.2,
+      "asian_pct": 6.3,
+      "black_pct": 2.5,
+      "mixed_pct": 3.2,
+      "other_pct": 1.9,
+      "nonwhite_pct": 13.8
+    },
+    "Nottingham East": {
+      "gss_code": "E14001410",
+      "region": "East Midlands",
+      "white_pct": 60.2,
+      "asian_pct": 18.6,
+      "black_pct": 11.0,
+      "mixed_pct": 5.9,
+      "other_pct": 4.3,
+      "nonwhite_pct": 39.8
+    },
+    "Nottingham North & Kimberley": {
+      "gss_code": "E14001411",
+      "region": "East Midlands",
+      "white_pct": 72.5,
+      "asian_pct": 10.1,
+      "black_pct": 9.6,
+      "mixed_pct": 5.8,
+      "other_pct": 2.0,
+      "nonwhite_pct": 27.5,
+      "ministers": [
+        "Alex Norris MP"
+      ]
+    },
+    "Nottingham South": {
+      "gss_code": "E14001412",
+      "region": "East Midlands",
+      "white_pct": 69.1,
+      "asian_pct": 14.3,
+      "black_pct": 8.0,
+      "mixed_pct": 5.4,
+      "other_pct": 3.2,
+      "nonwhite_pct": 30.9,
+      "ministers": [
+        "Lilian Greenwood MP"
+      ]
+    },
+    "Nuneaton": {
+      "gss_code": "E14001413",
+      "region": "West Midlands",
+      "white_pct": 87.6,
+      "asian_pct": 7.8,
+      "black_pct": 1.8,
+      "mixed_pct": 1.8,
+      "other_pct": 1.0,
+      "nonwhite_pct": 12.4
+    },
+    "Old Bexley & Sidcup": {
+      "gss_code": "E14001414",
+      "region": "London",
+      "white_pct": 80.2,
+      "asian_pct": 9.5,
+      "black_pct": 5.0,
+      "mixed_pct": 3.2,
+      "other_pct": 2.2,
+      "nonwhite_pct": 19.8
+    },
+    "Oldham East & Saddleworth": {
+      "gss_code": "E14001415",
+      "region": "North West",
+      "white_pct": 72.5,
+      "asian_pct": 20.6,
+      "black_pct": 3.0,
+      "mixed_pct": 2.7,
+      "other_pct": 1.3,
+      "nonwhite_pct": 27.5
+    },
+    "Oldham West, Chadderton & Royton": {
+      "gss_code": "E14001416",
+      "region": "North West",
+      "white_pct": 59.4,
+      "asian_pct": 32.8,
+      "black_pct": 3.9,
+      "mixed_pct": 2.4,
+      "other_pct": 1.5,
+      "nonwhite_pct": 40.6
+    },
+    "Orkney & Shetland": {
+      "gss_code": "S14000051",
+      "region": "Scotland",
+      "white_pct": 98.0,
+      "asian_pct": 0.8,
+      "black_pct": 0.2,
+      "mixed_pct": 0.8,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.0
+    },
+    "Orpington": {
+      "gss_code": "E14001417",
+      "region": "London",
+      "white_pct": 78.3,
+      "asian_pct": 10.1,
+      "black_pct": 6.1,
+      "mixed_pct": 3.8,
+      "other_pct": 1.7,
+      "nonwhite_pct": 21.7
+    },
+    "Ossett & Denby Dale": {
+      "gss_code": "E14001418",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 94.2,
+      "asian_pct": 2.8,
+      "black_pct": 0.9,
+      "mixed_pct": 1.6,
+      "other_pct": 0.6,
+      "nonwhite_pct": 5.8
+    },
+    "Oxford East": {
+      "gss_code": "E14001419",
+      "region": "South East",
+      "white_pct": 68.7,
+      "asian_pct": 16.4,
+      "black_pct": 5.6,
+      "mixed_pct": 5.5,
+      "other_pct": 3.9,
+      "nonwhite_pct": 31.3
+    },
+    "Oxford West & Abingdon": {
+      "gss_code": "E14001420",
+      "region": "South East",
+      "white_pct": 82.6,
+      "asian_pct": 8.9,
+      "black_pct": 2.1,
+      "mixed_pct": 4.2,
+      "other_pct": 2.2,
+      "nonwhite_pct": 17.4
+    },
+    "Paisley & Renfrewshire North": {
+      "gss_code": "S14000101",
+      "region": "Scotland",
+      "white_pct": 92.5,
+      "asian_pct": 4.3,
+      "black_pct": 1.4,
+      "mixed_pct": 0.9,
+      "other_pct": 0.9,
+      "nonwhite_pct": 7.5
+    },
+    "Paisley & Renfrewshire South": {
+      "gss_code": "S14000102",
+      "region": "Scotland",
+      "white_pct": 95.1,
+      "asian_pct": 2.1,
+      "black_pct": 1.5,
+      "mixed_pct": 0.8,
+      "other_pct": 0.6,
+      "nonwhite_pct": 4.9
+    },
+    "Peckham": {
+      "gss_code": "E14001421",
+      "region": "London",
+      "white_pct": 41.5,
+      "asian_pct": 9.1,
+      "black_pct": 34.4,
+      "mixed_pct": 7.4,
+      "other_pct": 7.8,
+      "nonwhite_pct": 58.5,
+      "ministers": [
+        "Miatta Fahnbulleh MP"
+      ]
+    },
+    "Pendle & Clitheroe": {
+      "gss_code": "E14001422",
+      "region": "North West",
+      "white_pct": 80.5,
+      "asian_pct": 17.0,
+      "black_pct": 0.2,
+      "mixed_pct": 1.4,
+      "other_pct": 0.8,
+      "nonwhite_pct": 19.5
+    },
+    "Penistone & Stocksbridge": {
+      "gss_code": "E14001423",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 96.6,
+      "asian_pct": 1.1,
+      "black_pct": 0.7,
+      "mixed_pct": 1.3,
+      "other_pct": 0.3,
+      "nonwhite_pct": 3.4
+    },
+    "Penrith & Solway": {
+      "gss_code": "E14001424",
+      "region": "North West",
+      "white_pct": 98.1,
+      "asian_pct": 0.8,
+      "black_pct": 0.1,
+      "mixed_pct": 0.7,
+      "other_pct": 0.3,
+      "nonwhite_pct": 1.9
+    },
+    "Perth & Kinross-shire": {
+      "gss_code": "S14000103",
+      "region": "Scotland",
+      "white_pct": 96.3,
+      "asian_pct": 1.8,
+      "black_pct": 0.4,
+      "mixed_pct": 1.0,
+      "other_pct": 0.5,
+      "nonwhite_pct": 3.7
+    },
+    "Peterborough": {
+      "gss_code": "E14001425",
+      "region": "East of England",
+      "white_pct": 69.6,
+      "asian_pct": 19.7,
+      "black_pct": 3.7,
+      "mixed_pct": 3.5,
+      "other_pct": 3.5,
+      "nonwhite_pct": 30.4
+    },
+    "Plymouth Moor View": {
+      "gss_code": "E14001426",
+      "region": "South West",
+      "white_pct": 95.9,
+      "asian_pct": 1.5,
+      "black_pct": 0.7,
+      "mixed_pct": 1.2,
+      "other_pct": 0.6,
+      "nonwhite_pct": 4.1
+    },
+    "Plymouth Sutton & Devonport": {
+      "gss_code": "E14001427",
+      "region": "South West",
+      "white_pct": 90.2,
+      "asian_pct": 3.8,
+      "black_pct": 1.8,
+      "mixed_pct": 2.6,
+      "other_pct": 1.6,
+      "nonwhite_pct": 9.8,
+      "ministers": [
+        "Luke Pollard MP"
+      ]
+    },
+    "Pontefract, Castleford & Knottingley": {
+      "gss_code": "E14001428",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 96.5,
+      "asian_pct": 1.3,
+      "black_pct": 0.8,
+      "mixed_pct": 1.1,
+      "other_pct": 0.3,
+      "nonwhite_pct": 3.5,
+      "ministers": [
+        "Yvette Cooper MP"
+      ]
+    },
+    "Pontypridd": {
+      "gss_code": "W07000106",
+      "region": "Wales",
+      "white_pct": 95.8,
+      "asian_pct": 1.9,
+      "black_pct": 0.7,
+      "mixed_pct": 1.2,
+      "other_pct": 0.5,
+      "nonwhite_pct": 4.2,
+      "ministers": [
+        "Alex Davies-Jones MP"
+      ]
+    },
+    "Poole": {
+      "gss_code": "E14001429",
+      "region": "South West",
+      "white_pct": 93.5,
+      "asian_pct": 2.9,
+      "black_pct": 0.7,
+      "mixed_pct": 2.0,
+      "other_pct": 0.9,
+      "nonwhite_pct": 6.5
+    },
+    "Poplar & Limehouse": {
+      "gss_code": "E14001430",
+      "region": "London",
+      "white_pct": 40.1,
+      "asian_pct": 42.9,
+      "black_pct": 7.7,
+      "mixed_pct": 5.1,
+      "other_pct": 4.1,
+      "nonwhite_pct": 59.9
+    },
+    "Portsmouth North": {
+      "gss_code": "E14001431",
+      "region": "South East",
+      "white_pct": 90.3,
+      "asian_pct": 4.8,
+      "black_pct": 2.0,
+      "mixed_pct": 1.9,
+      "other_pct": 1.0,
+      "nonwhite_pct": 9.7
+    },
+    "Portsmouth South": {
+      "gss_code": "E14001432",
+      "region": "South East",
+      "white_pct": 80.5,
+      "asian_pct": 8.8,
+      "black_pct": 4.7,
+      "mixed_pct": 3.4,
+      "other_pct": 2.6,
+      "nonwhite_pct": 19.5
+    },
+    "Preston": {
+      "gss_code": "E14001433",
+      "region": "North West",
+      "white_pct": 70.1,
+      "asian_pct": 21.8,
+      "black_pct": 2.7,
+      "mixed_pct": 3.3,
+      "other_pct": 2.1,
+      "nonwhite_pct": 29.9
+    },
+    "Putney": {
+      "gss_code": "E14001434",
+      "region": "London",
+      "white_pct": 68.9,
+      "asian_pct": 12.0,
+      "black_pct": 7.9,
+      "mixed_pct": 6.4,
+      "other_pct": 4.7,
+      "nonwhite_pct": 31.1
+    },
+    "Queen's Park & Maida Vale": {
+      "gss_code": "E14001435",
+      "region": "London",
+      "white_pct": 47.2,
+      "asian_pct": 14.1,
+      "black_pct": 17.3,
+      "mixed_pct": 7.2,
+      "other_pct": 14.1,
+      "nonwhite_pct": 52.8,
+      "ministers": [
+        "Georgia Gould OBE MP"
+      ]
+    },
+    "Rawmarsh & Conisbrough": {
+      "gss_code": "E14001436",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 96.8,
+      "asian_pct": 1.0,
+      "black_pct": 0.7,
+      "mixed_pct": 1.1,
+      "other_pct": 0.4,
+      "nonwhite_pct": 3.2,
+      "ministers": [
+        "John Healey MP"
+      ]
+    },
+    "Rayleigh & Wickford": {
+      "gss_code": "E14001437",
+      "region": "East of England",
+      "white_pct": 95.0,
+      "asian_pct": 1.7,
+      "black_pct": 1.0,
+      "mixed_pct": 1.8,
+      "other_pct": 0.4,
+      "nonwhite_pct": 5.0
+    },
+    "Reading Central": {
+      "gss_code": "E14001438",
+      "region": "South East",
+      "white_pct": 65.8,
+      "asian_pct": 19.2,
+      "black_pct": 7.0,
+      "mixed_pct": 4.8,
+      "other_pct": 3.2,
+      "nonwhite_pct": 34.2
+    },
+    "Reading West & Mid Berkshire": {
+      "gss_code": "E14001439",
+      "region": "South East",
+      "white_pct": 85.7,
+      "asian_pct": 6.0,
+      "black_pct": 3.4,
+      "mixed_pct": 3.9,
+      "other_pct": 0.9,
+      "nonwhite_pct": 14.3,
+      "ministers": [
+        "Olivia Bailey MP"
+      ]
+    },
+    "Redcar": {
+      "gss_code": "E14001440",
+      "region": "North East",
+      "white_pct": 97.3,
+      "asian_pct": 1.0,
+      "black_pct": 0.2,
+      "mixed_pct": 0.9,
+      "other_pct": 0.5,
+      "nonwhite_pct": 2.7,
+      "ministers": [
+        "Anna Turley MP"
+      ]
+    },
+    "Redditch": {
+      "gss_code": "E14001441",
+      "region": "West Midlands",
+      "white_pct": 90.7,
+      "asian_pct": 5.2,
+      "black_pct": 1.1,
+      "mixed_pct": 2.5,
+      "other_pct": 0.6,
+      "nonwhite_pct": 9.3
+    },
+    "Reigate": {
+      "gss_code": "E14001442",
+      "region": "South East",
+      "white_pct": 84.0,
+      "asian_pct": 8.0,
+      "black_pct": 2.8,
+      "mixed_pct": 3.7,
+      "other_pct": 1.5,
+      "nonwhite_pct": 16.0
+    },
+    "Rhondda & Ogmore": {
+      "gss_code": "W07000107",
+      "region": "Wales",
+      "white_pct": 97.7,
+      "asian_pct": 1.0,
+      "black_pct": 0.2,
+      "mixed_pct": 0.9,
+      "other_pct": 0.2,
+      "nonwhite_pct": 2.3,
+      "ministers": [
+        "Sir Chris Bryant MP"
+      ]
+    },
+    "Ribble Valley": {
+      "gss_code": "E14001443",
+      "region": "North West",
+      "white_pct": 91.1,
+      "asian_pct": 6.1,
+      "black_pct": 0.6,
+      "mixed_pct": 1.6,
+      "other_pct": 0.6,
+      "nonwhite_pct": 8.9
+    },
+    "Richmond & Northallerton": {
+      "gss_code": "E14001444",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 96.0,
+      "asian_pct": 1.8,
+      "black_pct": 0.6,
+      "mixed_pct": 0.9,
+      "other_pct": 0.7,
+      "nonwhite_pct": 4.0
+    },
+    "Richmond Park": {
+      "gss_code": "E14001445",
+      "region": "London",
+      "white_pct": 76.4,
+      "asian_pct": 10.9,
+      "black_pct": 2.0,
+      "mixed_pct": 6.0,
+      "other_pct": 4.7,
+      "nonwhite_pct": 23.6
+    },
+    "Rochdale": {
+      "gss_code": "E14001446",
+      "region": "North West",
+      "white_pct": 63.1,
+      "asian_pct": 29.3,
+      "black_pct": 3.1,
+      "mixed_pct": 2.3,
+      "other_pct": 2.2,
+      "nonwhite_pct": 36.9
+    },
+    "Rochester & Strood": {
+      "gss_code": "E14001447",
+      "region": "South East",
+      "white_pct": 85.9,
+      "asian_pct": 5.1,
+      "black_pct": 5.1,
+      "mixed_pct": 2.8,
+      "other_pct": 1.2,
+      "nonwhite_pct": 14.1
+    },
+    "Romford": {
+      "gss_code": "E14001448",
+      "region": "London",
+      "white_pct": 72.4,
+      "asian_pct": 12.8,
+      "black_pct": 8.1,
+      "mixed_pct": 4.1,
+      "other_pct": 2.5,
+      "nonwhite_pct": 27.6
+    },
+    "Romsey & Southampton North": {
+      "gss_code": "E14001449",
+      "region": "South East",
+      "white_pct": 88.9,
+      "asian_pct": 6.4,
+      "black_pct": 1.3,
+      "mixed_pct": 2.1,
+      "other_pct": 1.4,
+      "nonwhite_pct": 11.1
+    },
+    "Rossendale & Darwen": {
+      "gss_code": "E14001450",
+      "region": "North West",
+      "white_pct": 94.3,
+      "asian_pct": 3.6,
+      "black_pct": 0.3,
+      "mixed_pct": 1.4,
+      "other_pct": 0.4,
+      "nonwhite_pct": 5.7
+    },
+    "Rother Valley": {
+      "gss_code": "E14001451",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 95.2,
+      "asian_pct": 2.6,
+      "black_pct": 0.6,
+      "mixed_pct": 1.1,
+      "other_pct": 0.4,
+      "nonwhite_pct": 4.8,
+      "ministers": [
+        "Jake Richards MP"
+      ]
+    },
+    "Rotherham": {
+      "gss_code": "E14001452",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 84.1,
+      "asian_pct": 10.3,
+      "black_pct": 1.8,
+      "mixed_pct": 1.9,
+      "other_pct": 2.0,
+      "nonwhite_pct": 15.9
+    },
+    "Rugby": {
+      "gss_code": "E14001453",
+      "region": "West Midlands",
+      "white_pct": 85.7,
+      "asian_pct": 7.7,
+      "black_pct": 2.7,
+      "mixed_pct": 2.8,
+      "other_pct": 1.1,
+      "nonwhite_pct": 14.3
+    },
+    "Ruislip, Northwood & Pinner": {
+      "gss_code": "E14001454",
+      "region": "London",
+      "white_pct": 55.4,
+      "asian_pct": 32.4,
+      "black_pct": 4.0,
+      "mixed_pct": 4.1,
+      "other_pct": 4.1,
+      "nonwhite_pct": 44.6
+    },
+    "Runcorn & Helsby": {
+      "gss_code": "E14001455",
+      "region": "North West",
+      "white_pct": 96.5,
+      "asian_pct": 1.1,
+      "black_pct": 0.4,
+      "mixed_pct": 1.4,
+      "other_pct": 0.5,
+      "nonwhite_pct": 3.5
+    },
+    "Runnymede & Weybridge": {
+      "gss_code": "E14001456",
+      "region": "South East",
+      "white_pct": 85.5,
+      "asian_pct": 7.5,
+      "black_pct": 1.6,
+      "mixed_pct": 3.6,
+      "other_pct": 1.8,
+      "nonwhite_pct": 14.5
+    },
+    "Rushcliffe": {
+      "gss_code": "E14001457",
+      "region": "East Midlands",
+      "white_pct": 88.6,
+      "asian_pct": 6.5,
+      "black_pct": 1.0,
+      "mixed_pct": 2.9,
+      "other_pct": 1.0,
+      "nonwhite_pct": 11.4
+    },
+    "Rutherglen": {
+      "gss_code": "S14000104",
+      "region": "Scotland",
+      "white_pct": 93.9,
+      "asian_pct": 3.9,
+      "black_pct": 0.9,
+      "mixed_pct": 0.8,
+      "other_pct": 0.5,
+      "nonwhite_pct": 6.1,
+      "ministers": [
+        "Michael Shanks MP"
+      ]
+    },
+    "Rutland & Stamford": {
+      "gss_code": "E14001458",
+      "region": "East Midlands",
+      "white_pct": 92.9,
+      "asian_pct": 3.7,
+      "black_pct": 1.0,
+      "mixed_pct": 1.8,
+      "other_pct": 0.7,
+      "nonwhite_pct": 7.1
+    },
+    "Salford": {
+      "gss_code": "E14001459",
+      "region": "North West",
+      "white_pct": 76.8,
+      "asian_pct": 6.7,
+      "black_pct": 8.9,
+      "mixed_pct": 3.9,
+      "other_pct": 3.7,
+      "nonwhite_pct": 23.2
+    },
+    "Salisbury": {
+      "gss_code": "E14001460",
+      "region": "South West",
+      "white_pct": 94.3,
+      "asian_pct": 2.7,
+      "black_pct": 0.9,
+      "mixed_pct": 1.5,
+      "other_pct": 0.6,
+      "nonwhite_pct": 5.7
+    },
+    "Scarborough & Whitby": {
+      "gss_code": "E14001461",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 96.8,
+      "asian_pct": 1.4,
+      "black_pct": 0.3,
+      "mixed_pct": 1.0,
+      "other_pct": 0.5,
+      "nonwhite_pct": 3.2
+    },
+    "Scunthorpe": {
+      "gss_code": "E14001462",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 92.1,
+      "asian_pct": 4.8,
+      "black_pct": 0.7,
+      "mixed_pct": 1.2,
+      "other_pct": 1.2,
+      "nonwhite_pct": 7.9,
+      "ministers": [
+        "Sir Nic Dakin MP"
+      ]
+    },
+    "Sefton Central": {
+      "gss_code": "E14001463",
+      "region": "North West",
+      "white_pct": 97.0,
+      "asian_pct": 1.2,
+      "black_pct": 0.3,
+      "mixed_pct": 1.3,
+      "other_pct": 0.3,
+      "nonwhite_pct": 3.0
+    },
+    "Selby": {
+      "gss_code": "E14001464",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 97.5,
+      "asian_pct": 0.8,
+      "black_pct": 0.4,
+      "mixed_pct": 1.0,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.5,
+      "ministers": [
+        "Keir Mather MP"
+      ]
+    },
+    "Sevenoaks": {
+      "gss_code": "E14001465",
+      "region": "South East",
+      "white_pct": 91.3,
+      "asian_pct": 3.2,
+      "black_pct": 2.0,
+      "mixed_pct": 2.7,
+      "other_pct": 0.9,
+      "nonwhite_pct": 8.7
+    },
+    "Sheffield Brightside & Hillsborough": {
+      "gss_code": "E14001466",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 69.0,
+      "asian_pct": 13.0,
+      "black_pct": 8.2,
+      "mixed_pct": 4.1,
+      "other_pct": 5.6,
+      "nonwhite_pct": 31.0
+    },
+    "Sheffield Central": {
+      "gss_code": "E14001467",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 66.9,
+      "asian_pct": 17.1,
+      "black_pct": 5.9,
+      "mixed_pct": 4.3,
+      "other_pct": 5.8,
+      "nonwhite_pct": 33.1
+    },
+    "Sheffield Hallam": {
+      "gss_code": "E14001468",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 88.1,
+      "asian_pct": 5.9,
+      "black_pct": 1.4,
+      "mixed_pct": 3.1,
+      "other_pct": 1.5,
+      "nonwhite_pct": 11.9
+    },
+    "Sheffield Heeley": {
+      "gss_code": "E14001469",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 81.4,
+      "asian_pct": 5.8,
+      "black_pct": 6.1,
+      "mixed_pct": 4.5,
+      "other_pct": 2.2,
+      "nonwhite_pct": 18.6
+    },
+    "Sheffield South East": {
+      "gss_code": "E14001470",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 81.1,
+      "asian_pct": 11.2,
+      "black_pct": 2.9,
+      "mixed_pct": 2.8,
+      "other_pct": 2.0,
+      "nonwhite_pct": 18.9
+    },
+    "Sherwood Forest": {
+      "gss_code": "E14001471",
+      "region": "East Midlands",
+      "white_pct": 95.1,
+      "asian_pct": 1.4,
+      "black_pct": 1.2,
+      "mixed_pct": 1.8,
+      "other_pct": 0.4,
+      "nonwhite_pct": 4.9
+    },
+    "Shipley": {
+      "gss_code": "E14001472",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 89.5,
+      "asian_pct": 6.7,
+      "black_pct": 0.7,
+      "mixed_pct": 2.3,
+      "other_pct": 0.8,
+      "nonwhite_pct": 10.5
+    },
+    "Shrewsbury": {
+      "gss_code": "E14001473",
+      "region": "West Midlands",
+      "white_pct": 95.6,
+      "asian_pct": 2.0,
+      "black_pct": 0.4,
+      "mixed_pct": 1.5,
+      "other_pct": 0.5,
+      "nonwhite_pct": 4.4
+    },
+    "Sittingbourne & Sheppey": {
+      "gss_code": "E14001474",
+      "region": "South East",
+      "white_pct": 93.1,
+      "asian_pct": 1.7,
+      "black_pct": 2.7,
+      "mixed_pct": 1.9,
+      "other_pct": 0.5,
+      "nonwhite_pct": 6.9
+    },
+    "Skipton & Ripon": {
+      "gss_code": "E14001475",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 96.9,
+      "asian_pct": 1.4,
+      "black_pct": 0.3,
+      "mixed_pct": 1.1,
+      "other_pct": 0.3,
+      "nonwhite_pct": 3.1
+    },
+    "Sleaford & North Hykeham": {
+      "gss_code": "E14001476",
+      "region": "East Midlands",
+      "white_pct": 97.1,
+      "asian_pct": 1.0,
+      "black_pct": 0.4,
+      "mixed_pct": 1.2,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.9
+    },
+    "Slough": {
+      "gss_code": "E14001477",
+      "region": "South East",
+      "white_pct": 35.1,
+      "asian_pct": 47.8,
+      "black_pct": 7.5,
+      "mixed_pct": 3.9,
+      "other_pct": 5.7,
+      "nonwhite_pct": 64.9
+    },
+    "Smethwick": {
+      "gss_code": "E14001478",
+      "region": "West Midlands",
+      "white_pct": 47.4,
+      "asian_pct": 31.3,
+      "black_pct": 11.0,
+      "mixed_pct": 5.0,
+      "other_pct": 5.3,
+      "nonwhite_pct": 52.6
+    },
+    "Solihull West & Shirley": {
+      "gss_code": "E14001479",
+      "region": "West Midlands",
+      "white_pct": 77.4,
+      "asian_pct": 16.2,
+      "black_pct": 1.4,
+      "mixed_pct": 3.0,
+      "other_pct": 2.0,
+      "nonwhite_pct": 22.6
+    },
+    "South Antrim": {
+      "gss_code": "N05000014",
+      "region": "Northern Ireland",
+      "white_pct": 97.3,
+      "asian_pct": 1.5,
+      "black_pct": 0.3,
+      "mixed_pct": 0.6,
+      "other_pct": 0.2,
+      "nonwhite_pct": 2.7
+    },
+    "South Basildon & East Thurrock": {
+      "gss_code": "E14001480",
+      "region": "East of England",
+      "white_pct": 86.7,
+      "asian_pct": 4.3,
+      "black_pct": 5.7,
+      "mixed_pct": 2.4,
+      "other_pct": 0.8,
+      "nonwhite_pct": 13.3
+    },
+    "South Cambridgeshire": {
+      "gss_code": "E14001481",
+      "region": "East of England",
+      "white_pct": 86.4,
+      "asian_pct": 8.1,
+      "black_pct": 1.2,
+      "mixed_pct": 2.9,
+      "other_pct": 1.4,
+      "nonwhite_pct": 13.6
+    },
+    "South Cotswolds": {
+      "gss_code": "E14001482",
+      "region": "South West",
+      "white_pct": 95.3,
+      "asian_pct": 1.9,
+      "black_pct": 0.8,
+      "mixed_pct": 1.6,
+      "other_pct": 0.5,
+      "nonwhite_pct": 4.7
+    },
+    "South Derbyshire": {
+      "gss_code": "E14001483",
+      "region": "East Midlands",
+      "white_pct": 93.0,
+      "asian_pct": 3.7,
+      "black_pct": 0.8,
+      "mixed_pct": 1.8,
+      "other_pct": 0.7,
+      "nonwhite_pct": 7.0
+    },
+    "South Devon": {
+      "gss_code": "E14001484",
+      "region": "South West",
+      "white_pct": 97.3,
+      "asian_pct": 0.8,
+      "black_pct": 0.2,
+      "mixed_pct": 1.3,
+      "other_pct": 0.4,
+      "nonwhite_pct": 2.7
+    },
+    "South Dorset": {
+      "gss_code": "E14001485",
+      "region": "South West",
+      "white_pct": 96.8,
+      "asian_pct": 1.1,
+      "black_pct": 0.4,
+      "mixed_pct": 1.3,
+      "other_pct": 0.4,
+      "nonwhite_pct": 3.2
+    },
+    "South Down": {
+      "gss_code": "N05000015",
+      "region": "Northern Ireland",
+      "white_pct": 98.7,
+      "asian_pct": 0.5,
+      "black_pct": 0.1,
+      "mixed_pct": 0.5,
+      "other_pct": 0.2,
+      "nonwhite_pct": 1.3
+    },
+    "South East Cornwall": {
+      "gss_code": "E14001486",
+      "region": "South West",
+      "white_pct": 97.8,
+      "asian_pct": 0.5,
+      "black_pct": 0.1,
+      "mixed_pct": 0.9,
+      "other_pct": 0.7,
+      "nonwhite_pct": 2.2
+    },
+    "South Holland & The Deepings": {
+      "gss_code": "E14001487",
+      "region": "East Midlands",
+      "white_pct": 96.3,
+      "asian_pct": 1.3,
+      "black_pct": 0.5,
+      "mixed_pct": 1.3,
+      "other_pct": 0.6,
+      "nonwhite_pct": 3.7
+    },
+    "South Leicestershire": {
+      "gss_code": "E14001488",
+      "region": "East Midlands",
+      "white_pct": 94.1,
+      "asian_pct": 2.6,
+      "black_pct": 0.7,
+      "mixed_pct": 2.1,
+      "other_pct": 0.5,
+      "nonwhite_pct": 5.9
+    },
+    "South Norfolk": {
+      "gss_code": "E14001489",
+      "region": "East of England",
+      "white_pct": 94.7,
+      "asian_pct": 2.2,
+      "black_pct": 0.9,
+      "mixed_pct": 1.7,
+      "other_pct": 0.5,
+      "nonwhite_pct": 5.3
+    },
+    "South Northamptonshire": {
+      "gss_code": "E14001490",
+      "region": "East Midlands",
+      "white_pct": 94.9,
+      "asian_pct": 1.9,
+      "black_pct": 1.0,
+      "mixed_pct": 1.8,
+      "other_pct": 0.4,
+      "nonwhite_pct": 5.1
+    },
+    "South Ribble": {
+      "gss_code": "E14001491",
+      "region": "North West",
+      "white_pct": 95.7,
+      "asian_pct": 1.9,
+      "black_pct": 0.5,
+      "mixed_pct": 1.7,
+      "other_pct": 0.3,
+      "nonwhite_pct": 4.3
+    },
+    "South Shields": {
+      "gss_code": "E14001492",
+      "region": "North East",
+      "white_pct": 92.8,
+      "asian_pct": 4.0,
+      "black_pct": 0.6,
+      "mixed_pct": 1.6,
+      "other_pct": 1.0,
+      "nonwhite_pct": 7.2
+    },
+    "South Shropshire": {
+      "gss_code": "E14001493",
+      "region": "West Midlands",
+      "white_pct": 97.7,
+      "asian_pct": 0.9,
+      "black_pct": 0.2,
+      "mixed_pct": 0.9,
+      "other_pct": 0.2,
+      "nonwhite_pct": 2.3
+    },
+    "South Suffolk": {
+      "gss_code": "E14001494",
+      "region": "East of England",
+      "white_pct": 96.7,
+      "asian_pct": 0.9,
+      "black_pct": 0.5,
+      "mixed_pct": 1.5,
+      "other_pct": 0.4,
+      "nonwhite_pct": 3.3
+    },
+    "South West Devon": {
+      "gss_code": "E14001495",
+      "region": "South West",
+      "white_pct": 97.8,
+      "asian_pct": 0.6,
+      "black_pct": 0.3,
+      "mixed_pct": 1.0,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.2
+    },
+    "South West Hertfordshire": {
+      "gss_code": "E14001496",
+      "region": "East of England",
+      "white_pct": 77.9,
+      "asian_pct": 14.6,
+      "black_pct": 2.3,
+      "mixed_pct": 3.6,
+      "other_pct": 1.6,
+      "nonwhite_pct": 22.1
+    },
+    "South West Norfolk": {
+      "gss_code": "E14001497",
+      "region": "East of England",
+      "white_pct": 96.2,
+      "asian_pct": 0.9,
+      "black_pct": 0.6,
+      "mixed_pct": 1.6,
+      "other_pct": 0.8,
+      "nonwhite_pct": 3.8
+    },
+    "South West Wiltshire": {
+      "gss_code": "E14001498",
+      "region": "South West",
+      "white_pct": 95.1,
+      "asian_pct": 1.6,
+      "black_pct": 0.8,
+      "mixed_pct": 1.7,
+      "other_pct": 0.8,
+      "nonwhite_pct": 4.9
+    },
+    "Southampton Itchen": {
+      "gss_code": "E14001499",
+      "region": "South East",
+      "white_pct": 86.0,
+      "asian_pct": 6.3,
+      "black_pct": 2.6,
+      "mixed_pct": 3.4,
+      "other_pct": 1.7,
+      "nonwhite_pct": 14.0
+    },
+    "Southampton Test": {
+      "gss_code": "E14001500",
+      "region": "South East",
+      "white_pct": 77.2,
+      "asian_pct": 13.3,
+      "black_pct": 3.4,
+      "mixed_pct": 3.3,
+      "other_pct": 2.7,
+      "nonwhite_pct": 22.8,
+      "ministers": [
+        "Satvir Kaur MP"
+      ]
+    },
+    "Southend East & Rochford": {
+      "gss_code": "E14001501",
+      "region": "East of England",
+      "white_pct": 87.6,
+      "asian_pct": 4.9,
+      "black_pct": 3.3,
+      "mixed_pct": 3.0,
+      "other_pct": 1.1,
+      "nonwhite_pct": 12.4
+    },
+    "Southend West & Leigh": {
+      "gss_code": "E14001502",
+      "region": "East of England",
+      "white_pct": 89.0,
+      "asian_pct": 5.2,
+      "black_pct": 2.1,
+      "mixed_pct": 2.8,
+      "other_pct": 1.0,
+      "nonwhite_pct": 11.0
+    },
+    "Southgate & Wood Green": {
+      "gss_code": "E14001503",
+      "region": "London",
+      "white_pct": 58.4,
+      "asian_pct": 12.8,
+      "black_pct": 11.8,
+      "mixed_pct": 6.3,
+      "other_pct": 10.8,
+      "nonwhite_pct": 41.6
+    },
+    "Southport": {
+      "gss_code": "E14001504",
+      "region": "North West",
+      "white_pct": 95.4,
+      "asian_pct": 1.8,
+      "black_pct": 0.6,
+      "mixed_pct": 1.6,
+      "other_pct": 0.7,
+      "nonwhite_pct": 4.6
+    },
+    "Spelthorne": {
+      "gss_code": "E14001505",
+      "region": "South East",
+      "white_pct": 78.7,
+      "asian_pct": 12.8,
+      "black_pct": 2.5,
+      "mixed_pct": 3.7,
+      "other_pct": 2.4,
+      "nonwhite_pct": 21.3
+    },
+    "Spen Valley": {
+      "gss_code": "E14001506",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 88.3,
+      "asian_pct": 8.3,
+      "black_pct": 0.7,
+      "mixed_pct": 2.1,
+      "other_pct": 0.5,
+      "nonwhite_pct": 11.7
+    },
+    "St Albans": {
+      "gss_code": "E14001507",
+      "region": "East of England",
+      "white_pct": 80.6,
+      "asian_pct": 10.1,
+      "black_pct": 2.5,
+      "mixed_pct": 4.6,
+      "other_pct": 2.2,
+      "nonwhite_pct": 19.4
+    },
+    "St Austell & Newquay": {
+      "gss_code": "E14001508",
+      "region": "South West",
+      "white_pct": 97.2,
+      "asian_pct": 0.5,
+      "black_pct": 0.1,
+      "mixed_pct": 1.2,
+      "other_pct": 1.0,
+      "nonwhite_pct": 2.8
+    },
+    "St Helens North": {
+      "gss_code": "E14001509",
+      "region": "North West",
+      "white_pct": 96.9,
+      "asian_pct": 1.2,
+      "black_pct": 0.4,
+      "mixed_pct": 1.1,
+      "other_pct": 0.5,
+      "nonwhite_pct": 3.1
+    },
+    "St Helens South & Whiston": {
+      "gss_code": "E14001510",
+      "region": "North West",
+      "white_pct": 95.7,
+      "asian_pct": 2.1,
+      "black_pct": 0.5,
+      "mixed_pct": 1.1,
+      "other_pct": 0.6,
+      "nonwhite_pct": 4.3
+    },
+    "St Ives": {
+      "gss_code": "E14001511",
+      "region": "South West",
+      "white_pct": 96.5,
+      "asian_pct": 0.6,
+      "black_pct": 0.2,
+      "mixed_pct": 1.3,
+      "other_pct": 1.5,
+      "nonwhite_pct": 3.5
+    },
+    "St Neots & Mid Cambridgeshire": {
+      "gss_code": "E14001512",
+      "region": "East of England",
+      "white_pct": 89.6,
+      "asian_pct": 5.1,
+      "black_pct": 1.4,
+      "mixed_pct": 2.8,
+      "other_pct": 1.1,
+      "nonwhite_pct": 10.4
+    },
+    "Stafford": {
+      "gss_code": "E14001513",
+      "region": "West Midlands",
+      "white_pct": 92.2,
+      "asian_pct": 3.6,
+      "black_pct": 1.3,
+      "mixed_pct": 2.0,
+      "other_pct": 0.8,
+      "nonwhite_pct": 7.8
+    },
+    "Staffordshire Moorlands": {
+      "gss_code": "E14001514",
+      "region": "West Midlands",
+      "white_pct": 98.0,
+      "asian_pct": 0.7,
+      "black_pct": 0.2,
+      "mixed_pct": 1.0,
+      "other_pct": 0.2,
+      "nonwhite_pct": 2.0
+    },
+    "Stalybridge & Hyde": {
+      "gss_code": "E14001515",
+      "region": "North West",
+      "white_pct": 89.6,
+      "asian_pct": 6.7,
+      "black_pct": 1.4,
+      "mixed_pct": 1.8,
+      "other_pct": 0.6,
+      "nonwhite_pct": 10.4,
+      "ministers": [
+        "Jonathan Reynolds MP"
+      ]
+    },
+    "Stevenage": {
+      "gss_code": "E14001516",
+      "region": "East of England",
+      "white_pct": 84.0,
+      "asian_pct": 7.0,
+      "black_pct": 4.4,
+      "mixed_pct": 3.4,
+      "other_pct": 1.2,
+      "nonwhite_pct": 16.0
+    },
+    "Stirling & Strathallan": {
+      "gss_code": "S14000105",
+      "region": "Scotland",
+      "white_pct": 95.4,
+      "asian_pct": 2.5,
+      "black_pct": 0.6,
+      "mixed_pct": 1.0,
+      "other_pct": 0.5,
+      "nonwhite_pct": 4.6
+    },
+    "Stockport": {
+      "gss_code": "E14001517",
+      "region": "North West",
+      "white_pct": 85.3,
+      "asian_pct": 7.6,
+      "black_pct": 2.0,
+      "mixed_pct": 3.3,
+      "other_pct": 1.8,
+      "nonwhite_pct": 14.7
+    },
+    "Stockton North": {
+      "gss_code": "E14001518",
+      "region": "North East",
+      "white_pct": 91.8,
+      "asian_pct": 4.6,
+      "black_pct": 1.5,
+      "mixed_pct": 1.2,
+      "other_pct": 0.9,
+      "nonwhite_pct": 8.2,
+      "ministers": [
+        "Chris McDonald MP"
+      ]
+    },
+    "Stockton West": {
+      "gss_code": "E14001519",
+      "region": "North East",
+      "white_pct": 93.3,
+      "asian_pct": 4.0,
+      "black_pct": 0.6,
+      "mixed_pct": 1.5,
+      "other_pct": 0.6,
+      "nonwhite_pct": 6.7
+    },
+    "Stoke-on-Trent Central": {
+      "gss_code": "E14001520",
+      "region": "West Midlands",
+      "white_pct": 81.0,
+      "asian_pct": 10.8,
+      "black_pct": 3.6,
+      "mixed_pct": 2.5,
+      "other_pct": 2.1,
+      "nonwhite_pct": 19.0
+    },
+    "Stoke-on-Trent North": {
+      "gss_code": "E14001521",
+      "region": "West Midlands",
+      "white_pct": 87.0,
+      "asian_pct": 7.9,
+      "black_pct": 1.8,
+      "mixed_pct": 2.0,
+      "other_pct": 1.3,
+      "nonwhite_pct": 13.0
+    },
+    "Stoke-on-Trent South": {
+      "gss_code": "E14001522",
+      "region": "West Midlands",
+      "white_pct": 89.9,
+      "asian_pct": 6.5,
+      "black_pct": 1.2,
+      "mixed_pct": 1.6,
+      "other_pct": 0.9,
+      "nonwhite_pct": 10.1
+    },
+    "Stone, Great Wyrley & Penkridge": {
+      "gss_code": "E14001523",
+      "region": "West Midlands",
+      "white_pct": 94.9,
+      "asian_pct": 2.1,
+      "black_pct": 0.8,
+      "mixed_pct": 1.8,
+      "other_pct": 0.3,
+      "nonwhite_pct": 5.1
+    },
+    "Stourbridge": {
+      "gss_code": "E14001524",
+      "region": "West Midlands",
+      "white_pct": 86.7,
+      "asian_pct": 8.2,
+      "black_pct": 1.7,
+      "mixed_pct": 2.5,
+      "other_pct": 1.0,
+      "nonwhite_pct": 13.3
+    },
+    "Strangford": {
+      "gss_code": "N05000016",
+      "region": "Northern Ireland",
+      "white_pct": 98.5,
+      "asian_pct": 0.7,
+      "black_pct": 0.1,
+      "mixed_pct": 0.5,
+      "other_pct": 0.1,
+      "nonwhite_pct": 1.5
+    },
+    "Stratford & Bow": {
+      "gss_code": "E14001525",
+      "region": "London",
+      "white_pct": 39.2,
+      "asian_pct": 37.6,
+      "black_pct": 13.5,
+      "mixed_pct": 5.5,
+      "other_pct": 4.2,
+      "nonwhite_pct": 60.8
+    },
+    "Stratford-on-Avon": {
+      "gss_code": "E14001526",
+      "region": "West Midlands",
+      "white_pct": 95.3,
+      "asian_pct": 2.0,
+      "black_pct": 0.3,
+      "mixed_pct": 1.7,
+      "other_pct": 0.6,
+      "nonwhite_pct": 4.7
+    },
+    "Streatham & Croydon North": {
+      "gss_code": "E14001527",
+      "region": "London",
+      "white_pct": 49.4,
+      "asian_pct": 13.5,
+      "black_pct": 23.4,
+      "mixed_pct": 8.3,
+      "other_pct": 5.4,
+      "nonwhite_pct": 50.6,
+      "ministers": [
+        "Steve Reed OBE MP"
+      ]
+    },
+    "Stretford & Urmston": {
+      "gss_code": "E14001528",
+      "region": "North West",
+      "white_pct": 73.5,
+      "asian_pct": 13.9,
+      "black_pct": 5.7,
+      "mixed_pct": 4.4,
+      "other_pct": 2.5,
+      "nonwhite_pct": 26.5,
+      "ministers": [
+        "Andrew Western MP"
+      ]
+    },
+    "Stroud": {
+      "gss_code": "E14001529",
+      "region": "South West",
+      "white_pct": 96.6,
+      "asian_pct": 0.9,
+      "black_pct": 0.4,
+      "mixed_pct": 1.7,
+      "other_pct": 0.4,
+      "nonwhite_pct": 3.4
+    },
+    "Suffolk Coastal": {
+      "gss_code": "E14001530",
+      "region": "East of England",
+      "white_pct": 95.8,
+      "asian_pct": 1.4,
+      "black_pct": 0.7,
+      "mixed_pct": 1.7,
+      "other_pct": 0.4,
+      "nonwhite_pct": 4.2
+    },
+    "Sunderland Central": {
+      "gss_code": "E14001531",
+      "region": "North East",
+      "white_pct": 89.5,
+      "asian_pct": 6.5,
+      "black_pct": 2.0,
+      "mixed_pct": 1.1,
+      "other_pct": 0.9,
+      "nonwhite_pct": 10.5
+    },
+    "Surrey Heath": {
+      "gss_code": "E14001532",
+      "region": "South East",
+      "white_pct": 85.5,
+      "asian_pct": 8.4,
+      "black_pct": 1.7,
+      "mixed_pct": 2.7,
+      "other_pct": 1.7,
+      "nonwhite_pct": 14.5
+    },
+    "Sussex Weald": {
+      "gss_code": "E14001533",
+      "region": "South East",
+      "white_pct": 96.2,
+      "asian_pct": 1.3,
+      "black_pct": 0.4,
+      "mixed_pct": 1.6,
+      "other_pct": 0.4,
+      "nonwhite_pct": 3.8
+    },
+    "Sutton & Cheam": {
+      "gss_code": "E14001534",
+      "region": "London",
+      "white_pct": 67.9,
+      "asian_pct": 19.2,
+      "black_pct": 4.5,
+      "mixed_pct": 4.7,
+      "other_pct": 3.7,
+      "nonwhite_pct": 32.1
+    },
+    "Sutton Coldfield": {
+      "gss_code": "E14001535",
+      "region": "West Midlands",
+      "white_pct": 81.4,
+      "asian_pct": 10.7,
+      "black_pct": 2.8,
+      "mixed_pct": 3.4,
+      "other_pct": 1.7,
+      "nonwhite_pct": 18.6
+    },
+    "Swansea West": {
+      "gss_code": "W07000108",
+      "region": "Wales",
+      "white_pct": 86.6,
+      "asian_pct": 7.1,
+      "black_pct": 2.0,
+      "mixed_pct": 2.0,
+      "other_pct": 2.3,
+      "nonwhite_pct": 13.4,
+      "ministers": [
+        "Torsten Bell MP"
+      ]
+    },
+    "Swindon North": {
+      "gss_code": "E14001536",
+      "region": "South West",
+      "white_pct": 86.8,
+      "asian_pct": 7.1,
+      "black_pct": 2.4,
+      "mixed_pct": 2.6,
+      "other_pct": 1.1,
+      "nonwhite_pct": 13.2
+    },
+    "Swindon South": {
+      "gss_code": "E14001537",
+      "region": "South West",
+      "white_pct": 74.9,
+      "asian_pct": 17.0,
+      "black_pct": 3.0,
+      "mixed_pct": 3.0,
+      "other_pct": 2.0,
+      "nonwhite_pct": 25.1,
+      "ministers": [
+        "Heidi Alexander MP"
+      ]
+    },
+    "Tamworth": {
+      "gss_code": "E14001538",
+      "region": "West Midlands",
+      "white_pct": 94.7,
+      "asian_pct": 2.2,
+      "black_pct": 0.7,
+      "mixed_pct": 1.9,
+      "other_pct": 0.5,
+      "nonwhite_pct": 5.3
+    },
+    "Tatton": {
+      "gss_code": "E14001539",
+      "region": "North West",
+      "white_pct": 92.8,
+      "asian_pct": 3.4,
+      "black_pct": 0.6,
+      "mixed_pct": 2.2,
+      "other_pct": 1.0,
+      "nonwhite_pct": 7.2
+    },
+    "Taunton & Wellington": {
+      "gss_code": "E14001540",
+      "region": "South West",
+      "white_pct": 94.5,
+      "asian_pct": 2.7,
+      "black_pct": 0.7,
+      "mixed_pct": 1.4,
+      "other_pct": 0.7,
+      "nonwhite_pct": 5.5
+    },
+    "Telford": {
+      "gss_code": "E14001541",
+      "region": "West Midlands",
+      "white_pct": 89.0,
+      "asian_pct": 4.2,
+      "black_pct": 3.3,
+      "mixed_pct": 2.7,
+      "other_pct": 0.8,
+      "nonwhite_pct": 11.0
+    },
+    "Tewkesbury": {
+      "gss_code": "E14001542",
+      "region": "South West",
+      "white_pct": 93.8,
+      "asian_pct": 3.1,
+      "black_pct": 0.7,
+      "mixed_pct": 1.8,
+      "other_pct": 0.6,
+      "nonwhite_pct": 6.2
+    },
+    "The Wrekin": {
+      "gss_code": "E14001543",
+      "region": "West Midlands",
+      "white_pct": 89.0,
+      "asian_pct": 5.7,
+      "black_pct": 2.0,
+      "mixed_pct": 2.3,
+      "other_pct": 1.1,
+      "nonwhite_pct": 11.0
+    },
+    "Thirsk & Malton": {
+      "gss_code": "E14001544",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 98.1,
+      "asian_pct": 0.6,
+      "black_pct": 0.2,
+      "mixed_pct": 0.8,
+      "other_pct": 0.3,
+      "nonwhite_pct": 1.9
+    },
+    "Thornbury & Yate": {
+      "gss_code": "E14001545",
+      "region": "South West",
+      "white_pct": 96.0,
+      "asian_pct": 1.3,
+      "black_pct": 0.6,
+      "mixed_pct": 1.6,
+      "other_pct": 0.5,
+      "nonwhite_pct": 4.0
+    },
+    "Thurrock": {
+      "gss_code": "E14001546",
+      "region": "East of England",
+      "white_pct": 71.2,
+      "asian_pct": 8.8,
+      "black_pct": 14.8,
+      "mixed_pct": 3.3,
+      "other_pct": 1.9,
+      "nonwhite_pct": 28.8
+    },
+    "Tipton & Wednesbury": {
+      "gss_code": "E14001547",
+      "region": "West Midlands",
+      "white_pct": 70.6,
+      "asian_pct": 17.1,
+      "black_pct": 6.5,
+      "mixed_pct": 3.6,
+      "other_pct": 2.3,
+      "nonwhite_pct": 29.4
+    },
+    "Tiverton & Minehead": {
+      "gss_code": "E14001548",
+      "region": "South West",
+      "white_pct": 98.1,
+      "asian_pct": 0.6,
+      "black_pct": 0.1,
+      "mixed_pct": 1.0,
+      "other_pct": 0.2,
+      "nonwhite_pct": 1.9
+    },
+    "Tonbridge": {
+      "gss_code": "E14001549",
+      "region": "South East",
+      "white_pct": 93.3,
+      "asian_pct": 3.1,
+      "black_pct": 0.7,
+      "mixed_pct": 2.3,
+      "other_pct": 0.6,
+      "nonwhite_pct": 6.7
+    },
+    "Tooting": {
+      "gss_code": "E14001550",
+      "region": "London",
+      "white_pct": 66.6,
+      "asian_pct": 14.0,
+      "black_pct": 10.0,
+      "mixed_pct": 6.1,
+      "other_pct": 3.3,
+      "nonwhite_pct": 33.4
+    },
+    "Torbay": {
+      "gss_code": "E14001551",
+      "region": "South West",
+      "white_pct": 95.7,
+      "asian_pct": 1.9,
+      "black_pct": 0.4,
+      "mixed_pct": 1.6,
+      "other_pct": 0.5,
+      "nonwhite_pct": 4.3
+    },
+    "Torfaen": {
+      "gss_code": "W07000109",
+      "region": "Wales",
+      "white_pct": 97.1,
+      "asian_pct": 1.3,
+      "black_pct": 0.2,
+      "mixed_pct": 1.1,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.9,
+      "ministers": [
+        "Nick Thomas-Symonds MP"
+      ]
+    },
+    "Torridge & Tavistock": {
+      "gss_code": "E14001552",
+      "region": "South West",
+      "white_pct": 98.2,
+      "asian_pct": 0.5,
+      "black_pct": 0.1,
+      "mixed_pct": 0.9,
+      "other_pct": 0.2,
+      "nonwhite_pct": 1.8
+    },
+    "Tottenham": {
+      "gss_code": "E14001553",
+      "region": "London",
+      "white_pct": 47.0,
+      "asian_pct": 9.5,
+      "black_pct": 24.7,
+      "mixed_pct": 6.9,
+      "other_pct": 11.8,
+      "nonwhite_pct": 53.0,
+      "ministers": [
+        "David Lammy MP"
+      ]
+    },
+    "Truro & Falmouth": {
+      "gss_code": "E14001554",
+      "region": "South West",
+      "white_pct": 95.2,
+      "asian_pct": 1.4,
+      "black_pct": 0.4,
+      "mixed_pct": 1.7,
+      "other_pct": 1.2,
+      "nonwhite_pct": 4.8
+    },
+    "Tunbridge Wells": {
+      "gss_code": "E14001555",
+      "region": "South East",
+      "white_pct": 91.2,
+      "asian_pct": 4.2,
+      "black_pct": 1.0,
+      "mixed_pct": 2.6,
+      "other_pct": 1.0,
+      "nonwhite_pct": 8.8
+    },
+    "Twickenham": {
+      "gss_code": "E14001556",
+      "region": "London",
+      "white_pct": 81.2,
+      "asian_pct": 9.0,
+      "black_pct": 2.0,
+      "mixed_pct": 5.1,
+      "other_pct": 2.7,
+      "nonwhite_pct": 18.8
+    },
+    "Tynemouth": {
+      "gss_code": "E14001557",
+      "region": "North East",
+      "white_pct": 95.1,
+      "asian_pct": 2.4,
+      "black_pct": 0.5,
+      "mixed_pct": 1.5,
+      "other_pct": 0.5,
+      "nonwhite_pct": 4.9,
+      "ministers": [
+        "Sir Alan Campbell MP"
+      ]
+    },
+    "Upper Bann": {
+      "gss_code": "N05000017",
+      "region": "Northern Ireland",
+      "white_pct": 95.8,
+      "asian_pct": 1.7,
+      "black_pct": 1.2,
+      "mixed_pct": 1.0,
+      "other_pct": 0.3,
+      "nonwhite_pct": 4.2
+    },
+    "Uxbridge & South Ruislip": {
+      "gss_code": "E14001558",
+      "region": "London",
+      "white_pct": 57.5,
+      "asian_pct": 25.5,
+      "black_pct": 6.7,
+      "mixed_pct": 5.0,
+      "other_pct": 5.3,
+      "nonwhite_pct": 42.5
+    },
+    "Vale of Glamorgan": {
+      "gss_code": "W07000110",
+      "region": "Wales",
+      "white_pct": 95.2,
+      "asian_pct": 1.8,
+      "black_pct": 0.4,
+      "mixed_pct": 2.1,
+      "other_pct": 0.5,
+      "nonwhite_pct": 4.8,
+      "ministers": [
+        "Kanishka Narayan MP"
+      ]
+    },
+    "Vauxhall & Camberwell Green": {
+      "gss_code": "E14001559",
+      "region": "London",
+      "white_pct": 49.0,
+      "asian_pct": 8.6,
+      "black_pct": 27.8,
+      "mixed_pct": 7.6,
+      "other_pct": 7.0,
+      "nonwhite_pct": 51.0
+    },
+    "Wakefield & Rothwell": {
+      "gss_code": "E14001560",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 86.4,
+      "asian_pct": 7.9,
+      "black_pct": 2.3,
+      "mixed_pct": 2.0,
+      "other_pct": 1.5,
+      "nonwhite_pct": 13.6,
+      "ministers": [
+        "Simon Lightwood MP"
+      ]
+    },
+    "Wallasey": {
+      "gss_code": "E14001561",
+      "region": "North West",
+      "white_pct": 95.6,
+      "asian_pct": 1.8,
+      "black_pct": 0.4,
+      "mixed_pct": 1.6,
+      "other_pct": 0.5,
+      "nonwhite_pct": 4.4,
+      "ministers": [
+        "Dame Angela Eagle DBE MP"
+      ]
+    },
+    "Walsall & Bloxwich": {
+      "gss_code": "E14001562",
+      "region": "West Midlands",
+      "white_pct": 58.7,
+      "asian_pct": 28.8,
+      "black_pct": 6.5,
+      "mixed_pct": 3.4,
+      "other_pct": 2.6,
+      "nonwhite_pct": 41.3
+    },
+    "Walthamstow": {
+      "gss_code": "E14001563",
+      "region": "London",
+      "white_pct": 50.5,
+      "asian_pct": 21.7,
+      "black_pct": 15.4,
+      "mixed_pct": 6.5,
+      "other_pct": 6.0,
+      "nonwhite_pct": 49.5
+    },
+    "Warrington North": {
+      "gss_code": "E14001564",
+      "region": "North West",
+      "white_pct": 94.5,
+      "asian_pct": 2.4,
+      "black_pct": 0.8,
+      "mixed_pct": 1.5,
+      "other_pct": 0.8,
+      "nonwhite_pct": 5.5
+    },
+    "Warrington South": {
+      "gss_code": "E14001565",
+      "region": "North West",
+      "white_pct": 92.3,
+      "asian_pct": 4.3,
+      "black_pct": 0.8,
+      "mixed_pct": 1.6,
+      "other_pct": 1.0,
+      "nonwhite_pct": 7.7
+    },
+    "Warwick & Leamington": {
+      "gss_code": "E14001566",
+      "region": "West Midlands",
+      "white_pct": 82.0,
+      "asian_pct": 11.5,
+      "black_pct": 1.1,
+      "mixed_pct": 3.3,
+      "other_pct": 2.0,
+      "nonwhite_pct": 18.0
+    },
+    "Washington & Gateshead South": {
+      "gss_code": "E14001567",
+      "region": "North East",
+      "white_pct": 97.0,
+      "asian_pct": 1.4,
+      "black_pct": 0.4,
+      "mixed_pct": 0.9,
+      "other_pct": 0.4,
+      "nonwhite_pct": 3.0
+    },
+    "Watford": {
+      "gss_code": "E14001568",
+      "region": "East of England",
+      "white_pct": 61.6,
+      "asian_pct": 24.0,
+      "black_pct": 6.2,
+      "mixed_pct": 4.7,
+      "other_pct": 3.5,
+      "nonwhite_pct": 38.4
+    },
+    "Waveney Valley": {
+      "gss_code": "E14001569",
+      "region": "East of England",
+      "white_pct": 97.6,
+      "asian_pct": 0.8,
+      "black_pct": 0.3,
+      "mixed_pct": 0.9,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.4
+    },
+    "Weald of Kent": {
+      "gss_code": "E14001570",
+      "region": "South East",
+      "white_pct": 95.8,
+      "asian_pct": 1.4,
+      "black_pct": 0.8,
+      "mixed_pct": 1.7,
+      "other_pct": 0.4,
+      "nonwhite_pct": 4.2
+    },
+    "Wellingborough & Rushden": {
+      "gss_code": "E14001571",
+      "region": "East Midlands",
+      "white_pct": 86.6,
+      "asian_pct": 5.1,
+      "black_pct": 4.4,
+      "mixed_pct": 3.1,
+      "other_pct": 0.8,
+      "nonwhite_pct": 13.4
+    },
+    "Wells & Mendip Hills": {
+      "gss_code": "E14001572",
+      "region": "South West",
+      "white_pct": 97.2,
+      "asian_pct": 0.9,
+      "black_pct": 0.2,
+      "mixed_pct": 1.3,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.8
+    },
+    "Welwyn Hatfield": {
+      "gss_code": "E14001573",
+      "region": "East of England",
+      "white_pct": 78.4,
+      "asian_pct": 9.0,
+      "black_pct": 6.2,
+      "mixed_pct": 4.2,
+      "other_pct": 2.2,
+      "nonwhite_pct": 21.6
+    },
+    "West Aberdeenshire & Kincardine": {
+      "gss_code": "S14000111",
+      "region": "Scotland",
+      "white_pct": 95.9,
+      "asian_pct": 1.6,
+      "black_pct": 1.0,
+      "mixed_pct": 1.0,
+      "other_pct": 0.6,
+      "nonwhite_pct": 4.1
+    },
+    "West Bromwich": {
+      "gss_code": "E14001574",
+      "region": "West Midlands",
+      "white_pct": 54.4,
+      "asian_pct": 28.4,
+      "black_pct": 8.6,
+      "mixed_pct": 4.2,
+      "other_pct": 4.3,
+      "nonwhite_pct": 45.6
+    },
+    "West Dorset": {
+      "gss_code": "E14001575",
+      "region": "South West",
+      "white_pct": 96.8,
+      "asian_pct": 1.4,
+      "black_pct": 0.3,
+      "mixed_pct": 1.2,
+      "other_pct": 0.3,
+      "nonwhite_pct": 3.2
+    },
+    "West Dunbartonshire": {
+      "gss_code": "S14000106",
+      "region": "Scotland",
+      "white_pct": 96.6,
+      "asian_pct": 1.4,
+      "black_pct": 0.7,
+      "mixed_pct": 0.7,
+      "other_pct": 0.5,
+      "nonwhite_pct": 3.4
+    },
+    "West Ham & Beckton": {
+      "gss_code": "E14001576",
+      "region": "London",
+      "white_pct": 38.4,
+      "asian_pct": 28.3,
+      "black_pct": 22.6,
+      "mixed_pct": 5.7,
+      "other_pct": 5.0,
+      "nonwhite_pct": 61.6
+    },
+    "West Lancashire": {
+      "gss_code": "E14001577",
+      "region": "North West",
+      "white_pct": 96.7,
+      "asian_pct": 1.1,
+      "black_pct": 0.4,
+      "mixed_pct": 1.4,
+      "other_pct": 0.4,
+      "nonwhite_pct": 3.3,
+      "ministers": [
+        "Ashley Dalton MP"
+      ]
+    },
+    "West Suffolk": {
+      "gss_code": "E14001578",
+      "region": "East of England",
+      "white_pct": 90.8,
+      "asian_pct": 2.7,
+      "black_pct": 2.0,
+      "mixed_pct": 3.0,
+      "other_pct": 1.5,
+      "nonwhite_pct": 9.2
+    },
+    "West Tyrone": {
+      "gss_code": "N05000018",
+      "region": "Northern Ireland",
+      "white_pct": 98.9,
+      "asian_pct": 0.5,
+      "black_pct": 0.1,
+      "mixed_pct": 0.4,
+      "other_pct": 0.1,
+      "nonwhite_pct": 1.1
+    },
+    "West Worcestershire": {
+      "gss_code": "E14001579",
+      "region": "West Midlands",
+      "white_pct": 96.8,
+      "asian_pct": 1.2,
+      "black_pct": 0.3,
+      "mixed_pct": 1.3,
+      "other_pct": 0.3,
+      "nonwhite_pct": 3.2
+    },
+    "Westmorland & Lonsdale": {
+      "gss_code": "E14001580",
+      "region": "North West",
+      "white_pct": 97.8,
+      "asian_pct": 0.7,
+      "black_pct": 0.2,
+      "mixed_pct": 0.9,
+      "other_pct": 0.3,
+      "nonwhite_pct": 2.2
+    },
+    "Weston-super-Mare": {
+      "gss_code": "E14001581",
+      "region": "South West",
+      "white_pct": 95.0,
+      "asian_pct": 1.9,
+      "black_pct": 0.7,
+      "mixed_pct": 1.7,
+      "other_pct": 0.7,
+      "nonwhite_pct": 5.0
+    },
+    "Wetherby & Easingwold": {
+      "gss_code": "E14001582",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 95.9,
+      "asian_pct": 1.7,
+      "black_pct": 0.6,
+      "mixed_pct": 1.4,
+      "other_pct": 0.4,
+      "nonwhite_pct": 4.1
+    },
+    "Whitehaven & Workington": {
+      "gss_code": "E14001583",
+      "region": "North West",
+      "white_pct": 98.2,
+      "asian_pct": 0.7,
+      "black_pct": 0.2,
+      "mixed_pct": 0.6,
+      "other_pct": 0.3,
+      "nonwhite_pct": 1.8,
+      "ministers": [
+        "Josh MacAlister OBE MP"
+      ]
+    },
+    "Widnes & Halewood": {
+      "gss_code": "E14001584",
+      "region": "North West",
+      "white_pct": 96.1,
+      "asian_pct": 1.3,
+      "black_pct": 0.4,
+      "mixed_pct": 1.6,
+      "other_pct": 0.5,
+      "nonwhite_pct": 3.9
+    },
+    "Wigan": {
+      "gss_code": "E14001585",
+      "region": "North West",
+      "white_pct": 94.7,
+      "asian_pct": 1.9,
+      "black_pct": 1.2,
+      "mixed_pct": 1.3,
+      "other_pct": 0.9,
+      "nonwhite_pct": 5.3,
+      "ministers": [
+        "Lisa Nandy MP"
+      ]
+    },
+    "Wimbledon": {
+      "gss_code": "E14001586",
+      "region": "London",
+      "white_pct": 68.8,
+      "asian_pct": 17.5,
+      "black_pct": 3.5,
+      "mixed_pct": 5.8,
+      "other_pct": 4.4,
+      "nonwhite_pct": 31.2
+    },
+    "Winchester": {
+      "gss_code": "E14001587",
+      "region": "South East",
+      "white_pct": 93.2,
+      "asian_pct": 3.3,
+      "black_pct": 0.6,
+      "mixed_pct": 2.2,
+      "other_pct": 0.7,
+      "nonwhite_pct": 6.8
+    },
+    "Windsor": {
+      "gss_code": "E14001588",
+      "region": "South East",
+      "white_pct": 73.5,
+      "asian_pct": 16.8,
+      "black_pct": 2.9,
+      "mixed_pct": 3.9,
+      "other_pct": 3.0,
+      "nonwhite_pct": 26.5
+    },
+    "Wirral West": {
+      "gss_code": "E14001589",
+      "region": "North West",
+      "white_pct": 96.2,
+      "asian_pct": 1.7,
+      "black_pct": 0.3,
+      "mixed_pct": 1.4,
+      "other_pct": 0.4,
+      "nonwhite_pct": 3.8,
+      "ministers": [
+        "Matthew Patrick MP"
+      ]
+    },
+    "Witham": {
+      "gss_code": "E14001590",
+      "region": "East of England",
+      "white_pct": 94.4,
+      "asian_pct": 1.8,
+      "black_pct": 1.3,
+      "mixed_pct": 1.9,
+      "other_pct": 0.6,
+      "nonwhite_pct": 5.6
+    },
+    "Witney": {
+      "gss_code": "E14001591",
+      "region": "South East",
+      "white_pct": 94.8,
+      "asian_pct": 1.7,
+      "black_pct": 0.9,
+      "mixed_pct": 1.9,
+      "other_pct": 0.7,
+      "nonwhite_pct": 5.2
+    },
+    "Woking": {
+      "gss_code": "E14001592",
+      "region": "South East",
+      "white_pct": 78.4,
+      "asian_pct": 14.2,
+      "black_pct": 1.8,
+      "mixed_pct": 3.5,
+      "other_pct": 2.1,
+      "nonwhite_pct": 21.6
+    },
+    "Wokingham": {
+      "gss_code": "E14001593",
+      "region": "South East",
+      "white_pct": 86.4,
+      "asian_pct": 7.6,
+      "black_pct": 1.8,
+      "mixed_pct": 2.9,
+      "other_pct": 1.2,
+      "nonwhite_pct": 13.6
+    },
+    "Wolverhampton North East": {
+      "gss_code": "E14001594",
+      "region": "West Midlands",
+      "white_pct": 72.4,
+      "asian_pct": 11.5,
+      "black_pct": 8.7,
+      "mixed_pct": 5.0,
+      "other_pct": 2.4,
+      "nonwhite_pct": 27.6
+    },
+    "Wolverhampton South East": {
+      "gss_code": "E14001595",
+      "region": "West Midlands",
+      "white_pct": 63.2,
+      "asian_pct": 20.7,
+      "black_pct": 8.0,
+      "mixed_pct": 5.3,
+      "other_pct": 2.8,
+      "nonwhite_pct": 36.8,
+      "ministers": [
+        "Pat McFadden MP"
+      ]
+    },
+    "Wolverhampton West": {
+      "gss_code": "E14001596",
+      "region": "West Midlands",
+      "white_pct": 55.3,
+      "asian_pct": 26.9,
+      "black_pct": 8.4,
+      "mixed_pct": 4.9,
+      "other_pct": 4.5,
+      "nonwhite_pct": 44.7
+    },
+    "Worcester": {
+      "gss_code": "E14001597",
+      "region": "West Midlands",
+      "white_pct": 90.0,
+      "asian_pct": 5.6,
+      "black_pct": 1.2,
+      "mixed_pct": 2.2,
+      "other_pct": 1.0,
+      "nonwhite_pct": 10.0
+    },
+    "Worsley & Eccles": {
+      "gss_code": "E14001598",
+      "region": "North West",
+      "white_pct": 88.9,
+      "asian_pct": 4.3,
+      "black_pct": 2.5,
+      "mixed_pct": 2.4,
+      "other_pct": 1.8,
+      "nonwhite_pct": 11.1
+    },
+    "Worthing West": {
+      "gss_code": "E14001599",
+      "region": "South East",
+      "white_pct": 92.6,
+      "asian_pct": 3.1,
+      "black_pct": 1.0,
+      "mixed_pct": 2.3,
+      "other_pct": 0.9,
+      "nonwhite_pct": 7.4
+    },
+    "Wrexham": {
+      "gss_code": "W07000111",
+      "region": "Wales",
+      "white_pct": 95.4,
+      "asian_pct": 2.0,
+      "black_pct": 0.7,
+      "mixed_pct": 1.3,
+      "other_pct": 0.6,
+      "nonwhite_pct": 4.6
+    },
+    "Wycombe": {
+      "gss_code": "E14001600",
+      "region": "South East",
+      "white_pct": 64.9,
+      "asian_pct": 22.8,
+      "black_pct": 5.2,
+      "mixed_pct": 4.8,
+      "other_pct": 2.3,
+      "nonwhite_pct": 35.1,
+      "ministers": [
+        "Emma Reynolds MP"
+      ]
+    },
+    "Wyre Forest": {
+      "gss_code": "E14001601",
+      "region": "West Midlands",
+      "white_pct": 95.9,
+      "asian_pct": 1.9,
+      "black_pct": 0.4,
+      "mixed_pct": 1.4,
+      "other_pct": 0.4,
+      "nonwhite_pct": 4.1
+    },
+    "Wythenshawe & Sale East": {
+      "gss_code": "E14001602",
+      "region": "North West",
+      "white_pct": 80.1,
+      "asian_pct": 8.3,
+      "black_pct": 4.8,
+      "mixed_pct": 4.3,
+      "other_pct": 2.5,
+      "nonwhite_pct": 19.9
+    },
+    "Yeovil": {
+      "gss_code": "E14001603",
+      "region": "South West",
+      "white_pct": 95.9,
+      "asian_pct": 1.8,
+      "black_pct": 0.6,
+      "mixed_pct": 1.3,
+      "other_pct": 0.5,
+      "nonwhite_pct": 4.1
+    },
+    "Ynys Môn": {
+      "gss_code": "W07000112",
+      "region": "Wales",
+      "white_pct": 98.1,
+      "asian_pct": 0.6,
+      "black_pct": 0.2,
+      "mixed_pct": 0.9,
+      "other_pct": 0.2,
+      "nonwhite_pct": 1.9
+    },
+    "York Central": {
+      "gss_code": "E14001604",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 90.3,
+      "asian_pct": 5.3,
+      "black_pct": 0.9,
+      "mixed_pct": 2.3,
+      "other_pct": 1.3,
+      "nonwhite_pct": 9.7
+    },
+    "York Outer": {
+      "gss_code": "E14001605",
+      "region": "Yorkshire and The Humber",
+      "white_pct": 95.7,
+      "asian_pct": 2.0,
+      "black_pct": 0.4,
+      "mixed_pct": 1.3,
+      "other_pct": 0.6,
+      "nonwhite_pct": 4.3
+    }
+  }
+}

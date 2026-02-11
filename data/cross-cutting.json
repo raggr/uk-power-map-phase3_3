@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Sir Alan Campbell MP",
+    "title": "Lord President of the Council, Leader of the House of Commons",
+    "rt": true,
+    "note": "Attends Cabinet"
+  },
+  {
+    "name": "Baroness Smith of Basildon",
+    "title": "Lord Privy Seal, Leader of the House of Lords",
+    "rt": true
+  },
+  {
+    "name": "Lord Hermer KC",
+    "title": "Attorney General",
+    "rt": true,
+    "note": "Attends Cabinet"
+  },
+  {
+    "name": "Ellie Reeves MP",
+    "title": "Solicitor General",
+    "rt": true
+  }
+]
