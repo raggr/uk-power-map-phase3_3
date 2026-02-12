@@ -7,8 +7,15 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700;800;900&display=swap');
   *{margin:0;padding:0;box-sizing:border-box}
-  body{zoom:1.33;font-family:'Source Sans 3','Segoe UI',system-ui,sans-serif;background:#f0f2f5;color:#1a1a2e;min-height:100vh;padding:20px}
-  .container{max-width:1100px;margin:0 auto}
+  body{zoom:1.33;font-family:'Source Sans 3','Segoe UI',system-ui,sans-serif;background:#f0f2f5;color:#1a1a2e;min-height:100vh;padding:0}
+  .site-nav{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;background:#fff;border-bottom:2px solid #e2e4e9;box-shadow:0 2px 8px rgba(0,0,0,0.06);position:sticky;top:0;z-index:100;flex-wrap:wrap;gap:8px}
+  .site-nav h1{font-size:20px;font-weight:800;letter-spacing:-0.3px}
+  .site-nav .sub{font-size:10px;color:#5a6577;margin-top:1px}
+  .nav-links{display:flex;gap:6px;align-items:center}
+  .nav-link{font-size:12px;color:#1d70b8;text-decoration:none;font-weight:600;padding:6px 14px;border-radius:6px;transition:all 0.15s;border:1px solid transparent}
+  .nav-link:hover{background:#f0f2f5;border-color:#d1d5db}
+  .nav-link.active{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+  .container{max-width:1100px;margin:0 auto;padding:20px}
   .header{text-align:center;margin-bottom:24px}
   .header-row{display:flex;justify-content:center;align-items:center;gap:12px;margin-bottom:8px}
   .crown-icon{width:36px;height:36px;background:#1a1a2e;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:18px}
@@ -192,6 +199,7 @@
 </style>
 </head>
 <body>
+<div class="site-nav"><div><h1>UK Government Ministerial Structure</h1><div class="sub">Ministerial org chart · Constituency maps · 650 MPs · Analysis</div></div><div class="nav-links"><a class="nav-link active" href="#">☰ Ministers</a><a class="nav-link" href="maps/index.html">⚙ Maps</a><a class="nav-link" href="mps/index.html">👥 All MPs</a><a class="nav-link" href="guide/index.html">📚 Guide</a></div></div>
 <div class="container" id="app">
   <div class="loading-state">
     <div class="spinner"></div>
@@ -261,7 +269,6 @@ function loadAllData() {
 // Optionally load future data files (fail silently if not present)
 function loadOptionalData() {
   var optionals = [
-    { file: 'ethnicity-mps.json', target: 'ETHNICITY' },
     { file: 'constituency-demographics.json', target: 'CONSTITUENCY_DEMOGRAPHICS' },
   ];
   return Promise.all(optionals.map(function(o) {
@@ -289,7 +296,7 @@ function loadIssueData(issueId) {
 function getPercentile(w){if(w==null)return null;for(var i=WPT.length-1;i>=0;i--)if(w>=WPT[i][0])return WPT[i][1];return 0}
 function getPercentileClass(p){if(p==null)return"wb-unknown";if(p>=99)return"wb-top1";if(p>=95)return"wb-top5";if(p>=90)return"wb-top10";if(p>=75)return"wb-top25";return"wb-top50"}
 function formatWealth(w){if(w==null)return"?";if(w>=10000000)return"\u00a3"+(w/1000000).toFixed(0)+"m";if(w>=1000000)return"\u00a3"+(w/1000000).toFixed(1)+"m";return"\u00a3"+(w/1000).toFixed(0)+"k"}
-function wealthBadgeHTML(n){if(!showWealth)return"";var w=WEALTH_EST[n],p=getPercentile(w),cls=getPercentileClass(p);var pL=p!=null?"Top "+parseFloat((100-p).toFixed(2))+"%":"N/A";var t=p!=null?"Est. wealth: "+formatWealth(w)+" \u2014 Wealthier than ~"+p+"% of UK adults":"Insufficient data";return' <span class="wealth-badge '+cls+'" title="'+t+'"><span class="wb-icon">\u00a3</span>'+pL+'</span>'}
+function wealthBadgeHTML(n){return""}
 function photoURL(n){var i=MP_INFO[n];if(!i||!i.parlId)return null;return"https://members-api.parliament.uk/api/Members/"+i.parlId+"/Thumbnail"}
 
 // ETHNICITY LOOKUP
@@ -309,13 +316,7 @@ function getEthnicity(name) {
 function isEthnicMinority(name) {
   return !!ETHNICITY_LOOKUP[name];
 }
-function ethBadgeHTML(name) {
-  if (!showDiversity) return "";
-  var e = getEthnicity(name);
-  if (!e) return "";
-  var cls = "eth-" + e.broad.toLowerCase();
-  return ' <span class="eth-badge ' + cls + '" title="' + esc(e.detail) + ' (Source: British Future / public records)">' + esc(e.broad) + '</span>';
-}
+function ethBadgeHTML(name){return""}
 
 // CONSTITUENCY DEMOGRAPHICS LOOKUP
 var CON_DEMO_LOOKUP = {}; // normalized constituency name -> demographics
@@ -341,32 +342,18 @@ function getConDemo(name) {
   if (!info || !info.con) return null;
   return CON_DEMO_LOOKUP[info.con] || CON_DEMO_LOOKUP[info.con.replace(/and/g, "&")] || null;
 }
-function conEthBarHTML(name) {
-  if (!showDiversity) return "";
-  var d = getConDemo(name);
-  if (!d) return "";
-  var nw = d.nonwhite_pct || 0;
-  return '<div class="con-eth-bar" title="Constituency: ' + Math.round(d.white_pct) + '% White, ' + 
-    Math.round(d.asian_pct) + '% Asian, ' + Math.round(d.black_pct) + '% Black, ' + 
-    Math.round(d.mixed_pct) + '% Mixed, ' + Math.round(d.other_pct) + '% Other">' +
-    '<span class="con-eth-white" style="width:' + d.white_pct + '%"></span>' +
-    '<span class="con-eth-asian" style="width:' + d.asian_pct + '%"></span>' +
-    '<span class="con-eth-black" style="width:' + d.black_pct + '%"></span>' +
-    '<span class="con-eth-mixed" style="width:' + d.mixed_pct + '%"></span>' +
-    '<span class="con-eth-other" style="width:' + d.other_pct + '%"></span>' +
-    '</div><div class="con-eth-label">' + nw.toFixed(0) + '% non-White</div>';
-}
+function conEthBarHTML(name){return""}
 function constituencyHTML(n){var i=MP_INFO[n];if(!i||!i.con)return"";var m=i.maj,c="safe";if(m<2000)c="vulnerable";else if(m<6000)c="marginal";var bw=Math.min(60,Math.max(4,Math.round(m/500)));var lnk=i.parlId?'<a href="https://members.parliament.uk/member/'+i.parlId+'/contact" target="_blank" rel="noopener">'+esc(i.con)+'</a>':esc(i.con);return'<div class="minister-constituency">'+lnk+' <span class="majority-bar-wrap"><span class="majority-bar '+c+'" style="width:'+bw+'px"></span><span class="majority-'+c+'" title="2024 majority: '+m.toLocaleString()+'">maj. '+m.toLocaleString()+'</span></span></div>'}
 
 // STATE
 var expandedDepts=new Set(["cabinet-office","treasury"]);
-var allExpanded=false,showKey=true,searchTerm="",showWealth=true,showChangelog=false,showDiversity=false;
+var allExpanded=false,showKey=true,searchTerm="",showChangelog=false;
 var currentView="full",seniorityFilter="all",sortByBudget=false;
 
 // HELPERS
 function esc(s){var d=document.createElement("div");d.textContent=s;return d.innerHTML}
 function badgeHTML(note){if(!note)return"";var c="whip";if(note==="Unpaid")c="unpaid";else if(note==="Attends Cabinet")c="cabinet";return'<span class="badge '+c+'">'+esc(note)+'</span>'}
-function ministerHTML(m,rank,color){var op=rank==="mos"?"80":rank==="puss"?"50":"";var ph=photoURL(m.name);var pt=ph?'<img class="minister-photo" src="'+ph+'" alt="" loading="lazy" onerror="this.style.display=\'none\'">':'';return'<div class="minister-card '+rank+'" style="border-left-color:'+color+op+'">'+pt+'<div class="minister-info"><div class="minister-name">'+(m.rt?'<span class="minister-rt">Rt Hon </span>':"")+esc(m.name)+badgeHTML(m.note)+wealthBadgeHTML(m.name)+ethBadgeHTML(m.name)+'</div><div class="minister-title">'+esc(m.title)+'</div>'+constituencyHTML(m.name)+conEthBarHTML(m.name)+'</div></div>'}
+function ministerHTML(m,rank,color){var op=rank==="mos"?"80":rank==="puss"?"50":"";var ph=photoURL(m.name);var pt=ph?'<img class="minister-photo" src="'+ph+'" alt="" loading="lazy" onerror="this.style.display=\'none\'">':'';return'<div class="minister-card '+rank+'" style="border-left-color:'+color+op+'">'+pt+'<div class="minister-info"><div class="minister-name">'+(m.rt?'<span class="minister-rt">Rt Hon </span>':"")+esc(m.name)+badgeHTML(m.note)+'</div><div class="minister-title">'+esc(m.title)+'</div>'+constituencyHTML(m.name)+'</div></div>'}
 
 function deptHTML(dept){var isOpen=expandedDepts.has(dept.id)||searchTerm.length>0;var total=1+dept.mos.length+dept.puss.length;var dn=dept.shortName||dept.name;var fnl=dept.shortName?'<div class="dept-fullname">'+esc(dept.name)+'</div>':"";var b=DEPT_BUDGET[dept.id];var bl=b!=null?'<div class="dept-budget">\u00a3'+b+'bn Total DEL 2025\u201326</div>':"";var vl=dept.verified?'<div class="dept-verified">Verified '+dept.verified+'</div>':"";
 var body="";var sS=seniorityFilter==="all"||seniorityFilter==="cabinet"||seniorityFilter==="sos";var sM=seniorityFilter==="all"||seniorityFilter==="mos";var sP=seniorityFilter==="all";
@@ -513,7 +500,7 @@ function render(){
   var h="";
 
   // Header
-  h+='<div class="header"><div class="header-row"><div class="crown-icon">\ud83d\udc51</div><h1>His Majesty\u2019s Government</h1></div><p class="subtitle">UK Government Ministerial Structure \u2014 '+totalMinisters+' ministerial posts across '+DEPARTMENTS.length+' departments</p><p class="source">Source: GOV.UK \u2022 Data as of February 2026</p></div>';
+  h+='<div class="header"><h1>UK Government Ministers</h1><p class="subtitle">'+totalMinisters+' ministerial posts across '+DEPARTMENTS.length+' departments</p><p class="source">Source: GOV.UK \u2022 Data as of February 2026</p></div>';
 
   // Changelog
   h+='<div class="changelog-box"><div class="changelog-toggle" onclick="toggleChangelog()">\ud83d\udccb What\u2019s changed'+(showChangelog?' \u25b4':' \u25be')+'</div><div class="changelog-body'+(showChangelog?" open":"")+'">';
@@ -524,27 +511,14 @@ function render(){
   if(showKey){
     var kr=[{l:"1. Prime Minister",d:"Head of Government",c:"#1a1a2e"},{l:"2. Secretary of State",d:"Cabinet minister",c:"#333"},{l:"3. Minister of State",d:"Senior junior minister",c:"#555"},{l:"4. PUSS",d:"Junior minister",c:"#777"},{l:"5. PPS",d:"Not a minister (omitted)",c:"#999"}];
     h+='<div class="key-box" id="key-box"><button class="close-btn" onclick="hideKey()">\u2715</button><div class="key-title">Ministerial Hierarchy</div><div class="key-items">'+kr.map(function(r){return'<div class="key-item"><div class="key-dot" style="background:'+r.c+'"></div><span class="key-label" style="color:'+r.c+'">'+r.l+'</span><span class="key-desc">\u2014 '+r.d+'</span></div>'}).join("")+'</div>';
-    if(showDiversity){
-      h+='<div class="key-title" style="margin-top:10px">Ethnicity Badges</div><div class="key-items">';
-      h+='<div class="key-item"><span class="eth-badge eth-asian">Asian</span><span class="key-desc">\u2014 Asian or Asian British</span></div>';
-      h+='<div class="key-item"><span class="eth-badge eth-black">Black</span><span class="key-desc">\u2014 Black, Caribbean or African</span></div>';
-      h+='<div class="key-item"><span class="eth-badge eth-mixed">Mixed</span><span class="key-desc">\u2014 Mixed or multiple heritage</span></div>';
-      h+='</div><div class="key-title" style="margin-top:8px">Constituency Ethnicity Bar</div><div class="key-items">';
-      h+='<div class="key-item"><span style="display:inline-block;width:12px;height:8px;background:#d1d5db;border-radius:1px"></span><span class="key-desc">White</span></div>';
-      h+='<div class="key-item"><span style="display:inline-block;width:12px;height:8px;background:#3b82f6;border-radius:1px"></span><span class="key-desc">Asian</span></div>';
-      h+='<div class="key-item"><span style="display:inline-block;width:12px;height:8px;background:#8b5cf6;border-radius:1px"></span><span class="key-desc">Black</span></div>';
-      h+='<div class="key-item"><span style="display:inline-block;width:12px;height:8px;background:#ec4899;border-radius:1px"></span><span class="key-desc">Mixed</span></div>';
-      h+='<div class="key-item"><span style="display:inline-block;width:12px;height:8px;background:#10b981;border-radius:1px"></span><span class="key-desc">Other</span></div>';
-      h+='</div>';
-    }
     h+='<div class="key-footer">Majority bars: <span class="majority-bar safe" style="display:inline-block;width:20px;vertical-align:middle"></span> safe (6k+) \u00b7 <span class="majority-bar marginal" style="display:inline-block;width:12px;vertical-align:middle"></span> marginal (2k\u20136k) \u00b7 <span class="majority-bar vulnerable" style="display:inline-block;width:6px;vertical-align:middle"></span> vulnerable (<2k) \u00b7 Headers show Total DEL 2025\u201326. Constituency names link to Parliament.uk.</div></div>';
   }
 
   // Controls
-  h+='<div class="controls"><input class="search-input" type="text" placeholder="Search ministers or departments\u2026" value="'+esc(searchTerm)+'" oninput="onSearch(this.value)"><button class="ctrl-btn" onclick="toggleAll()">'+(allExpanded?"Collapse All":"Expand All")+'</button><button class="ctrl-btn'+(showWealth?" active":"")+'" onclick="toggleWealth()">\u00a3 Wealth</button><button class="ctrl-btn'+(showDiversity?" active":"")+'" onclick="toggleDiversity()">\ud83c\udf0d Ethnicity</button><button class="ctrl-btn'+(sortByBudget?" active":"")+'" onclick="toggleBudgetSort()">\u00a3 Sort by Budget</button><button class="ctrl-btn" onclick="window.print()">\ud83d\udda8 Print</button>'+(!showKey?'<button class="ctrl-btn" onclick="showKeyBox()">Key</button>':"")+'</div>';
+  h+='<div class="controls"><input class="search-input" type="text" placeholder="Search ministers or departments\u2026" value="'+esc(searchTerm)+'" oninput="onSearch(this.value)"><button class="ctrl-btn" onclick="toggleAll()">'+(allExpanded?"Collapse All":"Expand All")+'</button><button class="ctrl-btn'+(sortByBudget?" active":"")+'" onclick="toggleBudgetSort()">\u00a3 Sort by Budget</button><button class="ctrl-btn" onclick="window.print()">\ud83d\udda8 Print</button>'+(!showKey?'<button class="ctrl-btn" onclick="showKeyBox()">Key</button>':"")+'</div>';
 
   // View tabs
-  h+='<div class="view-tabs"><div class="view-tab'+(currentView==="full"?" active":"")+'" onclick="setView(\'full\')">Full Chart</div><div class="view-tab'+(currentView==="cabinet"?" active":"")+'" onclick="setView(\'cabinet\')">Cabinet Table</div><div class="view-tab'+(currentView==="diversity"?" active":"")+'" onclick="setView(\'diversity\')">\ud83c\udf0d Diversity</div><a class="view-tab" href="maps/index.html" style="text-decoration:none">\ud83d\uddfa Map</a></div>';
+  h+='<div class="view-tabs"><div class="view-tab'+(currentView==="full"?" active":"")+'" onclick="setView(\'full\')">Full Chart</div><div class="view-tab'+(currentView==="cabinet"?" active":"")+'" onclick="setView(\'cabinet\')">Cabinet Table</div></div>';
 
   // Filter bar
   if(currentView==="full"){
@@ -554,29 +528,18 @@ function render(){
   }
 
   // Wealth note
-  if(showWealth&&currentView==="full"){
-    h+='<div class="wealth-note-box"><strong>\u26a0 Wealth Percentile Estimates</strong> \u2014 Badges show estimated position in UK adult wealth distribution (ONS WAS 2020\u201322). <strong>Rough approximations</strong>, not audited. Hover for detail.<br><span style="font-size:10px;opacity:0.8">Median \u2248 \u00a3104k \u00b7 Top 5% \u2248 \u00a3700k+ \u00b7 Top 1% \u2248 \u00a31.9m+ \u00b7 Top 0.1% \u2248 \u00a35m+</span></div>';
-  }
+  
 
   if(currentView==="cabinet"){
     var cab=getCabinetMembers();
     h+='<div class="cabinet-table">';
-    cab.forEach(function(m){var ph=photoURL(m.name);var inf=MP_INFO[m.name]||{};var pt=ph?'<img src="'+ph+'" alt="" loading="lazy" onerror="this.style.display=\'none\'">':'<div style="width:48px;height:48px;border-radius:50%;background:#e2e4e9;margin:0 auto 6px"></div>';var ethB=isEthnicMinority(m.name)?'<div style="margin-top:3px">'+ethBadgeHTML(m.name)+'</div>':"";h+='<div class="cabinet-card" style="border-top:3px solid '+m.color+'">'+pt+'<div class="cc-name">'+esc(m.name.replace(/ MP$/,"").replace(/^(Rt Hon |Sir |Dame )/,""))+'</div><div class="cc-dept">'+esc(m.dept)+'</div>'+(inf.con?'<div class="cc-con">'+esc(inf.con)+'</div>':'')+ethB+'</div>'});
+    cab.forEach(function(m){var ph=photoURL(m.name);var inf=MP_INFO[m.name]||{};var pt=ph?'<img src="'+ph+'" alt="" loading="lazy" onerror="this.style.display=\'none\'">':'<div style="width:48px;height:48px;border-radius:50%;background:#e2e4e9;margin:0 auto 6px"></div>';h+='<div class="cabinet-card" style="border-top:3px solid '+m.color+'">'+pt+'<div class="cc-name">'+esc(m.name.replace(/ MP$/,"").replace(/^(Rt Hon |Sir |Dame )/,""))+'</div><div class="cc-dept">'+esc(m.dept)+'</div>'+(inf.con?'<div class="cc-con">'+esc(inf.con)+'</div>':'')+'</div>'});
     h+='</div>';
-  } else if(currentView==="diversity"){
-    var dStats=getDiversityStats();
-    h+=diversitySummaryHTML(dStats);
-    h+=diversityViewHTML(dStats);
   } else {
     // PM
-    h+='<div class="pm-card"><div class="pm-label">Prime Minister</div><div class="pm-name">The Rt Hon Sir Keir Starmer KCB KC MP'+(showWealth?(function(){var w=WEALTH_EST["Sir Keir Starmer KCB KC MP"],p=getPercentile(w);return' <span class="wealth-badge wb-top1" style="font-size:11px;padding:3px 8px" title="Est. wealth: '+formatWealth(w)+' \u2014 Wealthier than ~'+p+'% of UK adults">\u00a3 Top '+parseFloat((100-p).toFixed(2))+'%</span>'})():"")+'</div><div class="pm-titles">First Lord of the Treasury \u00b7 Minister for the Civil Service \u00b7 Minister for the Union</div><div class="minister-constituency" style="text-align:center;margin-top:4px"><a href="https://members.parliament.uk/member/4514/contact" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.85)">Holborn and St Pancras</a> \u00b7 <span style="color:rgba(255,255,255,0.75)">maj. 11,572</span></div></div>';
+    h+='<div class="pm-card"><div class="pm-label">Prime Minister</div><div class="pm-name">The Rt Hon Sir Keir Starmer KCB KC MP'+'</div><div class="pm-titles">First Lord of the Treasury \u00b7 Minister for the Civil Service \u00b7 Minister for the Union</div><div class="minister-constituency" style="text-align:center;margin-top:4px"><a href="https://members.parliament.uk/member/4514/contact" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.85)">Holborn and St Pancras</a> \u00b7 <span style="color:rgba(255,255,255,0.75)">maj. 11,572</span></div></div>';
 
-    // Diversity summary (if toggled on in full view)
-    if(showDiversity){
-      var dStats=getDiversityStats();
-      h+=diversitySummaryHTML(dStats);
-    }
-
+    
     // Cross-cutting
     h+='<div class="cross-box"><div class="section-title">Cross-Cutting & Law Officers</div><div class="cross-grid">'+CROSS_CUTTING.map(function(m){return ministerHTML(m,"mos","#1a1a2e")}).join("")+'</div></div>';
 
@@ -599,10 +562,8 @@ function toggleAll(){if(allExpanded)expandedDepts.clear();else DEPARTMENTS.forEa
 function hideKey(){showKey=false;render()}
 function showKeyBox(){showKey=true;render()}
 function onSearch(v){searchTerm=v;render()}
-function toggleWealth(){showWealth=!showWealth;render()}
-function toggleDiversity(){showDiversity=!showDiversity;render()}
 function toggleChangelog(){showChangelog=!showChangelog;render()}
-function setView(v){currentView=v;if(v==="diversity")showDiversity=true;render()}
+function setView(v){currentView=v;render()}
 function setFilter(f){seniorityFilter=f;render()}
 function toggleBudgetSort(){sortByBudget=!sortByBudget;render()}
 
@@ -612,7 +573,6 @@ loadAllData()
     return loadOptionalData();
   })
   .then(function() {
-    buildEthnicityLookup();
     buildConDemoLookup();
     render();
   })

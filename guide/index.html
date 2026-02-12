@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UK Government Power Map — Analysis Guide</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700;800&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Source Sans 3','Segoe UI',system-ui,sans-serif;background:#f0f2f5;color:#1a1a2e;min-height:100vh}
+  .top-bar{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;flex-wrap:wrap;gap:8px;background:#fff;border-bottom:2px solid #e2e4e9;box-shadow:0 2px 8px rgba(0,0,0,0.06);position:sticky;top:0;z-index:100}
+  .top-left h1{font-size:20px;font-weight:800;letter-spacing:-0.3px}
+  .top-left .sub{font-size:10px;color:#5a6577;margin-top:1px}
+  .nav-links{display:flex;gap:6px;align-items:center}
+  .nav-link{font-size:12px;color:#1d70b8;text-decoration:none;font-weight:600;padding:6px 14px;border-radius:6px;transition:all 0.15s;border:1px solid transparent}
+  .nav-link:hover{background:#f0f2f5;border-color:#d1d5db}
+  .nav-link.active{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+  .article{max-width:780px;margin:0 auto;padding:32px 24px 60px}
+  .article-header{margin-bottom:36px;padding-bottom:24px;border-bottom:3px solid #1a1a2e}
+  .article-header h1{font-family:'Source Serif 4',Georgia,serif;font-size:32px;font-weight:700;line-height:1.2;letter-spacing:-0.5px;margin-bottom:8px}
+  .article-header .lead{font-size:16px;line-height:1.6;color:#5a6577;font-weight:300}
+  .toc{background:#fff;border:1px solid #e2e4e9;border-radius:8px;padding:18px 24px;margin-bottom:32px}
+  .toc-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#5a6577;margin-bottom:10px}
+  .toc a{display:block;font-size:13px;color:#1d70b8;text-decoration:none;padding:3px 0;line-height:1.5}
+  .toc a:hover{text-decoration:underline}
+  .toc .toc-sub{padding-left:16px;font-size:12px;color:#5a6577}
+  h2{font-family:'Source Serif 4',Georgia,serif;font-size:22px;font-weight:700;margin:36px 0 14px;padding-top:20px;border-top:1px solid #e2e4e9;letter-spacing:-0.3px}
+  h2:first-of-type{border-top:none;padding-top:0}
+  h3{font-size:16px;font-weight:700;margin:24px 0 10px;color:#1a1a2e}
+  p{font-size:14.5px;line-height:1.75;margin-bottom:14px;color:#333}
+  .quote{border-left:4px solid #1a1a2e;padding:12px 20px;margin:20px 0;background:#f8f9fc;border-radius:0 6px 6px 0}
+  .quote p{color:#444;font-style:italic;margin-bottom:0}
+  .quote .cite{font-size:12px;color:#8a94a6;margin-top:6px;font-style:normal}
+  .concept-card{background:#fff;border:1px solid #e2e4e9;border-radius:10px;padding:18px 22px;margin:20px 0;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+  .concept-card h4{font-size:14px;font-weight:700;color:#1a1a2e;margin-bottom:6px;display:flex;align-items:center;gap:8px}
+  .concept-card h4 .icon{font-size:18px}
+  .concept-card p{font-size:13px;margin-bottom:8px;color:#444}
+  .concept-card .map-link{font-size:12px;font-weight:600;color:#1d70b8;text-decoration:none}
+  .concept-card .map-link:hover{text-decoration:underline}
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}
+  @media(max-width:700px){.grid-2{grid-template-columns:1fr}}
+  .three-group{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:20px 0}
+  .three-group .group{border-radius:8px;padding:14px 16px}
+  .three-group .group h4{font-size:13px;font-weight:700;margin-bottom:6px}
+  .three-group .group p{font-size:12px;line-height:1.5;margin:0}
+  .g-conviction{background:#dbeafe;border:1px solid #93c5fd}.g-conviction h4{color:#1e40af}
+  .g-necessity{background:#fef3c7;border:1px solid #fde68a}.g-necessity h4{color:#92400e}
+  .g-identity{background:#fde8e8;border:1px solid #fca5a5}.g-identity h4{color:#991b1b}
+  @media(max-width:700px){.three-group{grid-template-columns:1fr}}
+  .data-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:12.5px}
+  .data-table th{background:#f8f9fa;padding:6px 10px;font-weight:700;text-align:left;border-bottom:2px solid #e2e4e9;font-size:11px;text-transform:uppercase;letter-spacing:0.3px;color:#5a6577}
+  .data-table td{padding:6px 10px;border-bottom:1px solid #f0f2f5}
+  .ref{font-size:13px;color:#5a6577;line-height:1.6;margin-bottom:8px}
+  .ref strong{color:#1a1a2e}
+  .footer{text-align:center;font-size:10px;color:#8a94a6;padding:20px;border-top:1px solid #e2e4e9;margin-top:32px}
+</style>
+</head>
+<body>
+<div class="top-bar">
+  <div class="top-left">
+    <h1>Analysis Guide</h1>
+    <div class="sub">Theoretical framework · Brexitland · Campbell & Heath · Methodology</div>
+  </div>
+  <div class="nav-links">
+    <a class="nav-link" href="../index.html">&#9776; Power Map</a>
+    <a class="nav-link" href="../maps/index.html">&#9881; Maps</a>
+    <a class="nav-link" href="../mps/index.html">&#128101; All MPs</a>
+    <a class="nav-link active" href="#">&#128214; Analysis Guide</a>
+  </div>
+</div>
+<div class="article">
+  <div class="article-header">
+    <h1>Understanding the Maps: Identity Politics, Demographic Change, and Electoral Realignment in Britain</h1>
+    <p class="lead">This guide explains the analytical frameworks behind each map layer, drawing on academic research by Sobolewska & Ford (<em>Brexitland</em>, 2020) and Campbell & Heath ("Fuelling the Populist Divide", 2021). It helps readers move beyond surface-level demographic description toward a theoretically grounded understanding of why British politics looks the way it does.</p>
+  </div>
+
+  <div class="toc">
+    <div class="toc-title">Contents</div>
+    <a href="#framework">1. The Brexitland Framework</a>
+    <a href="#demographics">2. Demographic Map Layers</a>
+    <a href="#brexitland-maps">3. Brexitland Analytical Layers</a>
+    <a href="#bivariate">4. Bivariate Analysis</a>
+    <a href="#parties">5. Party Coalitions & Volatility</a>
+    <a href="#representation">6. Representation & the Elite–Mass Gap</a>
+    <a href="#data">7. Data Sources & Methodology</a>
+    <a href="#references">8. References</a>
+  </div>
+
+  <h2 id="framework">1. The Brexitland Framework</h2>
+  <p>The maps in this project are built on the thesis that the fundamental divide in contemporary British politics is not the traditional left–right economic axis, but a newer <strong>identity divide</strong> shaped by two long-running demographic transformations: the expansion of higher education and the growth of ethnic diversity through immigration.</p>
+  <p>These shifts have gradually produced three distinct groups in the electorate, each with different worldviews, different relationships to social change, and different political demands. The conflict between these groups — once mobilised by events like the EU referendum — produces the volatile, polarised politics that characterises modern Britain.</p>
+
+  <div class="quote">
+    <p>"Two demographic shifts have been gradually reshaping British society for many decades — educational expansion and ethnic diversification. Just one generation ago a majority of the British electorate were white voters with few or no educational qualifications."</p>
+    <div class="cite">— Sobolewska & Ford, <em>Brexitland</em> (2020), Chapter 2</div>
+  </div>
+
+  <h3>The Three Identity Groups</h3>
+  <div class="three-group">
+    <div class="group g-conviction"><h4>Conviction Liberals</h4><p>University graduates who hold cosmopolitan values as a core commitment. They embrace diversity as a social good, support anti-racism norms, and reject ethnocentrism on principle.</p></div>
+    <div class="group g-necessity"><h4>Necessity Liberals</h4><p>Ethnic minority voters who align with conviction liberals on identity conflicts because they are themselves targets of ethnocentric hostility. Their opposition to nativism is strategic self-interest.</p></div>
+    <div class="group g-identity"><h4>Identity Conservatives</h4><p>White voters with lower formal education who hold ethnocentric worldviews. They experience demographic change as decline and threat. Formerly dominant, now declining but locally concentrated.</p></div>
+  </div>
+
+  <p>The political power of this framework lies in understanding that identity conflicts become <strong>polarised</strong> because the stakes feel existential to all three groups. Identity conservatives perceive their communities and values as under threat; conviction liberals view ethnocentrism as morally unacceptable; necessity liberals face the material consequences of prejudice.</p>
+
+  <h3>Threat Activation</h3>
+  <p>A key insight from Brexitland (drawing on Karen Stenner's work) is that ethnocentrism is a <strong>stable disposition</strong> whose political impact depends on <strong>perceived threat</strong>. Many identity conservatives hold ethnocentric views quietly without these translating into political action. Threat — from rapid demographic change, economic decline, or salient political events — <em>activates</em> latent ethnocentrism into voting behaviour.</p>
+  <p>This explains why the same demographics produce different outcomes at different times. The UKIP surge (2013–15), Brexit (2016), and Reform breakthrough (2024) are successive waves of threat activation among identity conservatives.</p>
+
+  <h2 id="demographics">2. Demographic Map Layers</h2>
+
+  <h3>Ethnic Diversity</h3>
+  <p>Shows the percentage of residents identifying as other than White British (Census 2021). High-diversity constituencies tend to be cosmopolitan strongholds; very low-diversity ones are where identity conservatives concentrate. The most volatile constituencies are often in the middle — where diversity is growing but identity conservatives remain numerous.</p>
+
+  <h3>Graduate Share</h3>
+  <p>The proportion with a degree-level qualification (Level 4+). This is the <strong>single strongest predictor</strong> of Leave voting and Reform support (r = −0.86 with Leave) — more predictive than ethnic diversity (r = −0.41), income, or age. University education is the primary route through which conviction-liberal values are acquired.</p>
+
+  <div class="concept-card">
+    <h4><span class="icon">🎓</span> The Education–Politics Link</h4>
+    <p>The graduate share map reveals "Two Englands" — a highly educated, urban, cosmopolitan England in London, university towns, and prosperous suburbs, versus a less-educated, post-industrial England in coastal towns, former mining communities, and rural peripheries.</p>
+    <a class="map-link" href="../maps/index.html">View Graduates map →</a>
+  </div>
+
+  <h3>Diversity Change (2011 → 2021)</h3>
+  <p>Maps the change in ethnic diversity between 2011 and 2021 Censuses (England & Wales). Rapid diversity change is a key "threat signal" — not diversity <em>per se</em> but the <em>perception that one's community is changing fast</em>.</p>
+
+  <h3>Deprivation</h3>
+  <p>UK-harmonised Index of Multiple Deprivation (Abel, Payne & Barclay 2019), comparable across all four nations. Uses IMD score for full 649/650 coverage. Deprivation compounds identity-conservative structure: low education + low diversity + high deprivation creates a powerful sense of being "left behind".</p>
+
+  <h3>MP Gender</h3>
+  <p>Cosmopolitan core constituencies elect 55% female MPs vs just 19% in identity-conservative ones. This reflects party selection practices and the broader correlation between cosmopolitan values and support for gender diversity in representation.</p>
+
+  <h2 id="brexitland-maps">3. Brexitland Analytical Layers</h2>
+
+  <h3>Identity Types</h3>
+  <p>The core Brexitland classification assigns each constituency to one of six types:</p>
+  <table class="data-table">
+    <thead><tr><th>Type</th><th>Characteristics</th><th>Political Tendency</th></tr></thead>
+    <tbody>
+    <tr><td><strong>Cosmopolitan Core</strong></td><td>High graduates + high diversity</td><td>Urban, professional, strongly Remain. Labour/Green heartlands.</td></tr>
+    <tr><td><strong>Graduate Cosmopolitan</strong></td><td>Degree-dense, moderate diversity</td><td>University towns, affluent suburbs. Lib Dem/Labour competitive.</td></tr>
+    <tr><td><strong>Necessity Liberal</strong></td><td>High diversity, fewer graduates</td><td>Ethnic minority communities, inner suburbs. Labour strongholds.</td></tr>
+    <tr><td><strong>Identity Conservative</strong></td><td>Very low graduates, very white, high deprivation</td><td>Strongest Reform vote. Former UKIP/BXP territory.</td></tr>
+    <tr><td><strong>Traditional Working Class</strong></td><td>Low graduates, low diversity</td><td>Ex-industrial, post-mining. Leave heartlands, Red Wall.</td></tr>
+    <tr><td><strong>Mixed / Transitional</strong></td><td>No dominant pattern</td><td>Suburban, mid-range. Most electorally competitive.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Identity Strongholds</h3>
+  <p>Creates a single continuous score by summing % graduates and % non-white residents, producing a spectrum from identity-liberal strongholds (diverse, educated, cosmopolitan) to identity-conservative ones (white, few graduates, traditional). The geographic polarisation is starkly visible: a liberal crescent of cities and university towns versus a conservative interior of small towns and post-industrial communities.</p>
+
+  <h3>Threat Activation Zones</h3>
+  <p>Classifies constituencies based on: (1) demographic structure for identity conservatism, (2) signs of perceived threat (rapid diversity change, deprivation), and (3) whether threat has translated into Reform mobilisation. <strong>Activated</strong> = structure + threat + Reform voting. <strong>Primed</strong> = structure + threat but lower mobilisation. <strong>Latent</strong> = structure without strong threat signals.</p>
+
+  <h2 id="bivariate">4. Bivariate Analysis</h2>
+  <p>Two bivariate choropleth maps show two variables simultaneously, avoiding single-variable oversimplification:</p>
+  <div class="grid-2">
+    <div class="concept-card"><h4>Education × Reform</h4><p>Top-left (low education, high Reform) = identity-conservative heartlands. Bottom-right (high education, low Reform) = cosmopolitan heartlands. The strongest correlation in the dataset.</p></div>
+    <div class="concept-card"><h4>Diversity × Reform</h4><p>Top-left (white + high Reform) = nativist pressure zones. Bottom-right (diverse + low Reform) = cosmopolitan areas. Weaker than education, confirming education as the primary driver.</p></div>
+  </div>
+
+  <h2 id="parties">5. Party Coalitions & Volatility</h2>
+
+  <h3>Labour's Two Geographies</h3>
+  <p>Labour's 400+ seats span identity-liberal bastions (urban, diverse, Remain) and identity-conservative heartlands (white, post-industrial, Leave, Reform-threatened). The party must bridge communities whose identity values directly conflict.</p>
+
+  <h3>Conservative Coalition Tensions</h3>
+  <p>With 121 seats, Conservatives face a two-front war: Remain suburban seats vulnerable to Lib Dems and Leave heartland seats facing Reform insurgency. Any move to recapture one flank risks losing the other.</p>
+
+  <h3>Electoral Volatility</h3>
+  <p>Mean volatility exceeds 22pp — the largest party-system upheaval in modern British electoral history. Concentrated in identity-conservative areas where ethnocentric politics have destabilised traditional loyalties.</p>
+
+  <h2 id="representation">6. Representation & the Elite–Mass Gap</h2>
+  <p>Campbell & Heath (2021) show that attitudes to representation are <strong>ideological</strong>, not just egocentric. They identify two competing visions:</p>
+  <div class="grid-2">
+    <div class="concept-card"><h4>Cosmopolitan Representation</h4><p>Supporters want diversity in legislatures — more women, minorities, young people. Held by 47% of voters but 80% of candidates. A large elite–mass gap.</p></div>
+    <div class="concept-card"><h4>Nativist Representation</h4><p>Supporters want more local, working-class MPs and fewer ethnic minorities. Common among older, less-educated, male voters — identity conservatives. Very rare among political elites of <em>all</em> parties.</p></div>
+  </div>
+  <p>This gap exists <em>within</em> every party, not just between them. The political class is far more cosmopolitan than the electorate, helping explain why identity conservatives feel unrepresented and turn to insurgent parties.</p>
+
+  <div class="quote">
+    <p>"People who support cosmopolitan representation are positively inclined to support the increased representation of all under-represented groups. By contrast people who prefer nativist representation prioritize increasing the number of local working class MPs and want to see fewer Muslims and ethnic minorities."</p>
+    <div class="cite">— Campbell & Heath, "Fuelling the Populist Divide" (2021), p. 1726</div>
+  </div>
+
+  <h2 id="data">7. Data Sources & Methodology</h2>
+  <table class="data-table">
+    <thead><tr><th>Dataset</th><th>Source</th><th>Coverage</th></tr></thead>
+    <tbody>
+    <tr><td>Ethnic composition (2021)</td><td>ONS Census 2021 (LSOA → PCON 2024)</td><td>England & Wales (+Scotland/NI census)</td></tr>
+    <tr><td>Ethnic composition (2011)</td><td>ONS Census 2011 (PCON 2010 → 2024)</td><td>England & Wales</td></tr>
+    <tr><td>Education qualifications</td><td>ONS Census 2021 TS067 (LSOA → PCON)</td><td>England & Wales</td></tr>
+    <tr><td>Deprivation (IMD)</td><td>Abel, Payne & Barclay UK IMD 2019</td><td>UK (649/650)</td></tr>
+    <tr><td>2024 election results</td><td>House of Commons Library</td><td>All 650 constituencies</td></tr>
+    <tr><td>Notional 2019 results</td><td>Rallings & Thrasher / HoC Library</td><td>All 650 (2024 boundaries)</td></tr>
+    <tr><td>EU referendum estimates</td><td>Chris Hanretty estimates</td><td>England, Wales & Scotland</td></tr>
+    <tr><td>Constituency boundaries</td><td>ONS Open Geography Portal (July 2024)</td><td>All 650</td></tr>
+    <tr><td>Government ministers</td><td>GOV.UK / Hansard (Feb 2026)</td><td>All ministerial posts</td></tr>
+    <tr><td>MP data</td><td>members-api.parliament.uk</td><td>All 650 MPs</td></tr>
+    </tbody>
+  </table>
+  <p>Historic data has been mapped to 2024 boundaries using ONS lookup tables and best-fit LSOA matching, introducing small approximation errors but preserving constituency-level analytical validity.</p>
+
+  <h2 id="references">8. References</h2>
+  <div class="ref"><strong>Sobolewska, M. & Ford, R.</strong> (2020). <em>Brexitland: Identity, Diversity and the Reshaping of British Politics</em>. Cambridge University Press.</div>
+  <div class="ref"><strong>Campbell, R. & Heath, O.</strong> (2021). "Fuelling the Populist Divide: Nativist and Cosmopolitan Preferences for Representation at the Elite and Mass Level." <em>Political Behavior</em>, 43, 1707–1729.</div>
+  <div class="ref"><strong>Stenner, K.</strong> (2005). <em>The Authoritarian Dynamic</em>. Cambridge University Press.</div>
+  <div class="ref"><strong>Jennings, W. & Stoker, G.</strong> (2016). "The Bifurcation of Politics: Two Englands." <em>The Political Quarterly</em>, 87(3), 372–382.</div>
+  <div class="ref"><strong>Abel, G., Payne, R. & Barclay, M.</strong> (2019). UK Indices of Multiple Deprivation: Composite Measure.</div>
+  <div class="ref"><strong>Sutton Trust</strong> (2024). <em>Parliamentary Privilege: The MPs 2024</em>.</div>
+
+  <div class="footer">UK Government Power Map · Phase 4 · February 2026<br>Data not audited. For research and educational purposes.</div>
+</div>
+</body>
+</html>
